@@ -16,6 +16,8 @@ author:
 plugins:
   - jekyll-paginate-v2
 
+timezone: Asia/Shanghai
+
 pagination:
   enabled: true
   per_page: 5
