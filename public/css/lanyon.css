@@ -473,35 +473,35 @@ a.pagination-item:hover {
 }
 
 
-.about-container {
+/*
+ * About page
+ *
+ *  
+ * 
+ */
+
+ .about-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 300px;
-}
-
 .about-image {
-  width: 100%;
+  width: 50%;
+  max-width: 300px;
 }
 
 .about-image img {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
   object-fit: cover;
   object-position: top;
 }
 
 .about-social {
-  width: 100%;
+  width: 50%;
+  max-width: 300px;
 }
 
 .about-social ul {
@@ -532,7 +532,7 @@ a.pagination-item:hover {
 
 /* Media Query for responsiveness */
 @media screen and (min-width: 768px) {
-  .about-content {
+  .about-container {
     flex-direction: row;
     justify-content: space-between;
   }

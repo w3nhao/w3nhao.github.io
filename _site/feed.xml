@@ -1,4 +1,253 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-31T21:38:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Limitation of ChatGPT in Causal Inference</title><link href="http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference/" rel="alternate" type="text/html" title="Limitation of ChatGPT in Causal Inference" /><published>2023-03-30T00:00:00+08:00</published><updated>2023-03-30T00:00:00+08:00</updated><id>http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference</id><content type="html" xml:base="http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference/"><![CDATA[<p>In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-01T04:02:45+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">HR, NDCG, and MRR: An easy implementation with TorchMetrics</title><link href="http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation.md/" rel="alternate" type="text/html" title="HR, NDCG, and MRR: An easy implementation with TorchMetrics" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation.md</id><content type="html" xml:base="http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation.md/"><![CDATA[<p>To assess the performance of  Recommender systems, we need to have reliable evaluation metrics. In this blog post, we will discuss three popular metrics: Hit Rate (HR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR). We will also show you how to easily implement these metrics using TorchMetrics and integrate them into a PyTorch Lightning model.</p>
+
+<h2 id="0-understanding-the-get_topk_ranks-function">0. Understanding the <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> Function</h2>
+
+<p>In the context of our recommender system evaluation, it is essential to understand the <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> function, which plays a crucial role in computing the ranks of the target items in the predicted scores. This function is used as an intermediate step to calculate the HR, NDCG, and MRR metrics.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">get_topk_ranks</span><span class="p">(</span><span class="n">pred_scores</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">topk</span><span class="p">):</span>
+    <span class="s">""" get topk ranks of the target in the pred_scores
+    Args:
+        pred_scores: (batch_size, item_num(with padding item))
+        target: (batch_size, ) or (batch_size, 1)
+        topk: int
+        
+    Returns:
+        topk_rank: (batch_size, 1) topk + 1 if not hit, 1 is the first rank
+    """</span>
+    <span class="k">assert</span> <span class="n">target</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">pred_scores</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">assert</span> <span class="n">pred_scores</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">topk</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">target</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">target</span><span class="p">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">target</span>
+
+    <span class="n">_</span><span class="p">,</span> <span class="n">topk_idx</span> <span class="o">=</span> <span class="n">pred_scores</span><span class="p">.</span><span class="nf">topk</span><span class="p">(</span><span class="n">topk</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">hitted_row</span><span class="p">,</span> <span class="n">rank</span> <span class="o">=</span> <span class="p">(</span><span class="n">target</span> <span class="o">==</span> <span class="n">topk_idx</span><span class="p">).</span><span class="nf">nonzero</span><span class="p">().</span><span class="nf">split</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">rank</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+    <span class="c1"># first set all rank to maximum value 
+</span>    <span class="c1"># int64 or set all rank to topk + 1
+</span>    <span class="n">all_rank</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">full_like</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">topk</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># then set the hitted row to the rank
+</span>    <span class="n">all_rank</span> <span class="o">=</span> <span class="n">all_rank</span><span class="p">.</span><span class="nf">scatter</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">hitted_row</span><span class="p">,</span> <span class="n">rank</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">all_rank</span>
+</code></pre></div></div>
+
+<h3 id="the-get_topk_ranks-function-explained">The <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> Function Explained</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> function takes three arguments: <code class="language-plaintext highlighter-rouge">pred_scores</code>, <code class="language-plaintext highlighter-rouge">target</code>, and <code class="language-plaintext highlighter-rouge">topk</code>. It returns the ranks of the target items within the top-k predictions.</p>
+
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">pred_scores</code>: A tensor of shape <code class="language-plaintext highlighter-rouge">(batch_size, item_num(with padding item))</code>, representing the predicted scores for each item for all users in a batch.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">target</code>: A tensor of shape <code class="language-plaintext highlighter-rouge">(batch_size,)</code> or <code class="language-plaintext highlighter-rouge">(batch_size, 1)</code>, containing the ground truth target items for each user in the batch.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">topk</code>: An integer value representing the number of top items we want to consider.</p>
+  </li>
+</ol>
+
+<p>The function returns a tensor <code class="language-plaintext highlighter-rouge">topk_rank</code> of shape <code class="language-plaintext highlighter-rouge">(batch_size, 1)</code> containing the top-k ranks of the target items in the predicted scores. If a target item is not in the top-k predictions, the rank will be set to <code class="language-plaintext highlighter-rouge">topk + 1</code>.</p>
+
+<h3 id="how-the-get_topk_ranks-function-works">How the <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> Function Works</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> function follows these steps to compute the ranks:</p>
+
+<ol>
+  <li>
+    <p>Ensures that the target tensor has two dimensions by unsqueezing it if necessary.</p>
+  </li>
+  <li>
+    <p>Retrieves the indices of the top-k items in the predicted scores using the <code class="language-plaintext highlighter-rouge">topk()</code> method.</p>
+  </li>
+  <li>
+    <p>Computes the ranks of the target items within the top-k predictions by checking if the target item is present in the top-k indices.</p>
+  </li>
+  <li>
+    <p>Initializes a tensor <code class="language-plaintext highlighter-rouge">all_rank</code> with the same shape as the target tensor, filled with the value <code class="language-plaintext highlighter-rouge">topk + 1</code>.</p>
+  </li>
+  <li>
+    <p>Updates the <code class="language-plaintext highlighter-rouge">all_rank</code> tensor with the computed ranks for each user using the <code class="language-plaintext highlighter-rouge">scatter()</code> method.</p>
+  </li>
+</ol>
+
+<p>By using the <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> function, we can efficiently compute the top-k ranks for each user in a batch, which is an essential step for calculating HR, NDCG, and MRR metrics in our recommender system evaluation.</p>
+
+<h2 id="1-hit-rate-hr">1. Hit Rate (HR)</h2>
+
+<p>Hit Rate is a simple and intuitive metric that measures the proportion of relevant items recommended to the user.</p>
+
+<p><strong>Mathematical Definition:</strong></p>
+
+<p>HR@k = (Number of hits in the top-k recommendations) / (Total number of recommendations)</p>
+
+<p>The Hit Ratio (HR) is a binary metric that measures whether a relevant item is present in the top-k recommendations or not. Mathematically, it can be expressed as:</p>
+
+\[\text{HR@k} = \frac{1}{|U|}\sum\_{u=1}^{|U|} \text{hit}\_u\]
+
+<p>
+where $|U|$ is the number of users, and $\text{hit}_u$ is 1 if the ground truth item is present in the top-k recommendations for user $u$, and 0 otherwise.
+</p>
+
+<p><strong>TorchMetrics Implementation:</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">torchmetrics</span> <span class="kn">import</span> <span class="n">Metric</span>
+
+<span class="k">class</span> <span class="nc">HR</span><span class="p">(</span><span class="n">Metric</span><span class="p">):</span>
+    <span class="p">...</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">topk_rank</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">accumulate_count</span> <span class="o">+=</span> <span class="n">topk_rank</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">accumulate_metric</span> <span class="o">+=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_metric</span><span class="p">(</span><span class="n">topk_rank</span><span class="p">[</span><span class="n">topk_rank</span> <span class="o">&lt;=</span> <span class="n">self</span><span class="p">.</span><span class="n">k</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_metric</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">topk_rank</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">topk_rank</span><span class="p">.</span><span class="nf">numel</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="2-normalized-discounted-cumulative-gain-ndcg">2. Normalized Discounted Cumulative Gain (NDCG)</h2>
+<p>NDCG is a metric that measures the quality of the ranking of the recommended items, taking into account their relevance and position in the list.</p>
+
+<p><strong>Mathematical Definition:</strong></p>
+
+<p>Normalized Discounted Cumulative Gain (NDCG) is a measure that evaluates the quality of the ranking of recommended items. It takes into account the positions of relevant items in the top-k recommendations. The NDCG@k is defined as:</p>
+
+<p>NDCG@k = (DCG@k) / (IDCG@k)</p>
+
+<p>where DCG@k is the Discounted Cumulative Gain at position k, and IDCG@k is the Ideal Discounted Cumulative Gain at position k.</p>
+
+<p>DCG@k = sum(relevance_i / log2(i + 1)) for i in range(1, k + 1)</p>
+
+\[\text{NDCG@k} = \frac{1}{|U|} \sum\_{u=1}^{|U|} \frac{\sum\_{i=1}^{k} \frac{2^{\text{rel}\_i\(u)} - 1}{\log\_2{\(i+1)}}}{\text{IDCG}\_u}\]
+
+<p>
+where $|U|$ is the number of users, $\text{rel}_i(u)$ is the relevance score of item $i$ for user $u$, and $\text{IDCG}_u$ is the Ideal Discounted Cumulative Gain for user $u$, which is the maximum possible NDCG for that user.
+</p>
+
+<p><strong>TorchMetrics Implementation:</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">torchmetrics</span> <span class="kn">import</span> <span class="n">Metric</span>
+
+<span class="k">class</span> <span class="nc">NDCG</span><span class="p">(</span><span class="n">Metric</span><span class="p">):</span>
+    <span class="p">...</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">topk_rank</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">accumulate_count</span> <span class="o">+=</span> <span class="n">topk_rank</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">accumulate_metric</span> <span class="o">+=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_metric</span><span class="p">(</span><span class="n">topk_rank</span><span class="p">[</span><span class="n">topk_rank</span> <span class="o">&lt;=</span> <span class="n">self</span><span class="p">.</span><span class="n">k</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_metric</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">topk_rank</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">torch</span><span class="p">.</span><span class="nf">log2</span><span class="p">(</span><span class="n">topk_rank</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="3-mean-reciprocal-rank-mrr">3. Mean Reciprocal Rank (MRR)</h2>
+<p>MRR is a metric that measures the quality of the ranking of the recommended items by computing the average of the reciprocal ranks of the first relevant item in the list.</p>
+
+<p><strong>Mathematical Definition:</strong></p>
+
+<p>Mean Reciprocal Rank (MRR) is another metric that evaluates the ranking quality of recommended items. It is the average of the reciprocal of the rank of the first relevant item in the top-k recommendations for each user. MRR can be defined as:</p>
+
+<p>MRR@k = (1 / Number of users) * sum(1 / rank_i) for i in range(Number of users)</p>
+
+\[\text{MRR@k} = \frac{1}{|U|}\sum\_{u=1}^{|U|} \frac{1}{\text{rank}\_u}\]
+
+<p>
+where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the first relevant item in the top-k recommendations for user $u$.
+</p>
+
+<p><strong>TorchMetrics Implementation:</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">torchmetrics</span> <span class="kn">import</span> <span class="n">Metric</span>
+
+<span class="k">class</span> <span class="nc">MRR</span><span class="p">(</span><span class="n">Metric</span><span class="p">):</span>
+    <span class="p">...</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">topk_rank</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">accumulate_count</span> <span class="o">+=</span> <span class="n">topk_rank</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">accumulate_metric</span> <span class="o">+=</span> <span class="n">self</span><span class="p">.</span><span class="nf">_metric</span><span class="p">(</span><span class="n">topk_rank</span><span class="p">[</span><span class="n">topk_rank</span> <span class="o">&lt;=</span> <span class="n">self</span><span class="p">.</span><span class="n">k</span><span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">_metric</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">topk_rank</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">torch</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">topk_rank</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="integrating-metrics-with-pytorch-lightning">Integrating Metrics with PyTorch Lightning</h2>
+<p>Now, let’s demonstrate how to integrate these evaluation metrics into a PyTorch Lightning model using a sample recommender system called SASRec.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pytorch_lightning</span> <span class="k">as</span> <span class="n">pl</span>
+<span class="kn">from</span> <span class="n">torchmetrics</span> <span class="kn">import</span> <span class="n">MetricCollection</span>
+
+<span class="k">class</span> <span class="nc">SASRec</span><span class="p">(</span><span class="n">pl</span><span class="p">.</span><span class="n">LightningModule</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">...):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        <span class="p">...</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">topk_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">topk_metric</span> <span class="o">=</span> <span class="n">MetricCollection</span>
+        <span class="p">({</span>
+            <span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">metric_name</span><span class="si">}</span><span class="s">@</span><span class="si">{</span><span class="n">topk</span><span class="si">}</span><span class="s">"</span><span class="p">:</span> <span class="nf">globals</span><span class="p">()[</span><span class="n">metric_name</span><span class="p">](</span><span class="n">topk</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">metric_name</span> <span class="ow">in</span> <span class="p">[</span><span class="s">"HR"</span><span class="p">,</span> <span class="s">"NDCG"</span><span class="p">,</span> <span class="s">"MRR"</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">topk</span> <span class="ow">in</span> <span class="n">self</span><span class="p">.</span><span class="n">topk_list</span>
+        <span class="p">})</span>
+
+    <span class="k">def</span> <span class="nf">_on_val_test_epoch_start</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">topk</span> <span class="ow">in</span> <span class="n">self</span><span class="p">.</span><span class="n">topk_list</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">metric_name</span> <span class="ow">in</span> <span class="n">METRIC_LIST</span><span class="p">:</span>
+                <span class="n">self</span><span class="p">.</span><span class="n">topk_metric</span><span class="p">[</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">metric_name</span><span class="si">}</span><span class="s">@</span><span class="si">{</span><span class="n">topk</span><span class="si">}</span><span class="s">"</span><span class="p">].</span><span class="nf">reset</span><span class="p">()</span>
+
+        <span class="n">self</span><span class="p">.</span><span class="nf">register_buffer</span><span class="p">(</span>
+            <span class="s">"all_item_embs"</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="nf">item_encoder</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">all_item_ids</span><span class="p">),</span> <span class="n">persistent</span><span class="o">=</span><span class="bp">False</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">on_validation_epoch_start</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">_on_val_test_epoch_start</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">on_test_epoch_start</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">_on_val_test_epoch_start</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_val_test_step</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="n">stage</span><span class="p">):</span>
+        <span class="p">...</span>
+
+        <span class="n">pred_item_embs</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">forward</span><span class="p">(</span><span class="n">input_ids</span><span class="p">,</span> <span class="n">input_mask</span><span class="p">)</span>
+        <span class="n">pred_scores</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">matmul</span><span class="p">(</span><span class="n">pred_item_embs</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">all_item_embs</span><span class="p">.</span><span class="nf">t</span><span class="p">()).</span><span class="nf">squeeze</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">pred_scores</span> <span class="o">=</span> <span class="n">pred_scores</span><span class="p">.</span><span class="nf">scatter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">history</span><span class="p">,</span> <span class="o">-</span><span class="nf">float</span><span class="p">(</span><span class="s">'inf'</span><span class="p">))</span>
+
+        <span class="n">target</span> <span class="o">=</span> <span class="n">behavs</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">target</span> <span class="o">=</span> <span class="n">target</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">topk</span> <span class="o">=</span> <span class="nf">max</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">topk_list</span><span class="p">)</span>
+        <span class="n">all_ranks</span> <span class="o">=</span> <span class="nf">get_topk_ranks</span><span class="p">(</span><span class="n">pred_scores</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">topk</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">topk</span> <span class="ow">in</span> <span class="n">self</span><span class="p">.</span><span class="n">topk_list</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">metric_name</span> <span class="ow">in</span> <span class="n">METRIC_LIST</span><span class="p">:</span>
+                <span class="n">metric</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">topk_metric</span><span class="p">[</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">metric_name</span><span class="si">}</span><span class="s">@</span><span class="si">{</span><span class="n">topk</span><span class="si">}</span><span class="s">"</span><span class="p">]</span>
+                <span class="n">metric</span><span class="p">.</span><span class="nf">update</span><span class="p">(</span><span class="n">all_ranks</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">validation_step</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">_val_test_step</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="s">"val"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_step</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">batch</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">_val_test_step</span><span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="s">"test"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_val_test_epoch_end</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">outputs</span><span class="p">,</span> <span class="n">stage</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">topk</span> <span class="ow">in</span> <span class="n">self</span><span class="p">.</span><span class="n">topk_list</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">metric_name</span> <span class="ow">in</span> <span class="n">METRIC_LIST</span><span class="p">:</span>
+                <span class="n">score</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">topk_metric</span><span class="p">[</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">metric_name</span><span class="si">}</span><span class="s">@</span><span class="si">{</span><span class="n">topk</span><span class="si">}</span><span class="s">"</span><span class="p">].</span><span class="nf">compute</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">metric_name</span> <span class="ow">in</span> <span class="p">[</span><span class="s">"HR"</span><span class="p">,</span> <span class="s">"NDCG"</span><span class="p">]</span> <span class="ow">and</span> <span class="n">topk</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]:</span>
+                    <span class="n">log_on_progress_bar</span> <span class="o">=</span> <span class="bp">True</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">log_on_progress_bar</span> <span class="o">=</span> <span class="bp">False</span>
+                <span class="n">self</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">stage</span><span class="si">}</span><span class="s">_</span><span class="si">{</span><span class="n">metric_name</span><span class="si">}</span><span class="s">@</span><span class="si">{</span><span class="n">topk</span><span class="si">}</span><span class="s">"</span><span class="p">,</span>
+                         <span class="n">score</span><span class="p">,</span>
+                         <span class="n">on_epoch</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                         <span class="n">prog_bar</span><span class="o">=</span><span class="n">log_on_progress_bar</span><span class="p">,</span>
+                         <span class="n">logger</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                         <span class="n">sync_dist</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+        <span class="n">self</span><span class="p">.</span><span class="n">all_item_embs</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">validation_epoch_end</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">outputs</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">_val_test_epoch_end</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="s">"val"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_epoch_end</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">outputs</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">_val_test_epoch_end</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="s">"test"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="next-steps-experimenting-with-recommender-systems">Next Steps: Experimenting with Recommender Systems</h2>
+
+<p>After implementing and integrating these evaluation metrics into your PyTorch Lightning model, you can use them to gauge the performance of your recommender system. Additionally, you can employ these metrics to compare different models and decide which one is best suited for your application.</p>]]></content><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><summary type="html"><![CDATA[To assess the performance of Recommender systems, we need to have reliable evaluation metrics. In this blog post, we will discuss three popular metrics: Hit Rate (HR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR). We will also show you how to easily implement these metrics using TorchMetrics and integrate them into a PyTorch Lightning model.]]></summary></entry><entry><title type="html">Limitation of ChatGPT in Causal Inference</title><link href="http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference/" rel="alternate" type="text/html" title="Limitation of ChatGPT in Causal Inference" /><published>2023-03-30T00:00:00+08:00</published><updated>2023-03-30T00:00:00+08:00</updated><id>http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference</id><content type="html" xml:base="http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference/"><![CDATA[<p>In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.</p>
 
 <p><img src="\../public/img/tweet_screen_shot_20230331.png#pic_center# =200x200" alt="img" />
 <a href="https://twitter.com/yudapearl/status/1641386266595033088">tweet_link</a></p>

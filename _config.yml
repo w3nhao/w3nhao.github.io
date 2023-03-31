@@ -43,6 +43,8 @@ toc:
   range_start: "<!-- toc:start -->"
   range_end: "<!-- toc:end -->"
 
+kramdown:
+  parse_block_html: true
 
 # Custom vars
 version:             1.1.0

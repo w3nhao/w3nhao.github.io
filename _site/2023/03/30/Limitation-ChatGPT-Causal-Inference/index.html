@@ -9,7 +9,7 @@
 
   <title>
     
-      Limitation of ChatGPT in Causal Inference &middot; Wenhao Deng
+      Limitation of ChatGPT in Causal Inference · Wenhao Deng
     
   </title>
 
@@ -29,8 +29,25 @@
 
   
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" crossorigin="anonymous">
 
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  
 </head>
 
 
@@ -84,7 +101,7 @@
 
   <div class="sidebar-item">
     <p>
-      &copy; 2023. All rights reserved.
+      © 2023. All rights reserved.
     </p>
   </div>
 </div>
@@ -117,7 +134,7 @@
   </div>
   <p>In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.</p>
 
-<p><img src="\../public/img/tweet_screen_shot_20230331.png#pic_center# =200x200" alt="img" />
+<p><img src="%5C../public/img/tweet_screen_shot_20230331.png#pic_center#%20=200x200" alt="img">
 <a href="https://twitter.com/yudapearl/status/1641386266595033088">tweet_link</a></p>
 
 <h2 id="judea-pearls-critique">Judea Pearl’s Critique</h2>
@@ -143,7 +160,7 @@
 
 <p>In conclusion, the dialogue between Judea Pearl and Jim Fan serves as a valuable reminder of the limitations of deep learning models like GPT in the domain of causal inference. While these models have made significant strides in various aspects of natural language understanding, their abilities in causal reasoning remain constrained by their training data and the algorithms themselves.</p>
 
-<hr />
+<hr>
 
 <font color="LightSlateGray" size="5" face="Times">GPT在因果推理方面的局限性：Judea Pearl和Jim Fan的对话</font>
 
@@ -185,6 +202,15 @@
     
       <li>
         <h3>
+          <a href="/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation.md/">
+            HR, NDCG, and MRR: An easy implementation with TorchMetrics
+            <small>31 Mar 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2023/03/29/Falsificationism-and-Bayesianism/">
             Falsificationism and Bayesianism
             <small>29 Mar 2023</small>
@@ -201,6 +227,6 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <script src='/public/js/script.js'></script>
+    <script src="/public/js/script.js"></script>
   </body>
 </html>

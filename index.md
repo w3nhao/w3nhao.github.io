@@ -4,18 +4,16 @@ title: Home
 ---
 
 <div class="about-container">
-  <div class="about-content">
-    <div class="about-image">
-      <img src="/public/pic.jpg" alt="Wenhao's Picture" />
-    </div>
-    <div class="about-social">
-      <ul>
-        <!-- <li><a href="https://www.instagram.com/your_username/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li> -->
-        <!-- <li><a href="https://twitter.com/dw3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></li> -->
-        <li><a href="https://github.com/w3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-        <!-- <li><i class="fab fa-weixin"></i> WeChat: your_wechat_id</li> -->
-      </ul>
-    </div>
+  <div class="about-image">
+    <img src="/public/pic.jpg" alt="Wenhao's Picture" />
+  </div>
+  <div class="about-social">
+    <ul>
+      <!-- <li><a href="https://www.instagram.com/your_username/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li> -->
+      <!-- <li><a href="https://twitter.com/dw3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></li> -->
+      <li><a href="https://github.com/w3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+      <!-- <li><i class="fab fa-weixin"></i> WeChat: your_wechat_id</li> -->
+    </ul>
   </div>
 </div>
 

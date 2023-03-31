@@ -80,7 +80,9 @@ $$
 \text{HR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \text{hit}_u
 $$
 
+<p>
 where $|U|$ is the number of users, and $\text{hit}_u$ is 1 if the ground truth item is present in the top-k recommendations for user $u$, and 0 otherwise.
+</p>
 
 **TorchMetrics Implementation:**
 
@@ -111,11 +113,12 @@ where DCG@k is the Discounted Cumulative Gain at position k, and IDCG@k is the I
 DCG@k = sum(relevance_i / log2(i + 1)) for i in range(1, k + 1)
 
 $$
-\text{NDCG@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \frac{\sum_{i=1}^{k} \frac{2^{\text{rel}_i(u)} - 1}{\log_2{(i+1)}}}{\text{IDCG}_u}
+\text{NDCG@k} = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{\sum_{i=1}^{k} \frac{2^{\text{rel}_i(u)} - 1}{\log_2{(i+1)}}}{\text{IDCG}_u}
 $$
 
+<p>
 where $|U|$ is the number of users, $\text{rel}_i(u)$ is the relevance score of item $i$ for user $u$, and $\text{IDCG}_u$ is the Ideal Discounted Cumulative Gain for user $u$, which is the maximum possible NDCG for that user.
-
+</p>
 
 **TorchMetrics Implementation:**
 
@@ -145,8 +148,9 @@ $$
 \text{MRR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \frac{1}{\text{rank}_u}
 $$
 
+<p>
 where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the first relevant item in the top-k recommendations for user $u$.
-
+</p>
 
 **TorchMetrics Implementation:**
 

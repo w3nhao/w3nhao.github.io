@@ -480,9 +480,9 @@ a.pagination-item:hover {
  * 
  */
 
-.about-container {
+ .about-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
@@ -495,7 +495,6 @@ a.pagination-item:hover {
 
 .about-image img {
   width: 100%;
-  border-radius: 50%;
   object-fit: cover;
   object-position: top;
 }
@@ -531,6 +530,13 @@ a.pagination-item:hover {
   color: #007bff;
 }
 
+/* Media Query for responsiveness */
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 
 /*

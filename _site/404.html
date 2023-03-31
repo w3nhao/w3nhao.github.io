@@ -9,7 +9,7 @@
 
   <title>
     
-      404: Page not found &middot; Wenhao Deng
+      404: Page not found · Wenhao Deng
     
   </title>
 
@@ -29,8 +29,25 @@
 
   
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" crossorigin="anonymous">
 
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  
 </head>
 
 
@@ -84,7 +101,7 @@
 
   <div class="sidebar-item">
     <p>
-      &copy; 2023. All rights reserved.
+      © 2023. All rights reserved.
     </p>
   </div>
 </div>
@@ -111,6 +128,6 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <script src='/public/js/script.js'></script>
+    <script src="/public/js/script.js"></script>
   </body>
 </html>
