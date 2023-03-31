@@ -16,6 +16,7 @@ author:
 plugins:
   - jekyll-paginate-v2
   - jekyll-toc
+  - jekyll-spaceship
 
 pagination:
   enabled: true

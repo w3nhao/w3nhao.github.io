@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HR, NDCG, and MRR easy implementation with TorchMetrics
+title: "HR, NDCG, and MRR: An easy implementation with TorchMetrics"
 subtitle: "Evaluation Metrics for Recommender Systems with PyTorch Lightning: HR, NDCG, and MRR"
 toc: true
 ---
