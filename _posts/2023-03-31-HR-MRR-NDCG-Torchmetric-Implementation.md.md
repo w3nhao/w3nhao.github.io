@@ -76,8 +76,7 @@ HR@k = (Number of hits in the top-k recommendations) / (Total number of recommen
 
 The Hit Ratio (HR) is a binary metric that measures whether a relevant item is present in the top-k recommendations or not. Mathematically, it can be expressed as:
 
-$$
-\text{HR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \text{hit}_u
+$$\text{HR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \text{hit}_u
 $$
 
 <p>
@@ -112,8 +111,7 @@ where DCG@k is the Discounted Cumulative Gain at position k, and IDCG@k is the I
 
 DCG@k = sum(relevance_i / log2(i + 1)) for i in range(1, k + 1)
 
-$$
-\text{NDCG@k} = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{\sum_{i=1}^{k} \frac{2^{\text{rel}_i(u)} - 1}{\log_2{(i+1)}}}{\text{IDCG}_u}
+$$\text{NDCG@k} = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{\sum_{i=1}^{k} \frac{2^{\text{rel}_i(u)} - 1}{\log_2{(i+1)}}}{\text{IDCG}_u}
 $$
 
 <p>
@@ -144,8 +142,7 @@ Mean Reciprocal Rank (MRR) is another metric that evaluates the ranking quality 
 
 MRR@k = (1 / Number of users) * sum(1 / rank_i) for i in range(Number of users)
 
-$$
-\text{MRR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \frac{1}{\text{rank}_u}
+$$\text{MRR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \frac{1}{\text{rank}_u}
 $$
 
 <p>

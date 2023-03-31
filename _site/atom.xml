@@ -4,7 +4,7 @@
  <title>Wenhao Deng</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-04-01T04:02:45+08:00</updated>
+ <updated>2023-04-01T04:11:35+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Wenhao Deng</name>
@@ -101,7 +101,8 @@
 
 &lt;p&gt;The Hit Ratio (HR) is a binary metric that measures whether a relevant item is present in the top-k recommendations or not. Mathematically, it can be expressed as:&lt;/p&gt;
 
-\[\text{HR@k} = \frac{1}{|U|}\sum\_{u=1}^{|U|} \text{hit}\_u\]
+&lt;p&gt;$$\text{HR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \text{hit}_u
+$$&lt;/p&gt;
 
 &lt;p&gt;
 where $|U|$ is the number of users, and $\text{hit}_u$ is 1 if the ground truth item is present in the top-k recommendations for user $u$, and 0 otherwise.
@@ -134,7 +135,8 @@ where $|U|$ is the number of users, and $\text{hit}_u$ is 1 if the ground truth 
 
 &lt;p&gt;DCG@k = sum(relevance_i / log2(i + 1)) for i in range(1, k + 1)&lt;/p&gt;
 
-\[\text{NDCG@k} = \frac{1}{|U|} \sum\_{u=1}^{|U|} \frac{\sum\_{i=1}^{k} \frac{2^{\text{rel}\_i\(u)} - 1}{\log\_2{\(i+1)}}}{\text{IDCG}\_u}\]
+&lt;p&gt;$$\text{NDCG@k} = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{\sum_{i=1}^{k} \frac{2^{\text{rel}_i(u)} - 1}{\log_2{(i+1)}}}{\text{IDCG}_u}
+$$&lt;/p&gt;
 
 &lt;p&gt;
 where $|U|$ is the number of users, $\text{rel}_i(u)$ is the relevance score of item $i$ for user $u$, and $\text{IDCG}_u$ is the Ideal Discounted Cumulative Gain for user $u$, which is the maximum possible NDCG for that user.
@@ -163,7 +165,8 @@ where $|U|$ is the number of users, $\text{rel}_i(u)$ is the relevance score of 
 
 &lt;p&gt;MRR@k = (1 / Number of users) * sum(1 / rank_i) for i in range(Number of users)&lt;/p&gt;
 
-\[\text{MRR@k} = \frac{1}{|U|}\sum\_{u=1}^{|U|} \frac{1}{\text{rank}\_u}\]
+&lt;p&gt;$$\text{MRR@k} = \frac{1}{|U|}\sum_{u=1}^{|U|} \frac{1}{\text{rank}_u}
+$$&lt;/p&gt;
 
 &lt;p&gt;
 where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the first relevant item in the top-k recommendations for user $u$.
