@@ -473,36 +473,35 @@ a.pagination-item:hover {
 }
 
 
-/*
- * About page
- *
- *  
- * 
- */
-
 .about-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 2rem 0;
 }
 
-.about-image {
-  width: 50%;
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   max-width: 300px;
+}
+
+.about-image {
+  width: 100%;
 }
 
 .about-image img {
   width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
 }
 
 .about-social {
-  width: 50%;
-  max-width: 300px;
+  width: 100%;
 }
 
 .about-social ul {
@@ -531,6 +530,13 @@ a.pagination-item:hover {
   color: #007bff;
 }
 
+/* Media Query for responsiveness */
+@media screen and (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 
 /*
