@@ -318,6 +318,11 @@ a.sidebar-nav-item:focus {
   margin-top: 0;
 }
 
+.post-subtitle {
+  color: #9a9a9a;
+  font-family: 'Times', 'Times New Roman', serif;
+}
+
 /* Meta data line below post title */
 .post-date {
   display: block;
@@ -351,6 +356,45 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+
+/*
+  * Article-toc
+  *
+  * The sidebar is a fixed width column that is positioned to the right of the
+  * main content. It is hidden by default on mobile devices.
+  */
+  .article-toc {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 0.8em;
+    width: 90%; /* 调整目录宽度，可以根据需要更改 */
+    box-sizing: border-box; /* 防止宽度溢出 */
+  }
+  
+  .article-toc a {
+    color: gray; /* 将目录链接颜色更改为灰色 */
+    text-decoration: none; /* 移除下划线 */
+  }
+  
+  /* 在鼠标悬停时显示下划线 */
+  .article-toc a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 为响应式设计添加媒体查询 */
+  @media screen and (max-width: 767px) {
+    .article-toc {
+      width: 90%; /* 在小屏幕上占据 100% 宽度 */
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .article-toc {
+      width: 50%; /* 在较大的屏幕上占据 50% 宽度 */
+    }
+  }
+  
 
 /*
  * Pagination

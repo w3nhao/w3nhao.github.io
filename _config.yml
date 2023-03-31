@@ -15,6 +15,7 @@ author:
 # Gems
 plugins:
   - jekyll-paginate-v2
+  - jekyll-toc
 
 pagination:
   enabled: true
@@ -25,6 +26,22 @@ pagination:
   trail:
     before: 2
     after: 2
+
+toc:
+  min_level: 1
+  max_level: 6
+  marker: "<!-- toc -->"
+  list_class: "toc__list"
+  sublist_class: "toc__sublist"
+  item_class: "toc__item"
+  link_class: "toc__link"
+  list_tag: "ul"
+  sublist_tag: "ul"
+  item_tag: "li"
+  link_tag: "a"
+  range_start: "<!-- toc:start -->"
+  range_end: "<!-- toc:end -->"
+
 
 # Custom vars
 version:             1.1.0
