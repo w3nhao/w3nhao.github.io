@@ -19,8 +19,10 @@ title: Home
 
 ### About Me
 
-Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence (AI) and computer science. I earned my Master's degree in Computer Science (Artificial Intelligence) with Distinction from the University of Nottingham under the guidance of Dr. Saeid P. Ardakani. Before that, I completed my Bachelor's degree in Computer Science and Technology at Guangzhou University.
-
-Throughout my learning journey, I've been involved in a variety of projects, such as multi-label text classification with federated learning, Chinese text semantic similarity modeling, distributed parallelization of clustering algorithms, and more. Each project provided me with valuable hands-on experience in different aspects of AI and machine learning.
+Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence (AI) and computer science. I earned my Master's degree in Computer Science (Artificial Intelligence) with Distinction from the University of Nottingham. Before that, I completed my Bachelor's degree in Computer Science and Technology at Guangzhou University.
 
 Feel free to reach out to me via email at wenhao.deng@foxmail.com.
+
+### Works
+
+Ruyu Li*, **Wenhao Deng***, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. 2021. [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700). arXiv preprint arXiv:2305.11700 (2021). (* Equal contribution)
