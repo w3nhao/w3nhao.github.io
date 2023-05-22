@@ -25,4 +25,4 @@ Feel free to reach out to me via email at wenhao.deng@foxmail.com.
 
 ### Works
 
-Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. 2021. [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700). arXiv preprint arXiv:2305.11700 (2023). (* Equal contribution)
+Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. 2023. [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700). arXiv preprint arXiv:2305.11700 (2023). (* Equal contribution)
