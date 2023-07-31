@@ -4,7 +4,7 @@
  <title>Wenhao Deng</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-04-01T04:11:35+08:00</updated>
+ <updated>2023-07-31T16:17:37+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Wenhao Deng</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>HR, NDCG, and MRR: An easy implementation with TorchMetrics</title>
-   <link href="http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation.md/"/>
+   <link href="http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/"/>
    <updated>2023-03-31T00:00:00+08:00</updated>
-   <id>http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation.md</id>
+   <id>http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation</id>
    <content type="html">&lt;p&gt;To assess the performance of  Recommender systems, we need to have reliable evaluation metrics. In this blog post, we will discuss three popular metrics: Hit Rate (HR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR). We will also show you how to easily implement these metrics using TorchMetrics and integrate them into a PyTorch Lightning model.&lt;/p&gt;
 
 &lt;h2 id=&quot;0-understanding-the-get_topk_ranks-function&quot;&gt;0. Understanding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_topk_ranks&lt;/code&gt; Function&lt;/h2&gt;
