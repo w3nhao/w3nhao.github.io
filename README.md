@@ -1,6 +1,6 @@
 ## How to install the Blog application
 1. Install Ruby and Gem.
-2. Run `Gem install Jekyll`
+2. Run `Gem install jekyll`
 3. Git clone the repository.
 4. Go to the repository folder.
 5. Run `bundle install` to install the dependencies.

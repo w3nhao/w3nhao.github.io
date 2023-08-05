@@ -25,4 +25,6 @@ Feel free to reach out to me via email at wenhao.deng@foxmail.com.
 
 ### Works
 
+Shihan Dou\*, Junjie Shan\*, Haoxiang Jia, **Wenhao Deng**, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang. 2023. [**Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey**](https://arxiv.org/abs/2308.01191). arXiv preprint arXiv:2308.01191 (2023). (* Equal contribution)
+
 Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. 2023. [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700). arXiv preprint arXiv:2305.11700 (2023). (* Equal contribution)
