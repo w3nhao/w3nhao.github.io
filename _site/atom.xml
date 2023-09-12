@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Wenhao Deng</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2023-08-05T14:52:02+08:00</updated>
- <id>http://localhost:4000</id>
+ <link href="https://w3nhao.github.io//atom.xml" rel="self"/>
+ <link href="https://w3nhao.github.io//"/>
+ <updated>2023-09-12T21:38:03+08:00</updated>
+ <id>https://w3nhao.github.io/</id>
  <author>
    <name>Wenhao Deng</name>
    <email>wenhao.deng@foxmail.com</email>
@@ -13,10 +13,962 @@
 
  
  <entry>
+   <title>Astrophysical Theoretical Framework</title>
+   <link href="https://w3nhao.github.io//2023/09/12/Astrophysical-Theoretical-Framework/"/>
+   <updated>2023-09-12T00:00:00+08:00</updated>
+   <id>https://w3nhao.github.io//2023/09/12/Astrophysical-Theoretical-Framework</id>
+   <content type="html">&lt;hr /&gt;
+
+&lt;h2 id=&quot;天文物理理论空间-astrophysical-theoretical-framework&quot;&gt;天文物理理论空间 (Astrophysical Theoretical Framework)&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;实体entities&quot;&gt;实体（Entities）&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;天体celestial-objects&quot;&gt;天体（Celestial Objects）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;行星（Planets）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;质量（Mass）&lt;/li&gt;
+      &lt;li&gt;半径（Radius）&lt;/li&gt;
+      &lt;li&gt;轨道参数（Orbital Parameters）
+        &lt;ul&gt;
+          &lt;li&gt;距离（Distance）&lt;/li&gt;
+          &lt;li&gt;周期（Period）&lt;/li&gt;
+          &lt;li&gt;偏心率（Eccentricity）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;组成（Composition）
+        &lt;ul&gt;
+          &lt;li&gt;核心（Core）&lt;/li&gt;
+          &lt;li&gt;地幔（Mantle）&lt;/li&gt;
+          &lt;li&gt;大气层（Atmosphere）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;磁场（Magnetic Field）&lt;/li&gt;
+      &lt;li&gt;卫星和环（Moons and Rings）&lt;/li&gt;
+      &lt;li&gt;发现方法（Discovery Method）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;卫星（Moons）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;类似行星的参数（Similar parameters as Planets）&lt;/li&gt;
+      &lt;li&gt;母行星（Parent Planet）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;恒星（Stars）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;类型（Type）
+        &lt;ul&gt;
+          &lt;li&gt;主序星（Main Sequence）&lt;/li&gt;
+          &lt;li&gt;红巨星（Red Giant）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;质量（Mass）&lt;/li&gt;
+      &lt;li&gt;亮度（Luminosity）&lt;/li&gt;
+      &lt;li&gt;温度（Temperature）&lt;/li&gt;
+      &lt;li&gt;星体演化阶段（Stellar Evolution Stage）&lt;/li&gt;
+      &lt;li&gt;核过程（Nuclear Processes）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;黑洞（Black Holes）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;质量（Mass）&lt;/li&gt;
+      &lt;li&gt;自旋（Spin）&lt;/li&gt;
+      &lt;li&gt;事件视界半径（Event Horizon Radius）&lt;/li&gt;
+      &lt;li&gt;霍金辐射（Hawking Radiation, if applicable）&lt;/li&gt;
+      &lt;li&gt;吸积盘属性（Accretion Disk Properties）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;星系（Galaxies）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;类型（Type）
+        &lt;ul&gt;
+          &lt;li&gt;螺旋星系（Spiral）&lt;/li&gt;
+          &lt;li&gt;椭圆星系（Elliptical）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;质量（Mass）&lt;/li&gt;
+      &lt;li&gt;星体数量（Number of Stars）&lt;/li&gt;
+      &lt;li&gt;星系核心属性（Galactic Core Properties）&lt;/li&gt;
+      &lt;li&gt;暗物质组成（Dark Matter Composition）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;星云（Nebulae）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;类型（Type）
+        &lt;ul&gt;
+          &lt;li&gt;行星状星云（Planetary）&lt;/li&gt;
+          &lt;li&gt;发射星云（Emission）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;组成（Composition）
+        &lt;ul&gt;
+          &lt;li&gt;气体（Gases）&lt;/li&gt;
+          &lt;li&gt;灰尘（Dust）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;星体形成过程（Stellar Formation Processes）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;系外行星（Exoplanets）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;类似行星的参数（Similar parameters as Planets）&lt;/li&gt;
+      &lt;li&gt;宿主恒星（Host Star）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;矮行星（Dwarf Planets）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;类似行星的参数（Similar parameters as Planets）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;彗星/小行星（Comets/Asteroids）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;质量（Mass）&lt;/li&gt;
+      &lt;li&gt;组成（Composition）&lt;/li&gt;
+      &lt;li&gt;轨道参数（Orbital Parameters）
+        &lt;ul&gt;
+          &lt;li&gt;距离（Distance）&lt;/li&gt;
+          &lt;li&gt;周期（Period）&lt;/li&gt;
+          &lt;li&gt;偏心率（Eccentricity）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;尾巴特性（Tail Characteristics, for comets）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;暗物质/暗能量团簇（Dark Matter/Dark Energy Clusters）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;估计质量（Estimated Mass）&lt;/li&gt;
+      &lt;li&gt;可观测效应（Observable Effects）
+        &lt;ul&gt;
+          &lt;li&gt;弯曲（Lensing）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;类星体（Quasars）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;亮度（Luminosity）&lt;/li&gt;
+      &lt;li&gt;发射光谱（Emission Spectra）&lt;/li&gt;
+      &lt;li&gt;关联星系（Associated Galaxy）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;脉冲星（Pulsars）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;周期（Period）&lt;/li&gt;
+      &lt;li&gt;质量（Mass）&lt;/li&gt;
+      &lt;li&gt;发射类型（Emission Types）
+        &lt;ul&gt;
+          &lt;li&gt;射电（Radio）&lt;/li&gt;
+          &lt;li&gt;X射线（X-ray）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;白矮星（White Dwarfs）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;质量（Mass）&lt;/li&gt;
+      &lt;li&gt;温度（Temperature）&lt;/li&gt;
+      &lt;li&gt;半径（Radius）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;超新星（Supernovae）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;类型（Type）
+        &lt;ul&gt;
+          &lt;li&gt;Ia&lt;/li&gt;
+          &lt;li&gt;II&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;爆炸前星体类型（Pre-explosion Star Type）&lt;/li&gt;
+      &lt;li&gt;残骸（Remnant）
+        &lt;ul&gt;
+          &lt;li&gt;黑洞（Black Hole）&lt;/li&gt;
+          &lt;li&gt;中子星（Neutron Star）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;物理定律physical-laws&quot;&gt;物理定律（Physical Laws）&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;牛顿定律（Newton’s Laws）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;方程式（Equations）&lt;/li&gt;
+      &lt;li&gt;局限性（Limitations）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;热力学定律（Laws of Thermodynamics）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;方程式（Equations）&lt;/li&gt;
+      &lt;li&gt;应用（Applications）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;守恒定律（Conservation Laws）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;动量（Momentum）&lt;/li&gt;
+      &lt;li&gt;能量（Energy）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;量子力学（Quantum Mechanics）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;基础方程式（Fundamental Equations）
+        &lt;ul&gt;
+          &lt;li&gt;薛定谔方程（Schrodinger Equation）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;量子数（Quantum Numbers）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;广义和特殊相对论（General and Special Relativity）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;基础方程式（Fundamental Equations）
+        &lt;ul&gt;
+          &lt;li&gt;爱因斯坦方程（Einstein’s Equations）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;概念（Concepts）
+        &lt;ul&gt;
+          &lt;li&gt;时空（Spacetime）&lt;/li&gt;
+          &lt;li&gt;黑洞（Black Holes）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;电磁学（Electromagnetism）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;麦克斯韦方程（Maxwell’s Equations）&lt;/li&gt;
+      &lt;li&gt;应用（Applications）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;哈勃定律（Hubble’s Law）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;方程式（Equation）&lt;/li&gt;
+      &lt;li&gt;含义（Implications）
+        &lt;ul&gt;
+          &lt;li&gt;宇宙膨胀（Expanding Universe）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;理论theories&quot;&gt;理论（Theories）&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;天体力学（Celestial Mechanics）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;关键方程式（Key Equations&lt;/li&gt;
+      &lt;li&gt;应用（Applications）
+        &lt;ul&gt;
+          &lt;li&gt;轨道（Orbits）&lt;/li&gt;
+          &lt;li&gt;潮汐力（Tidal Forces）&lt;/li&gt;
+          &lt;li&gt;等等（etc.）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;行星科学（Planetary Science）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;形成理论（Formation Theories）&lt;/li&gt;
+      &lt;li&gt;气候模型（Climate Models）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;星体动力学（Stellar Dynamics）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;星体演化模型（Stellar Evolution Models）&lt;/li&gt;
+      &lt;li&gt;核聚变过程（Nuclear Fusion Processes）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;宇宙学（Cosmology）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;大爆炸理论（Big Bang Theory）&lt;/li&gt;
+      &lt;li&gt;宇宙微波背景（Cosmic Microwave Background）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;星系和系外星系天文学（Galactic and Extragalactic Astronomy）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;星系形成（Galaxy Formation）&lt;/li&gt;
+      &lt;li&gt;星系团簇（Galactic Clusters）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;高能天体物理学（High-Energy Astrophysics）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;粒子加速（Particle Acceleration）&lt;/li&gt;
+      &lt;li&gt;伽马射线暴（Gamma-Ray Bursts）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;引力物理学（Gravitational Physics）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;引力波（Gravitational Waves）&lt;/li&gt;
+      &lt;li&gt;黑洞力学（Black Hole Mechanics）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;量子场论（Quantum Field Theory）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;拉格朗日量（Lagrangians）&lt;/li&gt;
+      &lt;li&gt;费曼图（Feynman Diagrams）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;弦理论（String Theory）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;基础方程式（Fundamental Equations）&lt;/li&gt;
+      &lt;li&gt;额外维度（Extra Dimensions）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;属性attributes&quot;&gt;属性（Attributes）&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;天体（Celestial Objects）&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;质量（Mass）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;静止质量（Rest Mass）&lt;/li&gt;
+          &lt;li&gt;相对论质量（Relativistic Mass）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;密度（Density）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;平均密度（Mean Density）&lt;/li&gt;
+          &lt;li&gt;核心密度（Core Density）&lt;/li&gt;
+          &lt;li&gt;外壳密度（Crust Density）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;位置（Position）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;银河坐标（Galactic Coordinates）&lt;/li&gt;
+          &lt;li&gt;黄道坐标（Ecliptic Coordinates）&lt;/li&gt;
+          &lt;li&gt;赤道坐标（Equatorial Coordinates）&lt;/li&gt;
+          &lt;li&gt;高度-方位坐标（Alt-Az Coordinates）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;速度（Velocity）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;径向速度（Radial Velocity）&lt;/li&gt;
+          &lt;li&gt;切向速度（Tangential Velocity）&lt;/li&gt;
+          &lt;li&gt;相对论速度（Relativistic Velocity）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;加速度（Acceleration）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;向心加速度（Centripetal Acceleration）&lt;/li&gt;
+          &lt;li&gt;切向加速度（Tangential Acceleration）&lt;/li&gt;
+          &lt;li&gt;重力加速度（Gravitational Acceleration）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;温度（Temperature）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;表面温度（Surface Temperature）&lt;/li&gt;
+          &lt;li&gt;核心温度（Core Temperature）&lt;/li&gt;
+          &lt;li&gt;有效温度（Effective Temperature）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;化学成分（Chemical Composition）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;元素丰度（Elemental Abundance: H, He, etc.）&lt;/li&gt;
+          &lt;li&gt;分子组成（Molecular Composition: H2O, CO2, etc.）&lt;/li&gt;
+          &lt;li&gt;微量元素（Trace Elements）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;半径/大小（Radius/Size）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;赤道半径（Equatorial Radius）&lt;/li&gt;
+          &lt;li&gt;极半径（Polar Radius）&lt;/li&gt;
+          &lt;li&gt;黑洞的Schwarzschild半径（Schwarzschild Radius for Black Holes）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;光度（Luminosity）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;辐射全光度（Bolometric Luminosity）&lt;/li&gt;
+          &lt;li&gt;光谱光度（Spectral Luminosity）&lt;/li&gt;
+          &lt;li&gt;视光度（Apparent Luminosity）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;自转/角动量（Spin/Angular Momentum）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;自转速率（Spin Rate）&lt;/li&gt;
+          &lt;li&gt;自转轴（Spin Axis）&lt;/li&gt;
+          &lt;li&gt;自转-轨道耦合（Spin-Orbit Coupling）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;轨道参数（Orbit Parameters）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;偏心率（Eccentricity）&lt;/li&gt;
+          &lt;li&gt;长半轴（Semimajor Axis）&lt;/li&gt;
+          &lt;li&gt;倾角（Inclination）&lt;/li&gt;
+          &lt;li&gt;升交点经度（Longitude of Ascending Node）&lt;/li&gt;
+          &lt;li&gt;近心点幅角（Argument of Periapsis）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;物理定律（Physical Laws）&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;常数（Constants）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;重力常数（Gravitational Constant, ( G )&lt;/li&gt;
+          &lt;li&gt;普朗克常数（Planck’s Constant, ( h )&lt;/li&gt;
+          &lt;li&gt;光速（Speed of Light, ( c )&lt;/li&gt;
+          &lt;li&gt;基础电荷（Elementary Charge, ( e )&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;方程（Equations）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;牛顿定律（Newton’s Laws）&lt;/li&gt;
+          &lt;li&gt;爱因斯坦场方程（Einstein’s Field Equations）&lt;/li&gt;
+          &lt;li&gt;薛定谔方程（Schrödinger Equation）&lt;/li&gt;
+          &lt;li&gt;麦克斯韦方程（Maxwell’s Equations）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;适用范围（Domains of Applicability）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;宏观尺度（Macroscopic Scale）&lt;/li&gt;
+          &lt;li&gt;量子尺度（Quantum Scale）&lt;/li&gt;
+          &lt;li&gt;相对论尺度（Relativistic Scale）&lt;/li&gt;
+          &lt;li&gt;非相对论尺度（Non-relativistic Scale）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;理论（Theories）&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;假设（Assumptions）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;各向同性宇宙（Isotropic Universe）&lt;/li&gt;
+          &lt;li&gt;各向同性宇宙（Homogeneous Universe）&lt;/li&gt;
+          &lt;li&gt;守恒定律（Conservation Laws）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;局限性（Limitations）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;非量子引力效应（Non-Quantum Gravitational Effects）&lt;/li&gt;
+          &lt;li&gt;奇点（Singularities）&lt;/li&gt;
+          &lt;li&gt;守恒定律的违反（Violations of Conservation Laws）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;数学模型（Mathematical Models）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;度规张量（Metric Tensors）&lt;/li&gt;
+          &lt;li&gt;拉格朗日量（Lagrangians）&lt;/li&gt;
+          &lt;li&gt;哈密顿量（Hamiltonians）&lt;/li&gt;
+          &lt;li&gt;费曼图（Feynman Diagrams）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;预测（Predictions）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;暗物质（Dark Matter）&lt;/li&gt;
+          &lt;li&gt;暗能量（Dark Energy）&lt;/li&gt;
+          &lt;li&gt;多宇宙（Multiverse）&lt;/li&gt;
+          &lt;li&gt;虫洞（Wormholes）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;实证证据（Empirical Evidence, if applicable）&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;观测到的红移（Observed Redshift）&lt;/li&gt;
+          &lt;li&gt;宇宙微波背景辐射（Cosmic Microwave Background Radiation）&lt;/li&gt;
+          &lt;li&gt;粒子碰撞数据（Particle Collision Data）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;关系relations&quot;&gt;关系（Relations）&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;数学关系mathematical-relations&quot;&gt;数学关系（Mathematical Relations）&lt;/h4&gt;
+
+&lt;h5 id=&quot;1-引力相互作用gravitational-interactions&quot;&gt;1. 引力相互作用（Gravitational Interactions）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;牛顿万有引力定律（Newton’s Universal Law of Gravitation）&lt;/li&gt;
+  &lt;li&gt;爱因斯坦广义相对论方程（Einstein’s General Relativity Equations）&lt;/li&gt;
+  &lt;li&gt;在引力背景下的泊松方程（Poisson’s Equation in the context of Gravity）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;2-电磁相互作用electromagnetic-interactions&quot;&gt;2. 电磁相互作用（Electromagnetic Interactions）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;麦克斯韦方程组（Maxwell’s Equations）&lt;/li&gt;
+  &lt;li&gt;洛伦兹力方程（Lorentz Force Equations）&lt;/li&gt;
+  &lt;li&gt;辐射定律，如普朗克定律和斯特潘-玻尔兹曼定律（Radiation laws like Planck’s law and Stefan-Boltzmann law）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;3-量子力学quantum-mechanics&quot;&gt;3. 量子力学（Quantum Mechanics）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;薛定谔方程（Schrödinger Equation）&lt;/li&gt;
+  &lt;li&gt;海森堡不确定性原理（Heisenberg Uncertainty Principle）&lt;/li&gt;
+  &lt;li&gt;量子场论方程（例如，狄拉克方程）（Quantum Field Theory Equations, e.g., Dirac Equation）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;4-运动方程kinematic-equations&quot;&gt;4. 运动方程（Kinematic Equations）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;位置、速度和加速度方程（Position, Velocity, and Acceleration equations）&lt;/li&gt;
+  &lt;li&gt;守恒定律（例如，动量和能量守恒）（Conservation laws, e.g., momentum, energy）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;5-热力学关系thermodynamic-relations&quot;&gt;5. 热力学关系（Thermodynamic Relations）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;热力学定律（Laws of Thermodynamics）&lt;/li&gt;
+  &lt;li&gt;状态方程（Equations of State）&lt;/li&gt;
+  &lt;li&gt;热传递方程（Heat Transfer Equations）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;6-宇宙学方程cosmological-equations&quot;&gt;6. 宇宙学方程（Cosmological Equations）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;弗里德曼方程（Friedmann Equations）&lt;/li&gt;
+  &lt;li&gt;规模因子方程（Scale Factor equations）&lt;/li&gt;
+  &lt;li&gt;暗能量方程（Dark Energy equations）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;7-统计关系statistical-relations&quot;&gt;7. 统计关系（Statistical Relations）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;亮度函数（Luminosity Functions）&lt;/li&gt;
+  &lt;li&gt;星体形成率（Star Formation Rates）&lt;/li&gt;
+  &lt;li&gt;黑洞熵（Black Hole Entropy）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;因果关系causal-relations&quot;&gt;因果关系（Causal Relations）&lt;/h4&gt;
+
+&lt;h5 id=&quot;1-星体演化stellar-evolution&quot;&gt;1. 星体演化（Stellar Evolution）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;氢燃烧导致氦生成（Hydrogen burning leading to helium）&lt;/li&gt;
+  &lt;li&gt;核心崩溃导致超新星或黑洞（Core collapse leading to supernovae or black holes）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;2-行星形成planetary-formation&quot;&gt;2. 行星形成（Planetary Formation）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;原行星盘导致行星形成（Protoplanetary disk leading to planet formation）&lt;/li&gt;
+  &lt;li&gt;冲击事件导致月球形成（Impact events leading to moon formation）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;3-星系动力学galactic-dynamics&quot;&gt;3. 星系动力学（Galactic Dynamics）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;引力相互作用导致星系合并（Gravitational interactions leading to galaxy mergers）&lt;/li&gt;
+  &lt;li&gt;星体的形成和死亡影响星系结构（Star formation and death affecting galactic structure）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;4-宇宙学事件cosmological-events&quot;&gt;4. 宇宙学事件（Cosmological Events）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;大爆炸导致宇宙微波背景辐射（Big Bang leading to cosmic microwave background radiation）&lt;/li&gt;
+  &lt;li&gt;暗能量导致宇宙加速膨胀（Dark energy causing accelerated expansion）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;分层关系hierarchical-relations&quot;&gt;分层关系（Hierarchical Relations）&lt;/h4&gt;
+
+&lt;h5 id=&quot;1-天体层次结构celestial-hierarchy&quot;&gt;1. 天体层次结构（Celestial Hierarchy）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;宇宙 &amp;gt; 星系团 &amp;gt; 星系 &amp;gt; 星团 &amp;gt; 行星系统 &amp;gt; 行星 &amp;gt; 卫星（Universe &amp;gt; Galaxy Clusters &amp;gt; Galaxies &amp;gt; Star Clusters &amp;gt; Planetary Systems &amp;gt; Planets &amp;gt; Moons）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;2-物理定律层次结构physical-laws-hierarchy&quot;&gt;2. 物理定律层次结构（Physical Laws Hierarchy）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;基本力（引力，电磁力，强力和弱力）（Fundamental Forces: Gravity, Electromagnetism, Strong and Weak Nuclear Forces）&lt;/li&gt;
+  &lt;li&gt;派生定律（例如，守恒定律，热力学）（Derived Laws: Conservation Laws, Thermodynamics）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;3-理论框架theoretical-frameworks&quot;&gt;3. 理论框架（Theoretical Frameworks）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;经典物理（牛顿力学，电磁学）（Classical Physics: Newtonian Mechanics, Electromagnetism）&lt;/li&gt;
+  &lt;li&gt;相对论物理（特殊和广义相对论）（Relativistic Physics: Special and General Relativity）&lt;/li&gt;
+  &lt;li&gt;量子物理（量子力学，量子场论）（Quantum Physics: Quantum Mechanics, Quantum Field Theory）&lt;/li&gt;
+  &lt;li&gt;统一理论（弦理论，M理论）（Unified Theories: String Theory, M-Theory）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;4-数据分类data-classification&quot;&gt;4. 数据分类（Data Classification）&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;恒星类型（O、B、A、F、G、K、M）（Types of stars: O, B, A, F, G, K, M）&lt;/li&gt;
+  &lt;li&gt;星系类型（螺旋、椭圆、不规则）（Types of galaxies: Spiral, Elliptical, Irregular）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;逻辑层logic-layer&quot;&gt;逻辑层（Logic Layer）&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;公理axioms&quot;&gt;公理（Axioms）&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;基本常数不变（Fundamental Constants are Invariant）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;光速 (c) （Speed of light (c)&lt;/li&gt;
+      &lt;li&gt;普朗克常数 (h) （Planck’s constant (h)&lt;/li&gt;
+      &lt;li&gt;引力常数 (G) （Gravitational constant (G)&lt;/li&gt;
+      &lt;li&gt;精细结构常数 (\alpha) （Fine structure constant (\alpha)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;物理定律的普遍性（Universality of Physical Laws）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;牛顿运动定律 (F = ma)&lt;/li&gt;
+      &lt;li&gt;广义相对论方程 (G_{\mu\nu} = 8\pi T_{\mu\nu})&lt;/li&gt;
+      &lt;li&gt;麦克斯韦电磁方程 ( \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} )&lt;/li&gt;
+      &lt;li&gt;量子力学（薛定谔方程、海森堡不确定性原理）(i\hbar \frac{\partial}{\partial t} \Psi = \hat{H} \Psi)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;因果原则（Causality Principle）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;因果时间排序 (t_1 &amp;lt; t_2)&lt;/li&gt;
+      &lt;li&gt;光锥 (ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;最小作用原理（Principle of Least Action）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;欧拉-拉格朗日方程 ( \frac{\partial L}{\partial q_i} - \frac{d}{dt} \frac{\partial L}{\partial \dot{q}_i} = 0 )&lt;/li&gt;
+      &lt;li&gt;哈密顿原理 ( \delta \int_{t_1}^{t_2} L(q_i, \dot{q}_i, t) dt = 0 )&lt;/li&gt;
+      &lt;li&gt;孟普尔图伊原理 ( \delta \int_{t_1}^{t_2} \sqrt{g_{\mu\nu} \dot{x}^\mu \dot{x}^\nu} dt = 0 )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;守恒定律成立（Conservation Laws Hold）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;能量 (E = mc^2)&lt;/li&gt;
+      &lt;li&gt;动量 (p = mv)&lt;/li&gt;
+      &lt;li&gt;角动量 (L = I \omega)&lt;/li&gt;
+      &lt;li&gt;电荷 (Q = \int \rho dV)&lt;/li&gt;
+      &lt;li&gt;重子数 (B = \int \rho_B dV)&lt;/li&gt;
+      &lt;li&gt;轻子数 (L = \int \rho_L dV)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;对称原理（Symmetry Principles）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;洛伦兹对称性 ( \Lambda^\mu_\nu \Lambda^\nu_\rho = \delta^\mu_\rho )&lt;/li&gt;
+      &lt;li&gt;规范对称 ( \mathcal{L} \rightarrow \mathcal{L} + \partial_\mu \mathcal{F}^\mu )&lt;/li&gt;
+      &lt;li&gt;宇称  ( \mathcal{L} \rightarrow \mathcal{L} )&lt;/li&gt;
+      &lt;li&gt;时间反演对称 (t \rightarrow -t)&lt;/li&gt;
+      &lt;li&gt;电荷共轭对称 ( \psi \rightarrow \psi^c = C \bar{\psi}^T )&lt;/li&gt;
+      &lt;li&gt;CPT对称&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;时空的均匀性与各向同性（Homogeneity and Isotropy of Space-Time）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;宇宙学原理 ( \text{Universe is homogeneous and isotropic} )&lt;/li&gt;
+      &lt;li&gt;FLRW度规 ( ds^2 = -dt^2 + a^2(t) \left[ \frac{dr^2}{1-kr^2} + r^2 d\Omega^2 \right] )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;某些性质的量子化（Quantization of Certain Properties）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;自旋 (s = \frac{n}{2})&lt;/li&gt;
+      &lt;li&gt;电荷 (Q = ne)&lt;/li&gt;
+      &lt;li&gt;原子内能级 (E_n = -\frac{m_e e^4}{2 \hbar^2 n^2})&lt;/li&gt;
+      &lt;li&gt;量子数（(n, l, m, s)） ( \psi_{n,l,m,s} )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;尺度不变性（Scale Invariance）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;重整化群 ( \mu \frac{\partial}{\partial \mu} \mathcal{L} = 0 )&lt;/li&gt;
+      &lt;li&gt;缩放定律&lt;/li&gt;
+      &lt;li&gt;分形&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;时间不可逆性（Time Irreversibility）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;时间的箭头 (t_1 &amp;lt; t_2)&lt;/li&gt;
+      &lt;li&gt;热力学第二定律（熵） (dS \geq 0)&lt;/li&gt;
+      &lt;li&gt;信息不对称 (I(X;Y) \neq I(Y;X))&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;量子-经典边界（Quantum-Classical Boundary）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;普朗克尺度 (l_P = \sqrt{\frac{\hbar G}{c^3}})&lt;/li&gt;
+      &lt;li&gt;退相干机制 ( \rho_{\text{total}} = \rho_{\text{system}} \otimes \rho_{\text{environment}} )&lt;/li&gt;
+      &lt;li&gt;对应原理 ( \hbar \rightarrow 0 )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;强弱人类原理（Strong and Weak Anthropic Principles）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;弱人类原理 ( \text{The Universe must be compatible with the existence of observers at some point.} )&lt;/li&gt;
+      &lt;li&gt;强人类原理 ( \text{The Universe must be compatible with the existence of observers at all points.} )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;信息守恒（Information Conservation）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;在封闭系统内，信息量保持不变 ( \Delta I = 0 )&lt;/li&gt;
+      &lt;li&gt;黑洞信息悖论 ( \text{Information is lost in black holes.} )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;叠加原理（Superposition Principle）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;对于量子系统，薛定谔方程的任何解的组合也是解 ( \Psi = \sum_i c_i \psi_i )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;排斥原理（Exclusion Principle）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;保利排斥原理：没有两个相同的费米子可以占据相同的量子态 ( \psi(x_1, x_2) = -\psi(x_2, x_1) )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;边界条件（Boundary Conditions）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;影响系统演变的边界条件 ( \psi(x_1, x_2) = 0 )&lt;/li&gt;
+      &lt;li&gt;狄利克雷、诺伊曼、和罗宾边界条件 ( \psi(x_1, x_2) = 0 )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;全息原理（Holographic Principle）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;一个空间体积的信息可以被认为是编码在该区域的边界上 ( \text{Information of a volume can be thought of as encoded on the boundary of that region.} )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;谓词predicates&quot;&gt;谓词（Predicates）&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;对象X处于状态Y（Object X is in State Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”行星A处于椭圆轨道。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;定律X适用于系统Y（Law X Applies to System Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”牛顿引力定律适用于行星系统。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;理论X预测结果Y（Theory X Predicts Outcome Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”广义相对论预测光绕大质量物体弯曲。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;对象X具有性质Y，其值为Z（Object X has Property Y with Value Z）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”恒星A的温度为Y Kelvin。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;对象X受对象Y影响（Object X is Influenced by Object Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”行星A的轨道受恒星B的影响。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;参数X在范围Y内（Parameter X is Within Range Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”速度远小于光速。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;陈述X来源于公理Y（Statement X is Derived from Axiom Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”地球绕太阳旋转的说法来源于牛顿定律。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;理论X与观测Y相符/不符（Theory X Conflicts/Agrees with Observation Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”大爆炸理论与宇宙微波背景辐射相符。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;对象X由Y组成（Object X is Composed of Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”恒星A主要由氢和氦组成。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;对象X由于Z沿路径Y运动（Object X Follows Path Y Due to Z）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”彗星A由于太阳的引力影响沿椭圆路径运动。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;事件X在时间Y发生（Event X Occurred at Time Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”超新星A在时间T爆炸。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;现象X具有概率Y（Phenomenon X has Probability Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”粒子A有50%的概率穿过屏障。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;系统X处于平衡/非平衡状态（System X is in Equilibrium/Non-Equilibrium）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”星系团A处于热平衡状态。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;对象X通过力Z与对象Y交互（Object X Interacts with Object Y through Force Z）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”地球通过引力与月球交互。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;对象X演变成状态Y（Object X Evolves into State Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”恒星A演变成红巨星。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;在条件Z下，理论X取代理论Y（Theory X Supersedes Theory Y under Conditions Z）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”对于具有强重力场的物体，广义相对论取代牛顿力学。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;现象X通过方法Y可观察（Phenomenon X is Observable Through Method Y）&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;例如：”暗物质通过其对可见物质的引力效应可观察。”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;推理规则rules-of-inference&quot;&gt;推理规则（Rules of Inference）&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;假言推理（Modus Ponens）&lt;/strong&gt;: 如果 ( P )，那么 ( Q )。 ( P ) 是真的，因此 ( Q ) 是真的。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;拒言推理（Modus Tollens）&lt;/strong&gt;: 如果 ( P )，那么 ( Q )。不 ( Q )，因此不 ( P )。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;链推理（Chain Rule）&lt;/strong&gt;: 如果 ( P )，那么 ( Q )。如果 ( Q )，那么 ( R )。因此，如果 ( P )，那么 ( R )。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;析取推理（Disjunctive Syllogism）&lt;/strong&gt;: ( P ) 或 ( Q )。不 ( P )，因此 ( Q )。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;全称概括（Universal Generalization）&lt;/strong&gt;: 如果对任意 ( X ) 都成立，那么对所有 ( X ) 都成立。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;全称特指（Universal Instantiation）&lt;/strong&gt;: 如果对所有 ( X ) 都成立，那么对任意特定的 ( X ) 都成立。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;存在性概括（Existential Generalization）&lt;/strong&gt;: 如果对某个特定的 ( X ) 成立，那么对某些 ( X ) 成立。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;存在性特指（Existential Instantiation）&lt;/strong&gt;: 如果对某些 ( X ) 成立，那么我们可以推断对至少一个特定的 ( X ) 成立。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;反证法（Reductio ad Absurdum）&lt;/strong&gt;: 如果假设非 ( P ) 导致矛盾，那么 ( P ) 必须是真的。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;条件推理（Hypothetical Syllogism）&lt;/strong&gt;: 如果 ( P ) 导致 ( Q ) 并且 ( Q ) 导致 ( R )，那么 ( P ) 导致 ( R )。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;肯定结论（Affirming the Consequent）&lt;/strong&gt;: 通常被认为是谬误，但可以作为对比（如果 ( P )，那么 ( Q )。 ( Q ) 是真的，因此 ( P ) 必须是真的）。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;否定前提（Denying the Antecedent）&lt;/strong&gt;: 另一个谬误，可以作为对比（如果 ( P )，那么 ( Q )。不 ( P )，因此不 ( Q )）。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;概率假言推理（Probabilistic Modus Ponens）&lt;/strong&gt;: 如果 ( P )，那么 ( Q ) 具有一定的概率。观察到 ( P )，因此 ( Q ) 具有一定的概率为真。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;反事实推理（Counterfactual Reasoning）&lt;/strong&gt;: 如果 ( P ) 曾经是真的，( Q ) 就会是真的。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;归因推理（Abduction）&lt;/strong&gt;: 给定观察 ( Q )，假设 ( P ) 是最佳解释。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;类比推理（Argument from Analogy）&lt;/strong&gt;: 如果 ( P ) 对 ( X ) 是真的并且 ( P ) 对 ( Y ) 是真的，那么 ( Q ) 对 ( X ) 是真的则暗示 ( Q ) 对 ( Y ) 很可能是真的。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;逻辑连接词logic-connectors&quot;&gt;逻辑连接词（Logic Connectors）&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;与（AND）&lt;/strong&gt;: 合取&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;或（OR）&lt;/strong&gt;: 析取&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;非（NOT）&lt;/strong&gt;: 否定&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;蕴含（IMPLIES）&lt;/strong&gt;: 条件&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;当且仅当（IFF）&lt;/strong&gt;: 双条件&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;异或（XOR）&lt;/strong&gt;: ( P ) 或 ( Q )，但不同时成立。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;与非（NAND）&lt;/strong&gt;: 不同时 ( P ) 和 ( Q )。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;或非（NOR）&lt;/strong&gt;: 既非 ( P ) 也非 ( Q )。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;当且仅当非（IFFN）&lt;/strong&gt;: 双条件否定。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;等价非（XNOR）&lt;/strong&gt;: 等价运算，与XOR相反。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;蕴含非（IMPLYNOT）&lt;/strong&gt;: 条件否定，如果 ( P ) 那么非 ( Q )。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ask-gpt-4&quot;&gt;Ask GPT-4&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; Given the System of Astronomy Theoretical Space (Entities, Attributes, Relations, Logic Layer), please use the first-logic combining the logic layer to make a hypothesis that explains the perturbation in orbit of Uranus.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;
+To explain the perturbation in the orbit of Uranus using first-order logic and the given Astronomy Theoretical Space, we can incorporate entities, attributes, relations, and axioms from the logic layer. Here’s how to frame it:&lt;/p&gt;
+
+&lt;h3 id=&quot;entities&quot;&gt;Entities&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Uranus (a planet)&lt;/li&gt;
+  &lt;li&gt;Neptune (another planet, initially unknown)&lt;/li&gt;
+  &lt;li&gt;Sun (a star)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;attributes&quot;&gt;Attributes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mass of Uranus, Neptune, and Sun&lt;/li&gt;
+  &lt;li&gt;Orbital parameters of Uranus (and Neptune)&lt;/li&gt;
+  &lt;li&gt;Position of Uranus, Neptune, and Sun at various times&lt;/li&gt;
+  &lt;li&gt;Gravitational constant (G)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;relations&quot;&gt;Relations&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Gravitational interactions between celestial bodies&lt;/li&gt;
+  &lt;li&gt;Theoretical frameworks (Newtonian Mechanics, General Relativity)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;axioms&quot;&gt;Axioms&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;( \text{Universality of Physical Laws: Newton’s law of gravitation applies to planetary systems.} )&lt;/li&gt;
+  &lt;li&gt;( \text{Fundamental Constants are Invariant: The gravitational constant G is the same throughout the observable universe.} )&lt;/li&gt;
+  &lt;li&gt;( \text{Causality Principle: Effects follow causes.} )&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hypothesis-formulation&quot;&gt;Hypothesis Formulation&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Observation&lt;/strong&gt;: The orbit of Uranus shows perturbations that cannot be explained solely by the known planets and Newton’s law of gravitation.
+    &lt;ul&gt;
+      &lt;li&gt;( \text{OrbitPerturbation}(Uranus) )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Gravitational Law&lt;/strong&gt;: According to Newton’s law of gravitation, any two masses attract each other with a force ( F = \frac ).
+    &lt;ul&gt;
+      &lt;li&gt;( \text{GravitationalForce}(Uranus, X) )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Unknown Mass Hypothesis&lt;/strong&gt;: There exists an unknown object (Neptune) whose gravitational influence explains the observed perturbations in the orbit of Uranus.
+    &lt;ul&gt;
+      &lt;li&gt;( \exists X (\text{CelestialObject}(X) \land \text{GravitationalForce}(Uranus, X) \land \text{ExplainsPerturbation}(X, Uranus)) )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Causality&lt;/strong&gt;: If the gravitational interaction with the unknown object (Neptune) exists, then it is the cause of the observed perturbations.
+    &lt;ul&gt;
+      &lt;li&gt;( \text{GravitationalForce}(Uranus, X) \rightarrow \text{OrbitPerturbation}(Uranus) )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Universality of Laws&lt;/strong&gt;: Newton’s law of gravitation should be applicable to Uranus and the unknown object (Neptune), as it is a universal law.
+    &lt;ul&gt;
+      &lt;li&gt;( \text{ApplicableLaw}(NewtonGravity, Uranus, X) )&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;complete-hypothesis-in-first-order-logic&quot;&gt;Complete Hypothesis in First-Order Logic&lt;/h3&gt;
+&lt;p&gt;[
+\text{OrbitPerturbation}(Uranus) \land \text{ApplicableLaw}(NewtonGravity, Uranus, X) \rightarrow \exists X (\text{CelestialObject}(X) \land \text{GravitationalForce}(Uranus, X) \land \text{ExplainsPerturbation}(X, Uranus))
+]&lt;/p&gt;
+
+&lt;p&gt;This hypothesis suggests that if there are observed perturbations in the orbit of Uranus and Newton’s law of gravitation is applicable, then there exists an unknown celestial object (which we now know as Neptune) whose gravitational force explains these perturbations.&lt;/p&gt;
+
+&lt;p&gt;Note: This is a simplified representation and assumes that only gravitational interactions are responsible for the perturbations. In a more detailed model, other forces and factors might also be considered.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>HR, NDCG, and MRR: An easy implementation with TorchMetrics</title>
-   <link href="http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/"/>
+   <link href="https://w3nhao.github.io//2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/"/>
    <updated>2023-03-31T00:00:00+08:00</updated>
-   <id>http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation</id>
+   <id>https://w3nhao.github.io//2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation</id>
    <content type="html">&lt;p&gt;To assess the performance of  Recommender systems, we need to have reliable evaluation metrics. In this blog post, we will discuss three popular metrics: Hit Rate (HR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR). We will also show you how to easily implement these metrics using TorchMetrics and integrate them into a PyTorch Lightning model.&lt;/p&gt;
 
 &lt;h2 id=&quot;0-understanding-the-get_topk_ranks-function&quot;&gt;0. Understanding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_topk_ranks&lt;/code&gt; Function&lt;/h2&gt;
@@ -275,9 +1227,9 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
  
  <entry>
    <title>Limitation of ChatGPT in Causal Inference</title>
-   <link href="http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference/"/>
+   <link href="https://w3nhao.github.io//2023/03/30/Limitation-ChatGPT-Causal-Inference/"/>
    <updated>2023-03-30T00:00:00+08:00</updated>
-   <id>http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference</id>
+   <id>https://w3nhao.github.io//2023/03/30/Limitation-ChatGPT-Causal-Inference</id>
    <content type="html">&lt;p&gt;In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\../public/img/tweet_screen_shot_20230331.png#pic_center# =200x200&quot; alt=&quot;img&quot; /&gt;
@@ -343,9 +1295,9 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
  
  <entry>
    <title>Falsificationism and Bayesianism</title>
-   <link href="http://localhost:4000/2023/03/29/Falsificationism-and-Bayesianism/"/>
+   <link href="https://w3nhao.github.io//2023/03/29/Falsificationism-and-Bayesianism/"/>
    <updated>2023-03-29T00:00:00+08:00</updated>
-   <id>http://localhost:4000/2023/03/29/Falsificationism-and-Bayesianism</id>
+   <id>https://w3nhao.github.io//2023/03/29/Falsificationism-and-Bayesianism</id>
    <content type="html">&lt;!-- English Content Start --&gt;
 
 &lt;p&gt;Philosophy of science is a discipline that studies the nature, methods, categories, and knowledge structure of science. Among them, falsificationism and Bayesianism are two important philosophical views on science, which emphasize different reasoning methods and evidence verification methods.&lt;/p&gt;
