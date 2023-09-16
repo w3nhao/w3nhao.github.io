@@ -61,6 +61,11 @@ p {
   font-size: 0.85rem; 
 }
 
+li {
+  font-size: 0.85rem;
+}
+
+
 /*
  * Wrapper
  *
@@ -404,7 +409,10 @@ a.sidebar-nav-item:focus {
     }
   }
   
-
+  .article-toc li {
+    font-size: inherit; /* This ensures that TOC items use the .article-toc font-size */
+  }
+  
 /*
  * Pagination
  *

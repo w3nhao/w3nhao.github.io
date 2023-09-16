@@ -22,8 +22,7 @@ pagination:
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {{ post.excerpt }}
-    <!-- {{ post.content }} -->
-     <a href="{{ post.url | absolute_url }}">Read more</a> <!-- Add a 'Read more' link -->
+
   </div>
   {% endfor %}
 </div>
