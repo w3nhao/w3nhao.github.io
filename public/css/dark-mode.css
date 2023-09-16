@@ -23,12 +23,17 @@
 
 /* New Dark mode styles */
 [data-theme="dark"] body {
-background-color: #333333;
-color: #F0EAD6;
+  background-color: #333333;
+  color: #F0EAD6;
 }
 
 [data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
-color: #dddddd;  /* You can choose a different light color if you prefer */
+  color: #dddddd;  /* You can choose a different light color if you prefer */
+}
+
+[data-theme="dark"] hr {
+  border-top-color: #444444;  /* Slightly lighter than the dark background */
+  border-bottom-color: #555555;  /* Slightly lighter than the dark background */
 }
 
 [data-theme="dark"] strong, [data-theme="dark"] b {
@@ -41,6 +46,10 @@ color: #ccccf0;  /* Again, choose a color that fits your design */
   border: 1px solid #555555;  /* Grey border */
 }
 
+[data-theme="dark"] .dark-mode-toggle:hover {
+  color: #bbbbbb;  /* Light gray text on hover in dark mode */
+  border-color: #666666;  /* Slightly lighter border on hover in dark mode */
+}
 
 [data-theme="dark"] .page,
 [data-theme="dark"] .post {

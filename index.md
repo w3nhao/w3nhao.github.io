@@ -3,6 +3,13 @@ layout: default
 title: Home
 ---
 
+### About Me
+---
+Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence (AI) and computer science. I earned my Master's degree in Computer Science (Artificial Intelligence) with Distinction from the University of Nottingham. Before that, I completed my Bachelor's degree in Computer Science and Technology at Guangzhou University.
+
+Feel free to reach out to me via email at wenhao.deng@foxmail.com.
+
+
 <div class="about-container">
   <div class="about-image">
     <img src="/public/pic.jpg" alt="Wenhao's Picture" />
@@ -17,14 +24,10 @@ title: Home
   </div>
 </div>
 
-### About Me
-
-Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence (AI) and computer science. I earned my Master's degree in Computer Science (Artificial Intelligence) with Distinction from the University of Nottingham. Before that, I completed my Bachelor's degree in Computer Science and Technology at Guangzhou University.
-
-Feel free to reach out to me via email at wenhao.deng@foxmail.com.
 
 ### Works
-
+---
 Shihan Dou\*, Junjie Shan\*, Haoxiang Jia, **Wenhao Deng**, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang. 2023. [**Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey**](https://arxiv.org/abs/2308.01191). arXiv preprint arXiv:2308.01191 (2023). (* Equal contribution)
 
 Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. 2023. [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700). arXiv preprint arXiv:2305.11700 (2023). (* Equal contribution)
+
