@@ -3,7 +3,7 @@ title:               Wenhao Deng
 tagline:             ''
 description:         ''
 url:                 https://w3nhao.github.io
-baseurl:             ''
+baseurl:             'https://w3nhao.github.io'
 permalink:           pretty
 
 # About/contact
