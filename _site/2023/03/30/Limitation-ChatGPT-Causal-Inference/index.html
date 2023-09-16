@@ -14,18 +14,19 @@
   </title>
 
   
-  <link rel="canonical" href="https://w3nhao.github.io//2023/03/30/Limitation-ChatGPT-Causal-Inference/">
+  <link rel="canonical" href="http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference/">
   
 
-  <link rel="stylesheet" href="https://w3nhao.github.io//public/css/poole.css">
-  <link rel="stylesheet" href="https://w3nhao.github.io//public/css/syntax.css">
-  <link rel="stylesheet" href="https://w3nhao.github.io//public/css/lanyon.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/dark-mode.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://w3nhao.github.io//public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="https://w3nhao.github.io//public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://w3nhao.github.io//atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
 
   
 
@@ -47,7 +48,6 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
-  
 </head>
 
 
@@ -65,7 +65,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://w3nhao.github.io//">Home</a>
+    <a class="sidebar-nav-item" href="http://localhost:4000/">Home</a>
 
     
 
@@ -85,7 +85,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="https://w3nhao.github.io//posts/">Blog Posts</a>
+          <a class="sidebar-nav-item" href="http://localhost:4000/posts/">Blog Posts</a>
         
       
     
@@ -109,22 +109,30 @@
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
+      <div class="wrap">
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
             <a href="/" title="Home">Wenhao Deng</a>
             <small></small>
           </h3>
+          
+          <!-- New Dark Mode Checkbox and Toggle -->
+          <input type="checkbox" class="dark-mode-checkbox" id="dark-mode-checkbox">
+          <label for="dark-mode-checkbox" class="dark-mode-toggle">🌞</label>
         </div>
       </div>
+        
 
       <div class="container content">
         <div class="post">
   <h1 class="post-title">Limitation of ChatGPT in Causal Inference</h1>
   <span class="post-date">30 Mar 2023</span>
   <span class="post-subtitle">The Limitations of GPT in Causal Inference: A Dialogue with Judea Pearl and Jim Fan</span>
-  <div class="article-toc">
+
+  <button id="toggle-toc" class="toc-button">📖 Toggle Table of Contents</button>
+
+  <div id="toc-container" class="article-toc">
     <ul id="toc" class="toc__list">
 <li class="toc__item toc-h2"><a href="#judea-pearls-critique">Judea Pearl’s Critique</a></li>
 <li class="toc__item toc-h2"><a href="#jim-fans-perspective">Jim Fan’s Perspective</a></li>
@@ -132,10 +140,12 @@
 <li class="toc__item toc-h2"><a href="#a-cautious-approach-to-causal-inference">A Cautious Approach to Causal Inference</a></li>
 </ul>
   </div>
+
   <p>In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.</p>
 
-<p><img src="%5C../public/img/tweet_screen_shot_20230331.png#pic_center#%20=200x200" alt="img">
-<a href="https://twitter.com/yudapearl/status/1641386266595033088">tweet_link</a></p>
+<p><img src="/public/img/2023-03-30-Limitation-ChatGPT-Causal-Inference/tweet_screen_shot_20230331.png" alt="img"></p>
+
+<p><a href="https://twitter.com/yudapearl/status/1641386266595033088">tweet_link</a></p>
 
 <h2 id="judea-pearls-critique">Judea Pearl’s Critique</h2>
 <p>According to Judea Pearl, deep learning models like GPT are inherently limited in their ability to reason about causality. He argues that their achievements amount to little more than “curve fitting” and are constrained by the passive data they are trained on. Pearl posits that answering causal questions requires either causal assumptions or interventional experiments to enrich the data.</p>
@@ -160,38 +170,6 @@
 
 <p>In conclusion, the dialogue between Judea Pearl and Jim Fan serves as a valuable reminder of the limitations of deep learning models like GPT in the domain of causal inference. While these models have made significant strides in various aspects of natural language understanding, their abilities in causal reasoning remain constrained by their training data and the algorithms themselves.</p>
 
-<hr>
-
-<font color="LightSlateGray" size="5" face="Times">GPT在因果推理方面的局限性：Judea Pearl和Jim Fan的对话</font>
-
-<p>在人工智能领域，理解和推理因果关系一直是一个重要的挑战。最近，在Twitter上，图灵奖得主Judea Pearl和人工智能爱好者Jim Fan就GPT这一最先进的语言模型在推断因果关系方面的局限性进行了讨论。</p>
-
-<p>Judea Pearl的批评</p>
-
-<p>据Judea Pearl称，像GPT这样的深度学习模型在推理因果关系方面存在内在的局限性。他认为，这些模型的成就只不过是“曲线拟合”，并受到它们所训练的被动数据的限制。Pearl认为，回答因果问题需要因果假设或干预实验来丰富数据。</p>
-
-<p>Jim Fan的观点</p>
-
-<p>另一方面，Jim Fan强调了GPT在推理“为什么”（因果关系）和“如果”（反事实想象）方面的卓越表现。他认为，GPT推断因果关系的能力可以归因于：</p>
-
-<ul>
-  <li>预训练数据中存在因果示例和反事实条件。</li>
-  <li>基于常识的归纳推理。</li>
-  <li>语言模式匹配。</li>
-  <li>应用于新情况的启发式方法。</li>
-</ul>
-
-<p>GPT的内在局限性</p>
-
-<p>尽管GPT在因果推理方面表现出一定的能力，但我们仍需认识到其内在的局限性。作为一种人工智能语言模型，GPT无法直接操纵变量或主动收集新数据以验证其因果推断。相反，它依赖于训练数据中的因果假设和人类判断。</p>
-
-<p>这种局限性的一个例子是，在一个假设的场景中，GPT接受了一个包含错误陈述的数据集：“跳楼不会死，因为跳的是十楼。” 在这种情况下，GPT可能会将这个错误的故事作为因果假设，并在回答相关问题时产生错误的推断。由于GPT缺乏与现实世界互动和进行干预实验的能力，它无法验证或纠正其对因果关系的理解。</p>
-
-<p>小心谨慎地进行因果推理</p>
-
-<p>鉴于这些局限性，在使用GPT或类似模型进行因果推理时，必须小心谨慎。为了获得更准确的结果，可能需要将GPT的输出与正确的因果假设相结合，或在可能的情况下进行干预实验。</p>
-
-<p>总之，Judea Pearl和Jim Fan之间的对话为我们提醒了深度学习模型如GPT在因果推理领域的局限性。虽然这些模型在自然语言理解的各个方面取得了重要进展，但它们在因果推理能力方面仍受到训练数据和算法本身的限制。</p>
 
 </div>
 
@@ -199,15 +177,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2023/09/12/Astrophysical-Theoretical-Framework/">
-            Astrophysical Theoretical Framework
-            <small>12 Sep 2023</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -231,11 +200,58 @@
 </div>
 
 
+<!-- JavaScript to toggle TOC -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const tocContainer = document.getElementById('toc-container');
+    const toggleButton = document.getElementById('toggle-toc');
+
+    toggleButton.addEventListener('click', () => {
+      if (tocContainer.style.display === 'none') {
+        tocContainer.style.display = 'block';
+      } else {
+        tocContainer.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+
       </div>
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+    <!-- Your existing JavaScript -->
     <script src="/public/js/script.js"></script>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+        
+        // Initialize based on localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          darkModeCheckbox.checked = true;
+          darkModeToggle.textContent = '🌝';
+        }
+      
+        darkModeCheckbox.addEventListener('change', function () {
+          if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            darkModeToggle.textContent = '🌝';
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            darkModeToggle.textContent = '🌞';
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>

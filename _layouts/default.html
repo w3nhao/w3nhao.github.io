@@ -9,15 +9,20 @@
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
+      <div class="wrap">
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
+          
+          <!-- New Dark Mode Checkbox and Toggle -->
+          <input type="checkbox" class="dark-mode-checkbox" id="dark-mode-checkbox">
+          <label for="dark-mode-checkbox" class="dark-mode-toggle">🌞</label>
         </div>
       </div>
+        
 
       <div class="container content">
         {{ content }}
@@ -26,6 +31,35 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+    <!-- Your existing JavaScript -->
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+        
+        // Initialize based on localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          darkModeCheckbox.checked = true;
+          darkModeToggle.textContent = '🌝';
+        }
+      
+        darkModeCheckbox.addEventListener('change', function () {
+          if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            darkModeToggle.textContent = '🌝';
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            darkModeToggle.textContent = '🌞';
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>

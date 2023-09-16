@@ -14,18 +14,19 @@
   </title>
 
   
-  <link rel="canonical" href="https://w3nhao.github.io//2023/03/29/Falsificationism-and-Bayesianism/">
+  <link rel="canonical" href="http://localhost:4000/2023/03/29/Falsificationism-and-Bayesianism/">
   
 
-  <link rel="stylesheet" href="https://w3nhao.github.io//public/css/poole.css">
-  <link rel="stylesheet" href="https://w3nhao.github.io//public/css/syntax.css">
-  <link rel="stylesheet" href="https://w3nhao.github.io//public/css/lanyon.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/dark-mode.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://w3nhao.github.io//public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="https://w3nhao.github.io//public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://w3nhao.github.io//atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
 
   
 
@@ -47,7 +48,6 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
-  
 </head>
 
 
@@ -65,7 +65,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://w3nhao.github.io//">Home</a>
+    <a class="sidebar-nav-item" href="http://localhost:4000/">Home</a>
 
     
 
@@ -85,7 +85,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="https://w3nhao.github.io//posts/">Blog Posts</a>
+          <a class="sidebar-nav-item" href="http://localhost:4000/posts/">Blog Posts</a>
         
       
     
@@ -109,22 +109,30 @@
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
+      <div class="wrap">
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
             <a href="/" title="Home">Wenhao Deng</a>
             <small></small>
           </h3>
+          
+          <!-- New Dark Mode Checkbox and Toggle -->
+          <input type="checkbox" class="dark-mode-checkbox" id="dark-mode-checkbox">
+          <label for="dark-mode-checkbox" class="dark-mode-toggle">🌞</label>
         </div>
       </div>
+        
 
       <div class="container content">
         <div class="post">
   <h1 class="post-title">Falsificationism and Bayesianism</h1>
   <span class="post-date">29 Mar 2023</span>
   <span class="post-subtitle">Falsificationism and Bayesianism: Two Views in the Philosophy of Science</span>
-  <div class="article-toc">
+
+  <button id="toggle-toc" class="toc-button">📖 Toggle Table of Contents</button>
+
+  <div id="toc-container" class="article-toc">
     <ul id="toc" class="toc__list">
 <li class="toc__item toc-h2"><a href="#falsificationism">Falsificationism</a></li>
 <li class="toc__item toc-h2"><a href="#bayesianism">Bayesianism</a></li>
@@ -141,9 +149,8 @@
 <li class="toc__item toc-h1"><a href="#references">References</a></li>
 </ul>
   </div>
-  <!-- English Content Start -->
 
-<p>Philosophy of science is a discipline that studies the nature, methods, categories, and knowledge structure of science. Among them, falsificationism and Bayesianism are two important philosophical views on science, which emphasize different reasoning methods and evidence verification methods.</p>
+  <p>Philosophy of science is a discipline that studies the nature, methods, categories, and knowledge structure of science. Among them, falsificationism and Bayesianism are two important philosophical views on science, which emphasize different reasoning methods and evidence verification methods.</p>
 
 <h2 id="falsificationism">Falsificationism</h2>
 
@@ -190,52 +197,6 @@
 
 <p>[3] Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp; Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). Chapman and Hall/CRC.</p>
 
-<!-- English Content End -->
-<!-- Chinese Content Start -->
-
-<hr>
-
-<font color="LightSlateGray" size="5" face="Times">证伪主义与贝叶斯主义：科学哲学的两种观点</font>
-
-<p>科学哲学是研究科学本质、方法、范畴和知识结构的哲学学科。其中，证伪主义和贝叶斯主义是两种重要的科学哲学观点，它们分别强调了不同的推理方式和证据检验方法。</p>
-
-<p>证伪主义</p>
-
-<p>证伪主义是由哲学家卡尔·波普尔提出的一种科学哲学观点。证伪主义认为科学理论应该是可证伪的，而科学家应该尝试证明一个理论是错误的，而不是寻找支持这个理论的证据。证伪主义强调了对科学理论进行批判性检验的重要性。</p>
-
-<p>然而，证伪主义也存在一些局限性。首先，证伪主义倾向于强调演绎推理，而忽略了归纳推理在科学中的重要性。其次，证伪主义对于理论与观察之间关系的简化可能会导致误解。观察数据可能受到许多因素的影响，而且实验结果通常依赖于所使用的科学仪器和技术。此外，证伪主义提倡在理论受到足够证伪证据的情况下舍弃它。然而，在实际科学实践中，很难确定一个理论何时已经被充分证伪。因此，证伪主义的应用也需要考虑不确定性和复杂性。</p>
-
-<p>贝叶斯主义</p>
-
-<p>相对于证伪主义，贝叶斯主义者尝试挽救归纳主义，提供了另一种观点。贝叶斯主义者基于贝叶斯定理，通过计算概率来量化信念，以此作为推理和决策的基础。他们认为，新的证据会更新我们对某一命题或假设的信念，并根据贝叶斯定理调整这些信念。</p>
-
-<p>贝叶斯主义者挽救归纳主义的具体方式包括使用先验概率、更新信念、概率论证等。然而，贝叶斯主义也面临一些批评，如主观性问题、计算复杂性、模型选择和过拟合问题等。</p>
-
-<p>两种观点的比较</p>
-
-<p>证伪主义和贝叶斯主义是两种不同的科学哲学观点，它们分别强调了不同的推理方式和证据检验方法。相对于证伪主义，贝叶斯主义更加注重不确定性和复杂性，并试图通过量化信念和概率计算来处理这些问题。</p>
-
-<p>两种观点的比较可以从以下几个方面进行：</p>
-
-<p>推理方式</p>
-
-<p>证伪主义强调演绎推理，即从一般原则推导出特定结论，强调从观察数据中寻找反例来证明一个理论是错误的。而贝叶斯主义则更注重归纳推理，即从特定情况推导出一般原则，并根据新证据来更新信念。</p>
-
-<p>证据检验</p>
-
-<p>证伪主义认为，一个理论只有在受到充分证伪证据时才应该被舍弃。而贝叶斯主义认为，任何新证据都应该被用来更新先验信念，并根据贝叶斯定理来调整后验信念。</p>
-
-<p>处理不确定性</p>
-
-<p>证伪主义对于不确定性的处理较为简单，即通过观察数据来证伪一个理论。而贝叶斯主义则更注重量化不确定性，并试图通过概率计算来处理不确定性和复杂性问题。</p>
-
-<p>局限性</p>
-
-<p>证伪主义的局限性包括忽略了归纳推理在科学中的作用，以及理论与观察之间的关系问题等。贝叶斯主义的局限性则包括主观性问题、计算复杂性、模型选择和过拟合问题等。</p>
-
-<p>总结</p>
-
-<p>证伪主义和贝叶斯主义是两种不同的科学哲学观点，它们分别强调了不同的推理方式和证据检验方法。虽然证伪主义存在一些局限性，但它强调了对科学理论进行批判性检验的重要性，是科学哲学中的一个重要组成部分。贝叶斯主义则更注重不确定性和复杂性，并试图通过量化信念和概率计算来处理这些问题，在实际应用中具有广泛的应用价值。</p>
 
 </div>
 
@@ -243,15 +204,6 @@
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2023/09/12/Astrophysical-Theoretical-Framework/">
-            Astrophysical Theoretical Framework
-            <small>12 Sep 2023</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -275,11 +227,58 @@
 </div>
 
 
+<!-- JavaScript to toggle TOC -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const tocContainer = document.getElementById('toc-container');
+    const toggleButton = document.getElementById('toggle-toc');
+
+    toggleButton.addEventListener('click', () => {
+      if (tocContainer.style.display === 'none') {
+        tocContainer.style.display = 'block';
+      } else {
+        tocContainer.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+
       </div>
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+    <!-- Your existing JavaScript -->
     <script src="/public/js/script.js"></script>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+        
+        // Initialize based on localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          darkModeCheckbox.checked = true;
+          darkModeToggle.textContent = '🌝';
+        }
+      
+        darkModeCheckbox.addEventListener('change', function () {
+          if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            darkModeToggle.textContent = '🌝';
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            darkModeToggle.textContent = '🌞';
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>
