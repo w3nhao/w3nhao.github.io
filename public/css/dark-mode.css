@@ -159,3 +159,17 @@ color: inherit;
   background-color: #1e1e1e;
   color: #B0C4DE;
 }
+
+[data-theme="dark"] .collapsible {
+  background: linear-gradient(45deg, #2c2c2c, #3c3c3c, #4c4c4c);  /* Dark gradient */
+  color: #B0C4DE;  /* Lighter text for dark mode */
+  border: none;  /* Remove the border for dark mode */
+}
+
+[data-theme="dark"] .collapsible:hover {
+  background: linear-gradient(45deg, #3c3c3c, #4c4c4c, #2c2c2c);
+}
+
+[data-theme="dark"] .collapsible .language-type {
+  color: #B0C4DE;  /* Lighter text for the language type in dark mode */
+}

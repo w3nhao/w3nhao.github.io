@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Wenhao Deng</title>
- <link href="https://w3nhao.github.io/atom.xml" rel="self"/>
- <link href="https://w3nhao.github.io/"/>
- <updated>2023-09-17T03:22:16+08:00</updated>
- <id>https://w3nhao.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2023-09-26T21:02:50+08:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Wenhao Deng</name>
    <email>wenhao.deng@foxmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>HR, NDCG, and MRR: An easy implementation with TorchMetrics</title>
-   <link href="https://w3nhao.github.io/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/"/>
+   <link href="http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/"/>
    <updated>2023-03-31T00:00:00+08:00</updated>
-   <id>https://w3nhao.github.io/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation</id>
+   <id>http://localhost:4000/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation</id>
    <content type="html">&lt;p&gt;To assess the performance of  Recommender systems, we need to have reliable evaluation metrics. In this blog post, we will discuss three popular metrics: Hit Rate (HR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR). We will also show you how to easily implement these metrics using TorchMetrics and integrate them into a PyTorch Lightning model.&lt;/p&gt;
 
 &lt;h2 id=&quot;0-understanding-the-get_topk_ranks-function&quot;&gt;0. Understanding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_topk_ranks&lt;/code&gt; Function&lt;/h2&gt;
@@ -275,9 +275,9 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
  
  <entry>
    <title>Limitation of ChatGPT in Causal Inference</title>
-   <link href="https://w3nhao.github.io/2023/03/30/Limitation-ChatGPT-Causal-Inference/"/>
+   <link href="http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference/"/>
    <updated>2023-03-30T00:00:00+08:00</updated>
-   <id>https://w3nhao.github.io/2023/03/30/Limitation-ChatGPT-Causal-Inference</id>
+   <id>http://localhost:4000/2023/03/30/Limitation-ChatGPT-Causal-Inference</id>
    <content type="html">&lt;p&gt;In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/2023-03-30-Limitation-ChatGPT-Causal-Inference/tweet_screen_shot_20230331.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
@@ -312,9 +312,9 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
  
  <entry>
    <title>Falsificationism and Bayesianism</title>
-   <link href="https://w3nhao.github.io/2023/03/29/Falsificationism-and-Bayesianism/"/>
+   <link href="http://localhost:4000/2023/03/29/Falsificationism-and-Bayesianism/"/>
    <updated>2023-03-29T00:00:00+08:00</updated>
-   <id>https://w3nhao.github.io/2023/03/29/Falsificationism-and-Bayesianism</id>
+   <id>http://localhost:4000/2023/03/29/Falsificationism-and-Bayesianism</id>
    <content type="html">&lt;p&gt;Philosophy of science is a discipline that studies the nature, methods, categories, and knowledge structure of science. Among them, falsificationism and Bayesianism are two important philosophical views on science, which emphasize different reasoning methods and evidence verification methods.&lt;/p&gt;
 
 &lt;h2 id=&quot;falsificationism&quot;&gt;Falsificationism&lt;/h2&gt;

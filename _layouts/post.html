@@ -48,6 +48,42 @@ layout: default
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Target only the <div> elements with the 'highlighter-rouge' class
+    var codeBlocks = document.querySelectorAll('div.highlighter-rouge');
+    
+    codeBlocks.forEach(function(block) {
+      var wrapper = document.createElement('div');
+      var btn = document.createElement('button');
+      
+      // Extract language type from class
+      var language = (block.className.match(/language-(\w+)/) || [,''])[1];
+  
+      btn.innerHTML = `<span class="description">Show/Hide Code</span><span class="language-type">${language}</span>`;
+      btn.className = 'collapsible';
+      
+      block.parentNode.insertBefore(wrapper, block);
+      wrapper.appendChild(btn);
+      wrapper.appendChild(block);
+      block.classList.add('collapsible_code_content');
+    });
+  
+    // Same collapsible functionality as before:
+    var coll = document.querySelectorAll(".collapsible");
+    for (var i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+  
 </script>
 
 

@@ -721,3 +721,55 @@ mjx-container {
   color: #666;
   border-color: #999;
 }
+
+
+/* Collasible Content
+  * 
+  * 
+  */
+  .collapsible {
+    cursor: pointer;
+    border: 2px solid #B0C4DE;  /* Light border for contrast */
+    background: transparent;
+    color: #333;  /* Dark text for light mode */
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .collapsible:hover {
+    background: rgba(176, 196, 222, 0.1);  /* Slight hover effect */
+  }
+  
+  .collapsible:before {
+    content: "▶";
+    margin-right: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .collapsible.active:before {
+    transform: rotate(90deg);
+  }
+  
+  .collapsible .description {
+    flex-grow: 1;
+    padding-left: 5px;
+  }
+  
+  .collapsible .language-type {
+    font-style: italic;
+    color: #555;  /* Slightly darker text for the language type in light mode */
+  }
+  
+  .collapsible_code_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
