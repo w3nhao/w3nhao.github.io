@@ -5,7 +5,7 @@ title: Home
 
 ### About Me
 ---
-Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence (AI) and computer science. I earned my Master's degree in Computer Science (Artificial Intelligence) with Distinction from the University of Nottingham. Before that, I completed my Bachelor's degree in Computer Science and Technology at Guangzhou University.
+Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence. I earned my Master's degree in *Computer Science (Artificial Intelligence)* with Distinction from the University of Nottingham. Before that, I completed my Bachelor's degree in Computer Science and Technology at Guangzhou University.
 
 Feel free to reach out to me via email at wenhao.deng@foxmail.com.
 
