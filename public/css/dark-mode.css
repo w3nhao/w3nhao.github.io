@@ -31,6 +31,10 @@
   color: #dddddd;  /* You can choose a different light color if you prefer */
 }
 
+[data-theme="dark"] a {
+  color: #ccccf0;  /* Blue links for dark mode */
+}
+
 [data-theme="dark"] hr {
   border-top-color: #444444;  /* Slightly lighter than the dark background */
   border-bottom-color: #555555;  /* Slightly lighter than the dark background */
@@ -173,3 +177,19 @@ color: inherit;
 [data-theme="dark"] .collapsible .language-type {
   color: #B0C4DE;  /* Lighter text for the language type in dark mode */
 }
+
+/* [data-theme="dark"] footer {
+  color: #fff; 
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.5em;
+}
+
+[data-theme="dark"] footer a {
+  color:  #B0C4DE; 
+  text-decoration: none;
+}
+
+[data-theme="dark"] footer a:hover {
+  text-decoration: underline;
+} */

@@ -773,3 +773,12 @@ mjx-container {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
+/* 
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.5em;
+    color: #666;
+  }
+   */
