@@ -3,14 +3,6 @@ layout: default
 title: Home
 ---
 
-### About Me
----
-Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence. I earned my M.Sc. degree in *Computer Science (Artificial Intelligence)* with Distinction from the University of Nottingham. Before that, I completed my B.Eng. in *Computer Science and Technology* at Guangzhou University.
-
-Feel free to reach out to me via email at wenhao.deng@foxmail.com.
-
-This site is powered by [**Jekyll**](https://jekyllrb.com/) and [**Lanyon**](https://github.com/poole/lanyon).
-
 <div class="about-container">
   <div class="about-image">
     <img src="/public/pic.jpg" alt="Wenhao's Picture" />
@@ -25,6 +17,14 @@ This site is powered by [**Jekyll**](https://jekyllrb.com/) and [**Lanyon**](htt
     </ul>
   </div>
 </div>
+
+Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence. I earned my M.Sc. degree in *Computer Science (Artificial Intelligence)* with Distinction from the University of Nottingham. Before that, I completed my B.Eng. in *Computer Science and Technology* at Guangzhou University.
+
+Feel free to reach out to me via email at wenhao.deng@foxmail.com.
+
+This site is powered by [**Jekyll**](https://jekyllrb.com/) and [**Lanyon**](https://github.com/poole/lanyon).
+
+
 
 
 ### Works
