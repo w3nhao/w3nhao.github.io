@@ -11,8 +11,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          ruby-version: '3.0'
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v3
@@ -25,6 +23,7 @@ jobs:
       # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.5.0
         with:
+          ruby-version: '3.0'
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
           repository: ''             # Default is current repository
