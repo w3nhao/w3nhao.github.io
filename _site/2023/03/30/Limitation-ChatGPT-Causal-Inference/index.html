@@ -179,6 +179,9 @@
 <p>In conclusion, the dialogue between Judea Pearl and Jim Fan serves as a valuable reminder of the limitations of deep learning models like GPT in the domain of causal inference. While these models have made significant strides in various aspects of natural language understanding, their abilities in causal reasoning remain constrained by their training data and the algorithms themselves.</p>
 
 
+  <!-- Utterances Comments Script -->
+  <script src="https://utteranc.es/client.js" repo="w3nhao/w3nhao.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+  </script>
 </div>
 
 
@@ -275,12 +278,27 @@
       document.addEventListener('DOMContentLoaded', (event) => {
         const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
         const darkModeToggle = document.querySelector('.dark-mode-toggle');
-        
+      
+        // Function to update Utterances theme
+        function updateUtterancesTheme(theme) {
+          const utterancesFrame = document.querySelector('.utterances-frame');
+          if (utterancesFrame) {
+            const message = {
+              type: 'set-theme',
+              theme: theme
+            };
+            utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
+          }
+        }
+      
         // Initialize based on localStorage
         if (localStorage.getItem('theme') === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
           darkModeCheckbox.checked = true;
           darkModeToggle.textContent = '🌝';
+          updateUtterancesTheme('github-dark');
+        } else {
+          updateUtterancesTheme('github-light');
         }
       
         darkModeCheckbox.addEventListener('change', function () {
@@ -288,10 +306,12 @@
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
             darkModeToggle.textContent = '🌝';
+            updateUtterancesTheme('github-dark');
           } else {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
             darkModeToggle.textContent = '🌞';
+            updateUtterancesTheme('github-light');
           }
         });
       });

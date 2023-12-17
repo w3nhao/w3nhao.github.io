@@ -15,7 +15,6 @@
 1. Run `bundle exec jekyll build` to build the static files.
 2. Commit the changes and push to the repository.
 
-
 ## How to write posts and preview locally
 1. Write posts in Markdown format and save them in `_drafts` folder.
 2. Before moving the post md file to `_posts` folder, use the `post_process.py` under `_drafts` folder to process the md file, the processed md file will be saved in `_posts` folder.

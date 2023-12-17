@@ -133,15 +133,7 @@
         
 
       <div class="container content">
-        <h3 id="about-me">About Me</h3>
-<hr>
-<p>Hey there! I’m Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence. I earned my M.Sc. degree in <em>Computer Science (Artificial Intelligence)</em> with Distinction from the University of Nottingham. Before that, I completed my B.Eng. in <em>Computer Science and Technology</em> at Guangzhou University.</p>
-
-<p>Feel free to reach out to me via email at wenhao.deng@foxmail.com.</p>
-
-<p>This site is powered by <a href="https://jekyllrb.com/"><strong>Jekyll</strong></a> and <a href="https://github.com/poole/lanyon"><strong>Lanyon</strong></a>.</p>
-
-<div class="about-container">
+        <div class="about-container">
   <div class="about-image">
     <img src="/public/pic.jpg" alt="Wenhao's Picture">
   </div>
@@ -155,6 +147,12 @@
     </ul>
   </div>
 </div>
+
+<p>Hey there! I’m Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence. I earned my M.Sc. degree in <em>Computer Science (Artificial Intelligence)</em> with Distinction from the University of Nottingham. Before that, I completed my B.Eng. in <em>Computer Science and Technology</em> at Guangzhou University.</p>
+
+<p>Feel free to reach out to me via email at wenhao.deng@foxmail.com.</p>
+
+<p>This site is powered by <a href="https://jekyllrb.com/"><strong>Jekyll</strong></a> and <a href="https://github.com/poole/lanyon"><strong>Lanyon</strong></a>.</p>
 
 <h3 id="works">Works</h3>
 <hr>
@@ -185,12 +183,27 @@ arXiv preprint arXiv:2305.11700 (2023).</p>
       document.addEventListener('DOMContentLoaded', (event) => {
         const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
         const darkModeToggle = document.querySelector('.dark-mode-toggle');
-        
+      
+        // Function to update Utterances theme
+        function updateUtterancesTheme(theme) {
+          const utterancesFrame = document.querySelector('.utterances-frame');
+          if (utterancesFrame) {
+            const message = {
+              type: 'set-theme',
+              theme: theme
+            };
+            utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
+          }
+        }
+      
         // Initialize based on localStorage
         if (localStorage.getItem('theme') === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
           darkModeCheckbox.checked = true;
           darkModeToggle.textContent = '🌝';
+          updateUtterancesTheme('github-dark');
+        } else {
+          updateUtterancesTheme('github-light');
         }
       
         darkModeCheckbox.addEventListener('change', function () {
@@ -198,10 +211,12 @@ arXiv preprint arXiv:2305.11700 (2023).</p>
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
             darkModeToggle.textContent = '🌝';
+            updateUtterancesTheme('github-dark');
           } else {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
             darkModeToggle.textContent = '🌞';
+            updateUtterancesTheme('github-light');
           }
         });
       });
