@@ -792,3 +792,17 @@ mjx-container {
     color: #666;
   }
    */
+
+.cat-gif-container {
+  text-align: center; /* Center the GIF */
+  padding: 20px 0; /* Add some space around the GIF */
+}
+
+.cat-gif-container img {
+  max-width: 50%; /* Ensure it's responsive */
+  /* Ensure the GIF is centered */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto; /* Maintain aspect ratio */
+}

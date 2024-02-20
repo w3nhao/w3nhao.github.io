@@ -24,16 +24,23 @@ Feel free to reach out to me via email at wenhao.deng@foxmail.com.
 
 This site is powered by [**Jekyll**](https://jekyllrb.com/) and [**Lanyon**](https://github.com/poole/lanyon).
 
-
-
-
 ### Works
 ---
 - [**Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey**](https://arxiv.org/abs/2308.01191).  
  Shihan Dou\*, Junjie Shan\*, Haoxiang Jia, **Wenhao Deng**, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang. (* Equal contribution)  
  arXiv preprint arXiv:2308.01191 (2023). 
 
+---
 - [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700).  
 Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. (* Equal contribution)  
 arXiv preprint arXiv:2305.11700 (2023). 
 
+---
+
+
+### A Cat for You
+Just a cat to brighten your day:
+
+<div class="cat-gif-container">
+  <img src="/public/spinning-cat.gif" alt="Spinning 3D Cat" />
+</div>
