@@ -40,5 +40,5 @@ arXiv preprint arXiv:2305.11700 (2023).
 
 <div class="cat-gif-container">
   <img src="/public/spinning-cat.gif" alt="Spinning 3D Cat" />
-  This site is powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
 </div>
