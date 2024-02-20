@@ -37,13 +37,6 @@
  * Update the foundational and global aspects of the page.
  */
 
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/public/fonts/JetBrainsMono-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
  /* Prevent scroll on narrow devices */
 html,
 body {
@@ -778,7 +771,6 @@ mjx-container {
   }
   
   .collapsible_code_content {
-    font-family: 'JetBrains Mono';
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
