@@ -22,7 +22,6 @@ Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial
 
 Feel free to reach out to me via email at wenhao.deng@foxmail.com.
 
-This site is powered by [**Jekyll**](https://jekyllrb.com/) and [**Lanyon**](https://github.com/poole/lanyon).
 
 ### Works
 ---
@@ -38,9 +37,8 @@ arXiv preprint arXiv:2305.11700 (2023).
 ---
 
 
-### A Cat for You
-Just a cat to brighten your day:
 
 <div class="cat-gif-container">
   <img src="/public/spinning-cat.gif" alt="Spinning 3D Cat" />
+  This site is powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
 </div>

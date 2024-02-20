@@ -795,13 +795,14 @@ mjx-container {
 
 .cat-gif-container {
   text-align: center; /* Center the GIF */
-  padding: 20px 0; /* Add some space around the GIF */
+  font-size: small; /* Make the text smaller */
+  padding: 20px 0; /* Add some padding */
+  margin-top: 200px; /* Add some margin to the top */
 }
 
 .cat-gif-container img {
-  max-width: 50%; /* Ensure it's responsive */
+  max-width: 15%; /* Ensure it's responsive */
   /* Ensure the GIF is centered */
-  display: block;
   margin-left: auto;
   margin-right: auto;
   height: auto; /* Maintain aspect ratio */
