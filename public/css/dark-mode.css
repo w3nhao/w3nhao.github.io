@@ -57,7 +57,7 @@ color: #ccccf0;  /* Again, choose a color that fits your design */
 
 [data-theme="dark"] .page,
 [data-theme="dark"] .post {
-margin-bottom: 4em;
+margin-bottom: 2em;
 }
 
 [data-theme="dark"] .page-title,

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Posts
+title: First In Last Out
 permalink: /posts/
 pagination:
   enabled: true
@@ -11,19 +11,25 @@ pagination:
   sort_reverse: true
 ---
 
+<div class="posts-intro">
+  <p class="blog-desc">This is where I'll be dropping my thoughts, stories, and a bit of everything in between.</p>
+  <hr class="intro-divider"/>
+</div>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h1 class="post-title">
+    <h2 class="post-title">
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }}
       </a>
-    </h1>
+    </h2>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {{ post.excerpt }}
-
+    
   </div>
+  <hr class="post-divider"/>
   {% endfor %}
 </div>
 

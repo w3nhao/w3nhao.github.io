@@ -37,7 +37,14 @@
  * Update the foundational and global aspects of the page.
  */
 
-/* Prevent scroll on narrow devices */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/public/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ /* Prevent scroll on narrow devices */
 html,
 body {
   overflow-x: hidden;
@@ -45,11 +52,13 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
+  font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  /* font-family: "PT Sans", Helvetica, Arial, sans-serif; */
+  font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -318,7 +327,7 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 /* Blog post or page title */
@@ -769,6 +778,7 @@ mjx-container {
   }
   
   .collapsible_code_content {
+    font-family: 'JetBrains Mono';
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
