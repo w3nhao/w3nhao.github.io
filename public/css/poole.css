@@ -54,8 +54,10 @@ body {
   font-style: normal;
 }
 
+@import url("/public/fonts/Spectral/stylesheet.css");
+
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Spectral", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
