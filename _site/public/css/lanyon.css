@@ -37,6 +37,8 @@
  * Update the foundational and global aspects of the page.
  */
 
+ @import url("/public/fonts/Spectral/stylesheet.css");
+
  /* Prevent scroll on narrow devices */
 html,
 body {
@@ -46,12 +48,12 @@ body {
 
 html {
   /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
-  font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: "Palatino Linotype", "Spectral",  "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   /* font-family: "PT Sans", Helvetica, Arial, sans-serif; */
-  font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: "Palatino Linotype", "Spectral", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -61,6 +63,12 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 0.85rem; 
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 li {

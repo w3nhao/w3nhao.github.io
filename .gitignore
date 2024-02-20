@@ -29,7 +29,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
-.lock
+*.lock
 
 # Komodo
 *.komodoproject

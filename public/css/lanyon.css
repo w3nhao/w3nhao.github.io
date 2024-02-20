@@ -65,6 +65,12 @@ p {
   font-size: 0.85rem; 
 }
 
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
 li {
   font-size: 0.85rem;
 }
