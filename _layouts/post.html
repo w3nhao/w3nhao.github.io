@@ -15,6 +15,28 @@ layout: default
 
   {{ content }}
   
+  <!-- Cite References Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cites = document.querySelectorAll('cite[data-info]');
+      const references = document.getElementById('citation-list');
+    
+      if (cites.length > 0) {
+        let refContent = '<hr><h2>References</h2><ol>';
+        
+        cites.forEach((cite, index) => {
+          const key = cite.getAttribute('key');
+          const info = cite.getAttribute('data-info');
+          refContent += `<li id="ref-${key}"><p>${info}</p></li>`;
+        });
+    
+        refContent += '</ol><hr>';
+        references.innerHTML = refContent;
+      }
+    });
+  </script>
+<div id="citation-list"></div>
+
   <!-- Utterances Comments Script -->
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {

@@ -153,8 +153,7 @@
 <li class="toc__item toc-h3"><a href="#limitations">Limitations</a></li>
 </ul>
 </li>
-<li class="toc__item toc-h1"><a href="#conclusion">Conclusion</a></li>
-<li class="toc__item toc-h1"><a href="#references">References</a></li>
+<li class="toc__item toc-h2"><a href="#conclusion">Conclusion</a></li>
 </ul>
   </div>
 
@@ -162,7 +161,7 @@
 
 <h2 id="falsificationism">Falsificationism</h2>
 
-<p>Falsificationism is a philosophical view on science proposed by the philosopher Karl Popper [1]. Falsificationism holds that scientific theories should be falsifiable, and scientists should try to prove a theory wrong rather than seek evidence to support it. Falsificationism emphasizes the importance of critically testing scientific theories.</p>
+<p>Falsificationism is a philosophical view on science proposed by the philosopher Karl Popper <cite key="1" data-info="Popper, K. R. (1959). The logic of scientific discovery. Routledge."></cite>. Falsificationism holds that scientific theories should be falsifiable, and scientists should try to prove a theory wrong rather than seek evidence to support it. Falsificationism emphasizes the importance of critically testing scientific theories.</p>
 
 <p>However, falsificationism also has some limitations. Firstly, falsificationism tends to emphasize deductive reasoning while neglecting the importance of inductive reasoning in science. Secondly, the simplification of the relationship between theory and observation by falsificationism may lead to misunderstandings. Observational data may be influenced by many factors, and experimental results usually depend on the scientific instruments and technologies used. In addition, falsificationism advocates abandoning a theory when it is sufficiently falsified. However, in practical scientific practice, it is difficult to determine when a theory has been sufficiently falsified. Therefore, the application of falsificationism also needs to consider uncertainty and complexity.</p>
 
@@ -170,7 +169,7 @@
 
 <p>Compared to falsificationism, Bayesianism tries to save inductive reasoning and provides another perspective. Bayesianism, based on Bayes’ theorem, quantifies beliefs by calculating probabilities as the basis for reasoning and decision-making. They believe that new evidence updates our beliefs about a proposition or hypothesis, and these beliefs are adjusted according to Bayes’ theorem.</p>
 
-<p>The specific ways in which Bayesianism saves inductive reasoning include using prior probabilities, updating beliefs, and probability reasoning [2]. However, Bayesianism also faces some criticisms, such as subjectivity, computational complexity, model selection, and overfitting problems [3].</p>
+<p>The specific ways in which Bayesianism saves inductive reasoning include using prior probabilities, updating beliefs, and probability reasoning <cite key="2" data-info="Jaynes, E. T. (2003). Probability theory: The logic of science. Cambridge University Press."></cite>. However, Bayesianism also faces some criticisms, such as subjectivity, computational complexity, model selection, and overfitting problems <cite key="3" data-info="Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp; Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). Chapman and Hall/CRC."></cite>.</p>
 
 <h2 id="comparison-of-the-two-views">Comparison of the Two Views</h2>
 
@@ -194,19 +193,34 @@
 
 <p>The limitations of falsificationism include neglecting the role of inductive reasoning in science and the problem of the relationship between theory and observation. The limitations of Bayesianism include subjectivity, computational complexity, model selection, and overfitting problems.</p>
 
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>Falsificationism and Bayesianism are two different philosophical views on science, which emphasize different reasoning methods and evidence verification methods. Although falsificationism has some limitations, it emphasizes the importance of critically testing scientific theories and is an important part of the philosophy of science. Bayesianism pays more attention to uncertainty and complexity and tries to handle these problems through quantifying beliefs and probability calculations, which has broad application value in practical use.</p>
 
-<h1 id="references">References</h1>
-<p>[1] Popper, K. R. (1959). The logic of scientific discovery. Routledge.</p>
-
-<p>[2] Jaynes, E. T. (2003). Probability theory: The logic of science. Cambridge University Press.</p>
-
-<p>[3] Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp; Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). Chapman and Hall/CRC.</p>
-
 
   
+  <!-- Cite References Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cites = document.querySelectorAll('cite[data-info]');
+      const references = document.getElementById('citation-list');
+    
+      if (cites.length > 0) {
+        let refContent = '<hr><h2>References</h2><ol>';
+        
+        cites.forEach((cite, index) => {
+          const key = cite.getAttribute('key');
+          const info = cite.getAttribute('data-info');
+          refContent += `<li id="ref-${key}"><p>${info}</p></li>`;
+        });
+    
+        refContent += '</ol><hr>';
+        references.innerHTML = refContent;
+      }
+    });
+  </script>
+<div id="citation-list"></div>
+
   <!-- Utterances Comments Script -->
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {

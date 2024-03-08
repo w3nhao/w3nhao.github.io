@@ -455,7 +455,68 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/* Style for <d-cite> tags */
+cite {
+  display: inline-block;
+  position: relative;
+  font-style: normal;
+  cursor: help;
+}
 
+/* Adjusted citation key in the upper right corner, resembling a superscript */
+cite::before {
+  content: "[" attr(key) "]";
+  position: absolute;
+  top: -2em; /* Move the key up */
+  right: -0.85em;
+  font-size: 0.4em; /* Small font size for the key */
+  z-index: 1;
+}
+
+/* Hover effect for displaying more information - Basic */
+cite:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: max-content;
+  max-width: 300px;
+  z-index: 10;
+  white-space: pre-wrap;
+  font-size: 0.8em;
+  background-color: #f5f5f5;
+  color: #333;
+  transform: translateY(-8px);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+cite:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ensure links inside the tooltip have no special color */
+cite:hover::after a {
+  color: inherit; /* This makes the link color the same as the text color */
+  text-decoration: none; /* Removes underline from links */
+}
+
+#citation-list ol {
+  padding-left: 20px;
+}
+
+#citation-list li {
+  margin-bottom: 5px; /* Adjust the space between items */
+}
+
+#citation-list p {
+  margin: 0; /* Remove default paragraph margin */
+}
 
 
 /*

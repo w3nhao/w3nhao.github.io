@@ -193,3 +193,20 @@ color: inherit;
 [data-theme="dark"] footer a:hover {
   text-decoration: underline;
 } */
+
+
+/* Citations */
+[data-theme="dark"] cite {
+  background-color: #333; /* Dark background for dark mode */
+  color: #B0C4DE; /* Lighter text color for dark mode */
+}
+
+[data-theme="dark"] cite:hover::after {
+  background-color: #333; /* Dark background for tooltip in dark mode */
+  color: #B0C4DE; /* Lighter text color for tooltip in dark mode */
+  border-color: #444; /* Slightly lighter border color for tooltip in dark mode */
+}
+
+[data-theme="dark"] cite:hover::after a {
+  color: #B0C4DE; /* Ensuring link color consistency in the tooltip */
+}
