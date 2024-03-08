@@ -7,9 +7,11 @@ toc: true
 
 In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.
 
-![img](/public/img/2023-03-30-Limitation-ChatGPT-Causal-Inference/tweet_screen_shot_20230331.png)
-
-[tweet_link](https://twitter.com/yudapearl/status/1641386266595033088)
+<div class="l-body">
+    <a href="https://twitter.com/yudapearl/status/1641386266595033088">
+        <img src="/public/img/2023-03-30-Limitation-ChatGPT-Causal-Inference/tweet_screen_shot_20230331.png" alt="tweet" /> 
+    </a>
+</div>
 
 ## Judea Pearl's Critique
 According to Judea Pearl, deep learning models like GPT are inherently limited in their ability to reason about causality. He argues that their achievements amount to little more than "curve fitting" and are constrained by the passive data they are trained on. Pearl posits that answering causal questions requires either causal assumptions or interventional experiments to enrich the data.

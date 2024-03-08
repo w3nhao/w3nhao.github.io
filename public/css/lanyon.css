@@ -380,6 +380,83 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+.post > .l-body,
+.post > .l-body-outset,
+.post > .l-page,
+.post > .l-page-outset,
+.post > .l-middle,
+.post > .l-middle-outset {
+  width: auto;
+  margin-left: 24px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+
+@media(min-width: 768px) {
+  .post > .l-body,
+  .post > .l-body-outset,
+  .post > .l-page,
+  .post > .l-page-outset,
+  .post > .l-middle,
+  .post > .l-middle-outset {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+}
+
+@media(min-width: 1080px) {
+  .post > .l-body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 648px;
+  }
+  .post > .l-body-outset {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(648px + 96px);
+  }
+  .post > .l-middle {
+    width: 816px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-middle-outset {
+    width: calc(816px + 96px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-page {
+    width: 984px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-page-outset {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-screen {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .post > .l-screen-inset {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: auto;
+  }
+  .post > .l-gutter {
+    clear: both;
+    float: right;
+    margin-top: 0;
+    margin-left: 24px;
+    margin-right: calc((100vw - 984px) / 2 + 168px);
+    width: calc((984px - 648px) / 2 - 24px);
+  }
+}
+
+
+
 
 /*
   * Article-toc
