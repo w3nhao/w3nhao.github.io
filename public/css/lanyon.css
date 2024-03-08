@@ -455,7 +455,7 @@ a.sidebar-nav-item:focus {
   }
 }
 
-/* Style for <d-cite> tags */
+/* Style for <cite> tags */
 cite {
   display: inline-block;
   position: relative;
@@ -466,10 +466,10 @@ cite {
 /* Adjusted citation key in the upper right corner, resembling a superscript */
 cite::before {
   content: "[" attr(key) "]";
-  position: absolute;
+  /* position: absolute; */
   top: -2em; /* Move the key up */
-  right: -0.85em;
-  font-size: 0.4em; /* Small font size for the key */
+  right: -0.5em;
+  font-size: 0.5em; /* Small font size for the key */
   z-index: 1;
 }
 
@@ -488,7 +488,6 @@ cite:hover::after {
   white-space: pre-wrap;
   font-size: 0.8em;
   background-color: #f5f5f5;
-  color: #333;
   transform: translateY(-8px);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0;
@@ -515,6 +514,37 @@ cite:hover::after a {
 }
 
 #citation-list p {
+  margin: 0; /* Remove default paragraph margin */
+}
+
+
+/* Style for <footnote> tags */
+footnote {
+  display: inline-block;
+  position: relative;
+  font-style: normal;
+  cursor: help;
+}
+
+/* Adjusted citation key in the upper right corner, resembling a superscript */
+footnote::before {
+  content: attr(key);
+  position: absolute;
+  top: -2em; /* Move the key up */
+  right: -0.5em;
+  font-size: 0.5em; /* Small font size for the key */
+  z-index: 1;
+}
+
+#footnote-list ol {
+  padding-left: 20px;
+}
+
+#footnote-list li {
+  margin-bottom: 5px; /* Adjust the space between items */
+}
+
+#footnote-list p {
   margin: 0; /* Remove default paragraph margin */
 }
 

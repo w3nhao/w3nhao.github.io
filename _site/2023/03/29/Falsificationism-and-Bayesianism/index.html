@@ -163,7 +163,7 @@
 
 <p>Falsificationism is a philosophical view on science proposed by the philosopher Karl Popper <cite key="1" data-info="Popper, K. R. (1959). The logic of scientific discovery. Routledge."></cite>. Falsificationism holds that scientific theories should be falsifiable, and scientists should try to prove a theory wrong rather than seek evidence to support it. Falsificationism emphasizes the importance of critically testing scientific theories.</p>
 
-<p>However, falsificationism also has some limitations. Firstly, falsificationism tends to emphasize deductive reasoning while neglecting the importance of inductive reasoning in science. Secondly, the simplification of the relationship between theory and observation by falsificationism may lead to misunderstandings. Observational data may be influenced by many factors, and experimental results usually depend on the scientific instruments and technologies used. In addition, falsificationism advocates abandoning a theory when it is sufficiently falsified. However, in practical scientific practice, it is difficult to determine when a theory has been sufficiently falsified. Therefore, the application of falsificationism also needs to consider uncertainty and complexity.</p>
+<p>However, falsificationism also has some limitations. Firstly, falsificationism tends to emphasize deductive reasoning while neglecting the importance of inductive reasoning in science. Secondly, the simplification of the relationship between theory and observation by falsificationism may lead to misunderstandings. Observational data may be influenced by many factors, and experimental results usually depend on the scientific instruments and technologies used <footnote data-info="For example, the &lt;a href='https://en.wikipedia.org/wiki/Michelson–Morley_experiment'&gt;Michelson-Morley experiment&lt;/a&gt;, which was designed to detect the ether, failed to detect the ether, but it did not falsify the theory of the ether. Instead, it led to the development of the theory of relativity."></footnote>. In addition, falsificationism advocates abandoning a theory when it is sufficiently falsified. However, in practical scientific practice, it is difficult to determine when a theory has been sufficiently falsified. Therefore, the application of falsificationism also needs to consider uncertainty and complexity.</p>
 
 <h2 id="bayesianism">Bayesianism</h2>
 
@@ -199,6 +199,84 @@
 
 
   
+  <!-- Footnotes Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+  
+      // Function to update the tooltip theme
+      function updateTooltipTheme(tooltip) {
+        const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+        tooltip.style.backgroundColor = isDarkMode ? '#333' : '#f5f5f5';
+        tooltip.style.color = isDarkMode ? '#B0C4DE' : 'black';
+        tooltip.style.borderColor = isDarkMode ? '#444' : '#ccc';
+      }
+  
+      darkModeCheckbox.addEventListener('change', function () {
+        document.querySelectorAll('.custom-tooltip').forEach(tooltip => {
+          updateTooltipTheme(tooltip); // Update tooltips when the theme changes
+        });
+      });
+  
+      var footnoteContent = '<hr><h2>Footnotes</h2><ol>';
+      document.querySelectorAll('footnote').forEach((element, index) => {
+        const key = index + 1;
+        const footnoteId = 'fn-' + key;
+        const footnoteRefId = 'fnref-' + key;
+  
+        element.setAttribute('key', key);
+        element.setAttribute('id', footnoteRefId);
+  
+        element.addEventListener('mouseenter', function() {
+          const info = this.getAttribute('data-info');
+          const postElement = document.querySelector('.post');
+          const postWidth = postElement.offsetWidth + 'px';
+          const postLeft = postElement.getBoundingClientRect().left;
+          const footnoteLeft = this.getBoundingClientRect().left;
+  
+          const tooltip = document.createElement('div');
+          tooltip.classList.add('custom-tooltip');
+          tooltip.innerHTML = info;
+          tooltip.style.position = 'absolute';
+          tooltip.style.left = (postLeft - footnoteLeft) + 'px';
+          tooltip.style.bottom = '100%';
+          tooltip.style.width = postWidth;
+          tooltip.style.borderRadius = '4px';
+          tooltip.style.padding = '8px';
+          tooltip.style.fontSize = '0.8em';
+          tooltip.style.zIndex = '10';
+          tooltip.style.whiteSpace = 'pre-wrap';
+          tooltip.style.transform = 'translateY(-8px)';
+          tooltip.style.transition = 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out';
+          tooltip.style.visibility = 'hidden';
+          tooltip.style.opacity = '0';
+  
+          this.appendChild(tooltip);
+          updateTooltipTheme(tooltip);
+  
+          setTimeout(() => {
+            tooltip.style.visibility = 'visible';
+            tooltip.style.opacity = '1';
+          }, 10);
+        });
+  
+        element.addEventListener('mouseleave', function() {
+          this.removeChild(this.lastChild);
+        });
+  
+        // Append content for the footnote and add a return link
+        var dataInfo = element.getAttribute('data-info');
+        footnoteContent += `<li id="${footnoteId}">${dataInfo} <a href="#${footnoteRefId}" title="Return to article">↩</a></li>`;
+      });
+      footnoteContent += '</ol>';
+  
+      // Insert the generated footnotes at the element with id 'footnotes'
+      if (document.querySelectorAll('footnote').length > 0) {
+        document.getElementById('footnotes').innerHTML = footnoteContent;
+      }
+    });
+  </script>
+  
   <!-- Cite References Script -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -211,14 +289,16 @@
         cites.forEach((cite, index) => {
           const key = cite.getAttribute('key');
           const info = cite.getAttribute('data-info');
-          refContent += `<li id="ref-${key}"><p>${info}</p></li>`;
+          refContent += `<li id="ref-${key}">${info}</li>`;
         });
     
-        refContent += '</ol><hr>';
+        refContent += '</ol>';
         references.innerHTML = refContent;
       }
     });
   </script>
+
+<div id="footnotes"></div>
 <div id="citation-list"></div>
 
   <!-- Utterances Comments Script -->

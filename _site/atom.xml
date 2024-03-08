@@ -4,7 +4,7 @@
  <title>Wenhao Deng</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-03-08T13:50:07+08:00</updated>
+ <updated>2024-03-08T16:00:29+08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Wenhao Deng</name>
@@ -323,7 +323,7 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
 
 &lt;p&gt;Falsificationism is a philosophical view on science proposed by the philosopher Karl Popper &lt;cite key=&quot;1&quot; data-info=&quot;Popper, K. R. (1959). The logic of scientific discovery. Routledge.&quot;&gt;&lt;/cite&gt;. Falsificationism holds that scientific theories should be falsifiable, and scientists should try to prove a theory wrong rather than seek evidence to support it. Falsificationism emphasizes the importance of critically testing scientific theories.&lt;/p&gt;
 
-&lt;p&gt;However, falsificationism also has some limitations. Firstly, falsificationism tends to emphasize deductive reasoning while neglecting the importance of inductive reasoning in science. Secondly, the simplification of the relationship between theory and observation by falsificationism may lead to misunderstandings. Observational data may be influenced by many factors, and experimental results usually depend on the scientific instruments and technologies used. In addition, falsificationism advocates abandoning a theory when it is sufficiently falsified. However, in practical scientific practice, it is difficult to determine when a theory has been sufficiently falsified. Therefore, the application of falsificationism also needs to consider uncertainty and complexity.&lt;/p&gt;
+&lt;p&gt;However, falsificationism also has some limitations. Firstly, falsificationism tends to emphasize deductive reasoning while neglecting the importance of inductive reasoning in science. Secondly, the simplification of the relationship between theory and observation by falsificationism may lead to misunderstandings. Observational data may be influenced by many factors, and experimental results usually depend on the scientific instruments and technologies used &lt;footnote data-info=&quot;For example, the &amp;lt;a href=&apos;https://en.wikipedia.org/wiki/Michelson–Morley_experiment&apos;&amp;gt;Michelson-Morley experiment&amp;lt;/a&amp;gt;, which was designed to detect the ether, failed to detect the ether, but it did not falsify the theory of the ether. Instead, it led to the development of the theory of relativity.&quot;&gt;&lt;/footnote&gt;. In addition, falsificationism advocates abandoning a theory when it is sufficiently falsified. However, in practical scientific practice, it is difficult to determine when a theory has been sufficiently falsified. Therefore, the application of falsificationism also needs to consider uncertainty and complexity.&lt;/p&gt;
 
 &lt;h2 id=&quot;bayesianism&quot;&gt;Bayesianism&lt;/h2&gt;
 

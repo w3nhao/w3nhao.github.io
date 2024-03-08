@@ -210,3 +210,9 @@ color: inherit;
 [data-theme="dark"] cite:hover::after a {
   color: #B0C4DE; /* Ensuring link color consistency in the tooltip */
 }
+
+/* Footnotes */
+[data-theme="dark"] footnote {
+  background-color: #333; /* Dark background for dark mode */
+  color: #B0C4DE; /* Lighter text color for dark mode */
+}
