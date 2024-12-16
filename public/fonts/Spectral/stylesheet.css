@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Light'), local('Spectral-Light'),
+        url('Spectral-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral ExtraBold'), local('Spectral-ExtraBold'),
+        url('Spectral-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Italic'), local('Spectral-Italic'),
+        url('Spectral-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Medium'), local('Spectral-Medium'),
+        url('Spectral-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral ExtraBold Italic'), local('Spectral-ExtraBoldItalic'),
+        url('Spectral-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Medium Italic'), local('Spectral-MediumItalic'),
+        url('Spectral-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Light Italic'), local('Spectral-LightItalic'),
+        url('Spectral-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral SemiBold Italic'), local('Spectral-SemiBoldItalic'),
+        url('Spectral-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Bold Italic'), local('Spectral-BoldItalic'),
+        url('Spectral-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Bold'), local('Spectral-Bold'),
+        url('Spectral-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral Regular'), local('Spectral-Regular'),
+        url('Spectral-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral ExtraLight Italic'), local('Spectral-ExtraLightItalic'),
+        url('Spectral-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral ExtraLight'), local('Spectral-ExtraLight'),
+        url('Spectral-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    src: local('Spectral SemiBold'), local('Spectral-SemiBold'),
+        url('Spectral-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
