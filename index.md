@@ -36,9 +36,15 @@ arXiv preprint arXiv:2305.11700 (2023).
 
 ---
 
+<div class="homepage-footnote">
+  <div class="inspirational-quote">
+    *You don’t need to solve your entire life overnight, just focus on one small step at a time.*
+  </div>
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
+<div>
 
-
+<!-- 
 <div class="cat-gif-container">
   <img src="/public/spinning-cat.gif" alt="Spinning 3D Cat" />
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
-</div>
+</div> -->

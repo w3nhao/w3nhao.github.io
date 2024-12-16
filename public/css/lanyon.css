@@ -975,3 +975,44 @@ mjx-container {
   margin-right: auto;
   height: auto; /* Maintain aspect ratio */
 }
+
+.homepage-footnote {
+  text-align: center; /* Center the GIF */
+  font-size: small; /* Make the text smaller */
+  padding: 20px 0; /* Add some padding */
+  margin-top: 200px; /* Add some margin to the top */
+}
+
+.homepage-footnote img {
+  max-width: 15%; /* Ensure it's responsive */
+  /* Ensure the GIF is centered */
+  margin-left: auto;
+  margin-right: auto;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.homepage-footnote {
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inspirational-quote {
+  font-style: italic;
+  color: gray;
+  margin-top: 10px;
+}
+
+.homepage-footnote {
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inspirational-quote {
+  font-style: italic;
+  color: gray;
+  margin-top: 10px;
+}
