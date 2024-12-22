@@ -16,6 +16,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/life/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/posts/</loc>
 </url>
 </urlset>

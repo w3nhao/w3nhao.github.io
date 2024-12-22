@@ -178,22 +178,6 @@ color: inherit;
   color: #B0C4DE;  /* Lighter text for the language type in dark mode */
 }
 
-/* [data-theme="dark"] footer {
-  color: #fff; 
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.5em;
-}
-
-[data-theme="dark"] footer a {
-  color:  #B0C4DE; 
-  text-decoration: none;
-}
-
-[data-theme="dark"] footer a:hover {
-  text-decoration: underline;
-} */
-
 
 /* Citations */
 [data-theme="dark"] cite {
@@ -211,8 +195,9 @@ color: inherit;
   color: #B0C4DE; /* Ensuring link color consistency in the tooltip */
 }
 
-/* Footnotes */
-[data-theme="dark"] footnote {
-  background-color: #333; /* Dark background for dark mode */
-  color: #B0C4DE; /* Lighter text color for dark mode */
+
+[data-theme="dark"] .inspirational-quote {
+  font-style: italic;
+  color: lightgray;
+  margin-top: 10px;
 }

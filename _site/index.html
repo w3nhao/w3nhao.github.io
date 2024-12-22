@@ -56,6 +56,15 @@
     }
   </script>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll(".gallery-item img");
+      images.forEach((img) => {
+        img.setAttribute("loading", "lazy");
+      });
+    });
+  </script>
+
 </head>
 
 
@@ -89,6 +98,12 @@
     
       
     
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://localhost:4000/life/">Adventures</a>
+        
       
     
       
@@ -139,11 +154,8 @@
   </div>
   <div class="about-social">
     <ul>
-      <!-- <li><a href="https://www.instagram.com/your_username/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li> -->
-      <!-- <li><a href="https://twitter.com/dw3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></li> -->
       <li><a href="https://github.com/w3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
       <li><a href="https://www.semanticscholar.org/author/Wenhao-Deng/2217948574" target="_blank" rel="noopener noreferrer"> <i class="fas fa-book-reader"></i> Semantic Scholar </a></li>
-      <!-- <li><i class="fab fa-weixin"></i> WeChat: your_wechat_id</li> -->
     </ul>
   </div>
 </div>
@@ -169,14 +181,13 @@ Ruyu Li*, <strong>Wenhao Deng</strong>*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Faji
 arXiv preprint arXiv:2305.11700 (2023).</li>
 </ul>
 
-<hr>
-
 <div class="homepage-footnote">
   <div class="inspirational-quote">
     *You don’t need to solve your entire life overnight, just focus on one small step at a time.*
   </div>
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
 <div>
+
 
 <!-- 
 <div class="cat-gif-container">

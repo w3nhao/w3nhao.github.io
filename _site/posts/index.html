@@ -56,6 +56,15 @@
     }
   </script>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll(".gallery-item img");
+      images.forEach((img) => {
+        img.setAttribute("loading", "lazy");
+      });
+    });
+  </script>
+
 </head>
 
 
@@ -89,6 +98,12 @@
     
       
     
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://localhost:4000/life/">Adventures</a>
+        
       
     
       

@@ -993,7 +993,6 @@ mjx-container {
 
 .homepage-footnote {
   font-size: 14px;
-  color: #333;
   margin-top: 20px;
   text-align: center;
 }
@@ -1004,15 +1003,57 @@ mjx-container {
   margin-top: 10px;
 }
 
-.homepage-footnote {
-  font-size: 14px;
-  color: #333;
-  margin-top: 20px;
+.pinterest-gallery {
   text-align: center;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-.inspirational-quote {
-  font-style: italic;
-  color: gray;
-  margin-top: 10px;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom out effect */
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
 }
