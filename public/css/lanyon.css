@@ -1,0 +1,1059 @@
+/*
+ *  ___
+ * /\_ \
+ * \//\ \      __      ___   __  __    ___     ___
+ *   \ \ \   /'__`\  /' _ `\/\ \/\ \  / __`\ /' _ `\
+ *    \_\ \_/\ \_\.\_/\ \/\ \ \ \_\ \/\ \_\ \/\ \/\ \
+ *    /\____\ \__/.\_\ \_\ \_\/`____ \ \____/\ \_\ \_\
+ *    \/____/\/__/\/_/\/_/\/_/`/___/> \/___/  \/_/\/_/
+ *                               /\___/
+ *                               \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/lanyon.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Masthead
+ * Sidebar
+ * Slide effect
+ * Posts and pages
+ * Pagination
+ * Reverse layout
+ * Themes
+ * Overlay sidebar
+ * MathJax
+ * Table of Contents
+ */
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+ @import url("/public/fonts/Spectral/stylesheet.css");
+
+ /* Prevent scroll on narrow devices */
+html,
+body {
+  overflow-x: hidden;
+  transition: background-color .5s ease-in-out;
+}
+
+html {
+  /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
+  font-family: "Palatino Linotype", "Spectral",  "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: "PT Sans", Helvetica, Arial, sans-serif; */
+  font-family: "Palatino Linotype", "Spectral", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  color: #313131;
+  letter-spacing: -.025rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.85rem; 
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+li {
+  font-size: 0.85rem;
+}
+
+
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
+
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  max-width: 28rem;
+}
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
+}
+
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+}
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+.masthead-title a {
+  color: #505050;
+}
+.masthead-title small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}
+
+
+/*
+ * Sidebar
+ *
+ * The sidebar is the drawer, the item we are toggling with our handy hamburger
+ * button in the corner of the page.
+ *
+ * This particular sidebar implementation was inspired by Chris Coyier's
+ * "Offcanvas Menu with CSS Target" article, and the checkbox variation from the
+ * comments by a reader. It modifies both implementations to continue using the
+ * checkbox (no change in URL means no polluted browser history), but this uses
+ * `position` for the menu to avoid some potential content reflow issues.
+ *
+ * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
+ */
+
+/* Style and "hide" the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: .875rem; /* 15px */
+  color: rgba(255,255,255,.6);
+  background-color: #202020;
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+@media (min-width: 30em) {
+  .sidebar {
+    font-size: .75rem; /* 14px */
+  }
+}
+
+/* Sidebar content */
+.sidebar a {
+  font-weight: normal;
+  color: #fff;
+}
+.sidebar-item {
+  padding: 1rem;
+}
+.sidebar-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+
+@media (min-width: 48em) {
+  .sidebar-item {
+    padding: 1.5rem;
+  }
+  .sidebar-nav-item {
+    padding-left:  1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  position: absolute;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
+.sidebar-toggle {
+  position: absolute;
+  top:  .8rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  padding: .25rem .75rem;
+  color: #505050;
+  background-color: #fff;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.sidebar-toggle::before {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23555' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #555;
+}
+
+.sidebar-toggle:active:before,
+#sidebar-checkbox:focus ~ .sidebar-toggle::before,
+#sidebar-checkbox:checked ~ .sidebar-toggle::before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
+}
+
+@media (min-width: 30.1em) {
+  .sidebar-toggle {
+    position: fixed;
+  }
+}
+
+@media print {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+/* Slide effect
+ *
+ * Handle the sliding effects of the sidebar and content in one spot, seperate
+ * from the default styles.
+ *
+ * As an a heads up, we don't use `transform: translate3d()` here because when
+ * mixed with `position: fixed;` for the sidebar toggle, it creates a new
+ * containing block. Put simply, the fixed sidebar toggle behaves like
+ * `position: absolute;` when transformed.
+ *
+ * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+ */
+
+.wrap,
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.wrap,
+.sidebar-toggle {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition: transform .3s ease-in-out;
+}
+
+#sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
+  visibility: visible;
+}
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(14rem);
+      -ms-transform: translateX(14rem);
+          transform: translateX(14rem);
+}
+
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.page,
+.post {
+  margin-bottom: 2em;
+}
+
+/* Blog post or page title */
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+.post-subtitle {
+  color: #9a9a9a;
+  font-family: 'Times', 'Times New Roman', serif;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+
+.post > .l-body,
+.post > .l-body-outset,
+.post > .l-page,
+.post > .l-page-outset,
+.post > .l-middle,
+.post > .l-middle-outset {
+  width: auto;
+  margin-left: 24px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+
+@media(min-width: 768px) {
+  .post > .l-body,
+  .post > .l-body-outset,
+  .post > .l-page,
+  .post > .l-page-outset,
+  .post > .l-middle,
+  .post > .l-middle-outset {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+}
+
+@media(min-width: 1080px) {
+  .post > .l-body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 648px;
+  }
+  .post > .l-body-outset {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(648px + 96px);
+  }
+  .post > .l-middle {
+    width: 816px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-middle-outset {
+    width: calc(816px + 96px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-page {
+    width: 984px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-page-outset {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post > .l-screen {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .post > .l-screen-inset {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: auto;
+  }
+  .post > .l-gutter {
+    clear: both;
+    float: right;
+    margin-top: 0;
+    margin-left: 24px;
+    margin-right: calc((100vw - 984px) / 2 + 168px);
+    width: calc((984px - 648px) / 2 - 24px);
+  }
+}
+
+/* Style for <cite> tags */
+cite {
+  display: inline-block;
+  position: relative;
+  font-style: normal;
+  cursor: help;
+}
+
+/* Adjusted citation key in the upper right corner, resembling a superscript */
+cite::before {
+  content: "[" attr(key) "]";
+  /* position: absolute; */
+  top: -2em; /* Move the key up */
+  right: -0.5em;
+  font-size: 0.5em; /* Small font size for the key */
+  z-index: 1;
+}
+
+/* Hover effect for displaying more information - Basic */
+cite:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: max-content;
+  max-width: 300px;
+  z-index: 10;
+  white-space: pre-wrap;
+  font-size: 0.8em;
+  background-color: #f5f5f5;
+  transform: translateY(-8px);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+cite:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ensure links inside the tooltip have no special color */
+cite:hover::after a {
+  color: inherit; /* This makes the link color the same as the text color */
+  text-decoration: none; /* Removes underline from links */
+}
+
+#citation-list ol {
+  padding-left: 20px;
+}
+
+#citation-list li {
+  margin-bottom: 5px; /* Adjust the space between items */
+}
+
+#citation-list p {
+  margin: 0; /* Remove default paragraph margin */
+}
+
+
+/* Style for <footnote> tags */
+footnote {
+  display: inline-block;
+  position: relative;
+  font-style: normal;
+  cursor: help;
+}
+
+/* Adjusted citation key in the upper right corner, resembling a superscript */
+footnote::before {
+  content: attr(key);
+  position: absolute;
+  top: -2em; /* Move the key up */
+  right: -0.5em;
+  font-size: 0.5em; /* Small font size for the key */
+  z-index: 1;
+}
+
+#footnote-list ol {
+  padding-left: 20px;
+}
+
+#footnote-list li {
+  margin-bottom: 5px; /* Adjust the space between items */
+}
+
+#footnote-list p {
+  margin: 0; /* Remove default paragraph margin */
+}
+
+
+/*
+  * Article-toc
+  *
+  * The sidebar is a fixed width column that is positioned to the right of the
+  * main content. It is hidden by default on mobile devices.
+  */
+  .article-toc {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 0.8em;
+    width: 90%; /* 调整目录宽度，可以根据需要更改 */
+    box-sizing: border-box; /* 防止宽度溢出 */
+  }
+  
+  .article-toc a {
+    color: gray; /* 将目录链接颜色更改为灰色 */
+    text-decoration: none; /* 移除下划线 */
+  }
+  
+  /* 在鼠标悬停时显示下划线 */
+  .article-toc a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 为响应式设计添加媒体查询 */
+  @media screen and (max-width: 767px) {
+    .article-toc {
+      width: 90%; /* 在小屏幕上占据 100% 宽度 */
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .article-toc {
+      width: 50%; /* 在较大的屏幕上占据 50% 宽度 */
+    }
+  }
+  
+  .article-toc li {
+    font-size: inherit; /* This ensures that TOC items use the .article-toc font-size */
+  }
+  
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    margin-bottom: 0;
+    border-top-left-radius:    4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius:    4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` and sidebar toggle
+ * on the right side.
+ */
+
+.layout-reverse .sidebar {
+  left: auto;
+  right: -14rem;
+}
+.layout-reverse .sidebar-toggle {
+  left: auto;
+  right: 1rem;
+}
+
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar,
+.layout-reverse #sidebar-checkbox:checked ~ .wrap,
+.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(-14rem);
+      -ms-transform: translateX(-14rem);
+          transform: translateX(-14rem);
+}
+
+
+/*
+ * About page
+ *
+ *  
+ * 
+ */
+
+ .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.about-image {
+  width: 50%;
+  max-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.about-social {
+  width: 50%;
+  max-width: 300px;
+}
+
+.about-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-social li {
+  margin-bottom: 1rem;
+}
+
+.about-social a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.about-social i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.about-social a:hover {
+  color: #007bff;
+}
+
+/* Media Query for responsiveness */
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+/*
+ * Themes
+ *
+ * Apply custom color schemes by adding the appropriate class to the `body`.
+ * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
+ */
+
+/* Red */
+.theme-base-08 .sidebar,
+.theme-base-08 .sidebar-toggle:active,
+.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #ac4142;
+}
+.theme-base-08 .container a,
+.theme-base-08 .sidebar-toggle,
+.theme-base-08 .related-posts li a:hover {
+  color: #ac4142;
+}
+
+/* Orange */
+.theme-base-09 .sidebar,
+.theme-base-09 .sidebar-toggle:active,
+.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #d28445;
+}
+.theme-base-09 .container a,
+.theme-base-09 .sidebar-toggle,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
+}
+
+/* Yellow */
+.theme-base-0a .sidebar,
+.theme-base-0a .sidebar-toggle:active,
+.theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #f4bf75;
+}
+.theme-base-0a .container a,
+.theme-base-0a .sidebar-toggle,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
+}
+
+/* Green */
+.theme-base-0b .sidebar,
+.theme-base-0b .sidebar-toggle:active,
+.theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #90a959;
+}
+.theme-base-0b .container a,
+.theme-base-0b .sidebar-toggle,
+.theme-base-0b .related-posts li a:hover {
+  color: #90a959;
+}
+
+/* Cyan */
+.theme-base-0c .sidebar,
+.theme-base-0c .sidebar-toggle:active,
+.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #75b5aa;
+}
+.theme-base-0c .container a,
+.theme-base-0c .sidebar-toggle,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-0d .sidebar,
+.theme-base-0d .sidebar-toggle:active,
+.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #6a9fb5;
+}
+.theme-base-0d .container a,
+.theme-base-0d .sidebar-toggle,
+.theme-base-0d .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-0e .sidebar,
+.theme-base-0e .sidebar-toggle:active,
+.theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #aa759f;
+}
+.theme-base-0e .container a,
+.theme-base-0e .sidebar-toggle,
+.theme-base-0e .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .sidebar,
+.theme-base-0f .sidebar-toggle:active,
+.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #8f5536;
+}
+.theme-base-0f .container a,
+.theme-base-0f .sidebar-toggle,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
+}
+
+
+/*
+ * Overlay sidebar
+ *
+ * Make the sidebar content overlay the viewport content instead of pushing it
+ * aside when toggled.
+ */
+
+.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
+  box-shadow: 0 0 0 .25rem #fff;
+}
+.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+  box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+/* Only one tweak for a reverse layout */
+.layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+  box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+
+/*
+ * MathJax
+ *
+ * MathJax is a JavaScript library that allows the display of mathematical
+ */
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+/* Table of Contents 
+  * 
+  * 
+  */
+
+.toc-button {
+  display: block;  /* Block level element */
+  width: 100%;  /* Full width */
+  background: none;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  text-align: center;  /* Center the text */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.toc-button:hover {
+  color: #666;
+  border-color: #999;
+}
+
+
+/* Collasible Content
+  * 
+  * 
+  */
+  .collapsible {
+    cursor: pointer;
+    border: 2px solid #B0C4DE;  /* Light border for contrast */
+    background: transparent;
+    color: #333;  /* Dark text for light mode */
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .collapsible:hover {
+    background: rgba(176, 196, 222, 0.1);  /* Slight hover effect */
+  }
+  
+  .collapsible:before {
+    content: "▶";
+    margin-right: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .collapsible.active:before {
+    transform: rotate(90deg);
+  }
+  
+  .collapsible .description {
+    flex-grow: 1;
+    padding-left: 5px;
+  }
+  
+  .collapsible .language-type {
+    font-style: italic;
+    color: #555;  /* Slightly darker text for the language type in light mode */
+  }
+  
+  .collapsible_code_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+/* 
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.5em;
+    color: #666;
+  }
+   */
+
+.cat-gif-container {
+  text-align: center; /* Center the GIF */
+  font-size: small; /* Make the text smaller */
+  padding: 20px 0; /* Add some padding */
+  margin-top: 200px; /* Add some margin to the top */
+}
+
+.cat-gif-container img {
+  max-width: 15%; /* Ensure it's responsive */
+  /* Ensure the GIF is centered */
+  margin-left: auto;
+  margin-right: auto;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.homepage-footnote {
+  text-align: center; /* Center the GIF */
+  font-size: small; /* Make the text smaller */
+  padding: 20px 0; /* Add some padding */
+  margin-top: 200px; /* Add some margin to the top */
+}
+
+.homepage-footnote img {
+  max-width: 15%; /* Ensure it's responsive */
+  /* Ensure the GIF is centered */
+  margin-left: auto;
+  margin-right: auto;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.homepage-footnote {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inspirational-quote {
+  font-style: italic;
+  color: gray;
+  margin-top: 10px;
+}
+
+.pinterest-gallery {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom out effect */
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}

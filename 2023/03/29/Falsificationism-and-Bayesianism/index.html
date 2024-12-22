@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Falsificationism and Bayesianism · Wenhao Deng
+    
+  </title>
+
+  
+  <link rel="canonical" href="https://w3nhao.github.io/2023/03/29/Falsificationism-and-Bayesianism/">
+  
+
+  <link rel="stylesheet" href="https://w3nhao.github.io/public/css/poole.css">
+  <link rel="stylesheet" href="https://w3nhao.github.io/public/css/syntax.css">
+  <link rel="stylesheet" href="https://w3nhao.github.io/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://w3nhao.github.io/public/css/dark-mode.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://w3nhao.github.io/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="https://w3nhao.github.io/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://w3nhao.github.io/atom.xml">
+
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" crossorigin="anonymous">
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script>
+    // Check local storage for theme preference and set immediately
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+    }
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll(".gallery-item img");
+      images.forEach((img) => {
+        img.setAttribute("loading", "lazy");
+      });
+    });
+  </script>
+
+</head>
+
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="https://w3nhao.github.io/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://w3nhao.github.io/life/">Adventures</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://w3nhao.github.io/posts/">First In Last Out</a>
+        
+      
+    
+      
+    
+      
+    
+
+    <!-- <a class="sidebar-nav-item" href="/archive/v1.1.0.zip">Download</a> -->
+    <!-- <a class="sidebar-nav-item" href="">GitHub project</a> -->
+    <!-- <span class="sidebar-nav-item">Currently v1.1.0</span> -->
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      © 2024. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+      <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Wenhao Deng</a>
+            <small></small>
+          </h3>
+          
+          <!-- New Dark Mode Checkbox and Toggle -->
+          <input type="checkbox" class="dark-mode-checkbox" id="dark-mode-checkbox">
+          <label for="dark-mode-checkbox" class="dark-mode-toggle">🌞</label>
+        </div>
+      </div>
+        
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Falsificationism and Bayesianism</h1>
+  <span class="post-date">29 Mar 2023</span>
+  <span class="post-subtitle">Falsificationism and Bayesianism: Two Views in the Philosophy of Science</span>
+
+  <button id="toggle-toc" class="toc-button">📖 Toggle Table of Contents</button>
+
+  <div id="toc-container" class="article-toc">
+    <ul id="toc" class="toc__list">
+<li class="toc__item toc-h2"><a href="#falsificationism">Falsificationism</a></li>
+<li class="toc__item toc-h2"><a href="#bayesianism">Bayesianism</a></li>
+<li class="toc__item toc-h2">
+<a href="#comparison-of-the-two-views">Comparison of the Two Views</a>
+<ul class="toc__sublist">
+<li class="toc__item toc-h3"><a href="#reasoning-methods">Reasoning Methods</a></li>
+<li class="toc__item toc-h3"><a href="#evidence-verification">Evidence Verification</a></li>
+<li class="toc__item toc-h3"><a href="#handling-uncertainty">Handling Uncertainty</a></li>
+<li class="toc__item toc-h3"><a href="#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toc__item toc-h2"><a href="#conclusion">Conclusion</a></li>
+</ul>
+  </div>
+
+  <p>Philosophy of science is a discipline that studies the nature, methods, categories, and knowledge structure of science. Among them, falsificationism and Bayesianism are two important philosophical views on science, which emphasize different reasoning methods and evidence verification methods.</p>
+
+<h2 id="falsificationism">Falsificationism</h2>
+
+<p>Falsificationism is a philosophical view on science proposed by the philosopher Karl Popper <cite key="1" data-info="Popper, K. R. (1959). The logic of scientific discovery. Routledge."></cite>. Falsificationism holds that scientific theories should be falsifiable, and scientists should try to prove a theory wrong rather than seek evidence to support it. Falsificationism emphasizes the importance of critically testing scientific theories.</p>
+
+<p>However, falsificationism also has some limitations. Firstly, falsificationism tends to emphasize deductive reasoning while neglecting the importance of inductive reasoning in science. Secondly, the simplification of the relationship between theory and observation by falsificationism may lead to misunderstandings. Observational data may be influenced by many factors, and experimental results usually depend on the scientific instruments and technologies used <footnote data-info="For example, the &lt;a href='https://en.wikipedia.org/wiki/Michelson–Morley_experiment'&gt;Michelson-Morley experiment&lt;/a&gt;, which was designed to detect the ether, failed to detect the ether, but it did not falsify the theory of the ether. Instead, it led to the development of the theory of relativity."></footnote>. In addition, falsificationism advocates abandoning a theory when it is sufficiently falsified. However, in practical scientific practice, it is difficult to determine when a theory has been sufficiently falsified. Therefore, the application of falsificationism also needs to consider uncertainty and complexity.</p>
+
+<h2 id="bayesianism">Bayesianism</h2>
+
+<p>Compared to falsificationism, Bayesianism tries to save inductive reasoning and provides another perspective. Bayesianism, based on Bayes’ theorem, quantifies beliefs by calculating probabilities as the basis for reasoning and decision-making. They believe that new evidence updates our beliefs about a proposition or hypothesis, and these beliefs are adjusted according to Bayes’ theorem.</p>
+
+<p>The specific ways in which Bayesianism saves inductive reasoning include using prior probabilities, updating beliefs, and probability reasoning <cite key="2" data-info="Jaynes, E. T. (2003). Probability theory: The logic of science. Cambridge University Press."></cite>. However, Bayesianism also faces some criticisms, such as subjectivity, computational complexity, model selection, and overfitting problems <cite key="3" data-info="Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp; Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). Chapman and Hall/CRC."></cite>.</p>
+
+<h2 id="comparison-of-the-two-views">Comparison of the Two Views</h2>
+
+<p>Falsificationism and Bayesianism are two different philosophical views on science, which emphasize different reasoning methods and evidence verification methods. Compared to falsificationism, Bayesianism pays more attention to uncertainty and complexity and tries to handle these problems through quantifying beliefs and probability calculations.</p>
+
+<p>The comparison of the two views can be carried out from the following aspects:</p>
+
+<h3 id="reasoning-methods">Reasoning Methods</h3>
+
+<p>Falsificationism emphasizes deductive reasoning, that is, deriving specific conclusions from general principles, and emphasizes finding counterexamples from observational data to prove a theory wrong. Bayesianism is more concerned with inductive reasoning, that is, deriving general principles from specific situations and updating beliefs based on new evidence.</p>
+
+<h3 id="evidence-verification">Evidence Verification</h3>
+
+<p>Falsificationism holds that a theory should only be abandoned when it is sufficiently falsified by evidence. Bayesianism holds that any new evidence should be used to update prior beliefs and adjust posterior beliefs according to Bayes’ theorem.</p>
+
+<h3 id="handling-uncertainty">Handling Uncertainty</h3>
+
+<p>Falsificationism handles uncertainty relatively simply, that is, falsifying a theory based on observational data. Bayesianism pays more attention to quantifying uncertainty and tries to handle uncertainty and complexity problems through probability calculations.</p>
+
+<h3 id="limitations">Limitations</h3>
+
+<p>The limitations of falsificationism include neglecting the role of inductive reasoning in science and the problem of the relationship between theory and observation. The limitations of Bayesianism include subjectivity, computational complexity, model selection, and overfitting problems.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Falsificationism and Bayesianism are two different philosophical views on science, which emphasize different reasoning methods and evidence verification methods. Although falsificationism has some limitations, it emphasizes the importance of critically testing scientific theories and is an important part of the philosophy of science. Bayesianism pays more attention to uncertainty and complexity and tries to handle these problems through quantifying beliefs and probability calculations, which has broad application value in practical use.</p>
+
+
+  
+  <!-- Footnotes Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+  
+      // Function to update the tooltip theme
+      function updateTooltipTheme(tooltip) {
+        const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+        tooltip.style.backgroundColor = isDarkMode ? '#333' : '#f5f5f5';
+        tooltip.style.color = isDarkMode ? '#B0C4DE' : 'black';
+        tooltip.style.borderColor = isDarkMode ? '#444' : '#ccc';
+      }
+  
+      darkModeCheckbox.addEventListener('change', function () {
+        document.querySelectorAll('.custom-tooltip').forEach(tooltip => {
+          updateTooltipTheme(tooltip); // Update tooltips when the theme changes
+        });
+      });
+  
+      var footnoteContent = '<hr><h2>Footnotes</h2><ol>';
+      document.querySelectorAll('footnote').forEach((element, index) => {
+        const key = index + 1;
+        const footnoteId = 'fn-' + key;
+        const footnoteRefId = 'fnref-' + key;
+  
+        element.setAttribute('key', key);
+        element.setAttribute('id', footnoteRefId);
+  
+        element.addEventListener('mouseenter', function() {
+          const info = this.getAttribute('data-info');
+          const postElement = document.querySelector('.post');
+          const postWidth = postElement.offsetWidth + 'px';
+          const postLeft = postElement.getBoundingClientRect().left;
+          const footnoteLeft = this.getBoundingClientRect().left;
+  
+          const tooltip = document.createElement('div');
+          tooltip.classList.add('custom-tooltip');
+          tooltip.innerHTML = info;
+          tooltip.style.position = 'absolute';
+          tooltip.style.left = (postLeft - footnoteLeft) + 'px';
+          tooltip.style.bottom = '100%';
+          tooltip.style.width = postWidth;
+          tooltip.style.borderRadius = '4px';
+          tooltip.style.padding = '8px';
+          tooltip.style.fontSize = '0.8em';
+          tooltip.style.zIndex = '10';
+          tooltip.style.whiteSpace = 'pre-wrap';
+          tooltip.style.transform = 'translateY(-8px)';
+          tooltip.style.transition = 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out';
+          tooltip.style.visibility = 'hidden';
+          tooltip.style.opacity = '0';
+  
+          this.appendChild(tooltip);
+          updateTooltipTheme(tooltip);
+  
+          setTimeout(() => {
+            tooltip.style.visibility = 'visible';
+            tooltip.style.opacity = '1';
+          }, 10);
+        });
+  
+        element.addEventListener('mouseleave', function() {
+          this.removeChild(this.lastChild);
+        });
+  
+        // Append content for the footnote and add a return link
+        var dataInfo = element.getAttribute('data-info');
+        footnoteContent += `<li id="${footnoteId}">${dataInfo} <a href="#${footnoteRefId}" title="Return to article">↩</a></li>`;
+      });
+      footnoteContent += '</ol>';
+  
+      // Insert the generated footnotes at the element with id 'footnotes'
+      if (document.querySelectorAll('footnote').length > 0) {
+        document.getElementById('footnotes').innerHTML = footnoteContent;
+      }
+    });
+  </script>
+  
+  <!-- Cite References Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cites = document.querySelectorAll('cite[data-info]');
+      const references = document.getElementById('citation-list');
+    
+      if (cites.length > 0) {
+        let refContent = '<hr><h2>References</h2><ol>';
+        
+        cites.forEach((cite, index) => {
+          const key = cite.getAttribute('key');
+          const info = cite.getAttribute('data-info');
+          refContent += `<li id="ref-${key}">${info}</li>`;
+        });
+    
+        refContent += '</ol>';
+        references.innerHTML = refContent;
+      }
+    });
+  </script>
+
+<div id="footnotes"></div>
+<div id="citation-list"></div>
+
+  <!-- Utterances Comments Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      // Determine the current theme
+      const theme = localStorage.getItem('theme') === 'dark' ? 'github-dark' : 'github-light';
+
+      // Load the Utterances script with the determined theme
+      const script = document.createElement('script');
+      script.src = 'https://utteranc.es/client.js';
+      script.setAttribute('repo', 'w3nhao/w3nhao.github.io');
+      script.setAttribute('issue-term', 'pathname');
+      script.setAttribute('theme', theme);
+      script.setAttribute('crossorigin', 'anonymous');
+      script.setAttribute('async', true);
+
+      // Append the script to the container
+      document.querySelector('.post').appendChild(script);
+    });
+  </script>
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/">
+            HR, NDCG, and MRR: An easy implementation with TorchMetrics
+            <small>31 Mar 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2023/03/30/Limitation-ChatGPT-Causal-Inference/">
+            Limitation of ChatGPT in Causal Inference
+            <small>30 Mar 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+<!-- JavaScript to toggle TOC -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const tocContainer = document.getElementById('toc-container');
+    const toggleButton = document.getElementById('toggle-toc');
+
+    toggleButton.addEventListener('click', () => {
+      if (tocContainer.style.display === 'none') {
+        tocContainer.style.display = 'block';
+      } else {
+        tocContainer.style.display = 'none';
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Target only the <div> elements with the 'highlighter-rouge' class
+    var codeBlocks = document.querySelectorAll('div.highlighter-rouge');
+    
+    codeBlocks.forEach(function(block) {
+      var wrapper = document.createElement('div');
+      var btn = document.createElement('button');
+      
+      // Extract language type from class
+      var language = (block.className.match(/language-(\w+)/) || [,''])[1];
+  
+      btn.innerHTML = `<span class="description">Show/Hide Code</span><span class="language-type">${language}</span>`;
+      btn.className = 'collapsible';
+      
+      block.parentNode.insertBefore(wrapper, block);
+      wrapper.appendChild(btn);
+      wrapper.appendChild(block);
+      block.classList.add('collapsible_code_content');
+    });
+  
+    // Same collapsible functionality as before:
+    var coll = document.querySelectorAll(".collapsible");
+    for (var i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
+
+</script>
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <!-- Your existing JavaScript -->
+    <script src="/public/js/script.js"></script>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+      
+        // Function to update Utterances theme
+        function updateUtterancesTheme(theme) {
+          const utterancesFrame = document.querySelector('.utterances-frame');
+          if (utterancesFrame) {
+            const message = {
+              type: 'set-theme',
+              theme: theme
+            };
+            utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
+          }
+        }
+      
+        // Initialize based on localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          darkModeCheckbox.checked = true;
+          darkModeToggle.textContent = '🌝';
+          updateUtterancesTheme('github-dark');
+        } else {
+          updateUtterancesTheme('github-light');
+        }
+      
+        darkModeCheckbox.addEventListener('change', function () {
+          if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            darkModeToggle.textContent = '🌝';
+            updateUtterancesTheme('github-dark');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            darkModeToggle.textContent = '🌞';
+            updateUtterancesTheme('github-light');
+          }
+        });
+      });
+    </script>
+    
+  </body>
+</html>
