@@ -10,7 +10,9 @@ title: Home
   <div class="about-social">
     <ul>
       <li><a href="https://github.com/w3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-      <li><a href="https://www.semanticscholar.org/author/Wenhao-Deng/2217948574" target="_blank" rel="noopener noreferrer"> <i class="fas fa-book-reader"></i> Semantic Scholar </a></li>
+      <!-- <li><a href="https://www.semanticscholar.org/author/Wenhao-Deng/2217948574" target="_blank" rel="noopener noreferrer"> <i class="fas fa-book-reader"></i> Semantic Scholar </a></li> -->
+      <!-- Google Scholar -->
+      <li><a href="https://scholar.google.cz/citations?user=c7XCft4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
     </ul>
   </div>
 </div>
