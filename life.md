@@ -9,33 +9,39 @@ permalink: /life/
   <hr class="intro-divider"/>
 </div>
 
-<section class="pinterest-gallery">
-  <h4> 20241221 Mo Gan Shan Hiking</h4>
+<section class="adventure-gallery">
+  <h4>December 21, 2024 - Mo Gan Shan Hiking</h4>
   <div class="gallery-grid">
+    <div class="gallery-sizer"></div>
     <div class="gallery-item">
-      <img src="/public/img/gallery/20241223_items_1.jpg" alt="Gingerbread house" />
+      <img src="/public/img/gallery/20241223_items_1.jpg" alt="Gingerbread house" loading="lazy" />
       <div class="gallery-overlay">
-        <p>Quite a cute gingerbread house we found.</p>
+        <p>Quite a cute gingerbread house we found along the trail</p>
       </div>
     </div>
     <div class="gallery-item">
-      <img src="/public/img/gallery/20241223_items_2.jpg" alt="At the top of Mo Gan Shan" />
+      <img src="/public/img/gallery/20241223_items_2.jpg" alt="At the top of Mo Gan Shan" loading="lazy" />
       <div class="gallery-overlay">
-        <p>We are at the top of Mo Gan Shan. The view is good.</p>
+        <p>Summit view at Mo Gan Shan - the climb was worth it!</p>
       </div>
     </div>
     <div class="gallery-item">
-      <img src="/public/img/gallery/20241223_items_3.jpg" alt="Ruiqi, Jiashu and Tao" />
+      <img src="/public/img/gallery/20241223_items_3.jpg" alt="Ruiqi, Jiashu and Tao" loading="lazy" />
       <div class="gallery-overlay">
-        <p>My friends Ruiqi, Jiashu and Tao.</p>
+        <p>Adventure crew: Ruiqi, Jiashu and Tao enjoying the mountain air</p>
       </div>
     </div>
     <div class="gallery-item">
-      <img src="/public/img/gallery/20241223_items_4.jpg" alt="Lucky sign" />
+      <img src="/public/img/gallery/20241223_items_4.jpg" alt="Lucky sign" loading="lazy" />
       <div class="gallery-overlay">
-        <p>A lucky sign we found on the way.</p>
+        <p>A lucky sign we discovered on our hiking journey</p>
       </div>
     </div>
-    <!-- Add more gallery items as needed -->
   </div>
 </section>
+
+<div class="gallery-stats">
+  <span><i class="fas fa-images"></i> 4 Photos</span>
+  <span><i class="fas fa-mountain"></i> 1 Adventure</span>
+  <span><i class="fas fa-heart"></i> Memories Made</span>
+</div>
