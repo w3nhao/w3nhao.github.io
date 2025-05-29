@@ -65,6 +65,256 @@
     });
   </script>
 
+  <!-- Gallery Enhancement Scripts -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize masonry layout
+    const grid = document.querySelector('.gallery-grid');
+    if (grid) {
+        const masonry = new Masonry(grid, {
+            itemSelector: '.gallery-item',
+            columnWidth: '.gallery-sizer',
+            percentPosition: true,
+            gutter: 15
+        });
+
+        // Wait for images to load before running masonry
+        imagesLoaded(grid, function() {
+            masonry.layout();
+        });
+
+        // Lazy loading for performance
+        const images = document.querySelectorAll('.gallery-item img');
+        images.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+        });
+
+        // Lightbox functionality
+        setupLightbox();
+    }
+
+    // Setup lightbox modal
+    function setupLightbox() {
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const modal = createLightboxModal();
+
+        galleryItems.forEach((img, index) => {
+            img.addEventListener('click', () => openLightbox(img, index, galleryItems));
+        });
+    }
+
+    function createLightboxModal() {
+        const modal = document.createElement('div');
+        modal.className = 'lightbox-modal';
+        modal.innerHTML = `
+            <div class="lightbox-content">
+                <button class="lightbox-close">&times;</button>
+                <button class="lightbox-prev">&#8249;</button>
+                <button class="lightbox-next">&#8250;</button>
+                <img class="lightbox-img" src="" alt="">
+                <div class="lightbox-caption"></div>
+                <div class="lightbox-counter"></div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        // Close modal events
+        modal.querySelector('.lightbox-close').addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                } else if (e.key === 'ArrowLeft') {
+                    modal.querySelector('.lightbox-prev').click();
+                } else if (e.key === 'ArrowRight') {
+                    modal.querySelector('.lightbox-next').click();
+                }
+            }
+        });
+
+        return modal;
+    }
+
+    function openLightbox(img, currentIndex, allImages) {
+        const modal = document.querySelector('.lightbox-modal');
+        const modalImg = modal.querySelector('.lightbox-img');
+        const caption = modal.querySelector('.lightbox-caption');
+        const counter = modal.querySelector('.lightbox-counter');
+        const prevBtn = modal.querySelector('.lightbox-prev');
+        const nextBtn = modal.querySelector('.lightbox-next');
+
+        let currentIdx = currentIndex;
+
+        function showImage(index) {
+            const targetImg = allImages[index];
+            modalImg.src = targetImg.src;
+            modalImg.alt = targetImg.alt;
+            
+            const overlayText = targetImg.closest('.gallery-item').querySelector('.gallery-overlay p');
+            caption.textContent = overlayText ? overlayText.textContent : targetImg.alt;
+            counter.textContent = `${index + 1} / ${allImages.length}`;
+            
+            currentIdx = index;
+        }
+
+        prevBtn.onclick = () => {
+            currentIdx = (currentIdx - 1 + allImages.length) % allImages.length;
+            showImage(currentIdx);
+        };
+
+        nextBtn.onclick = () => {
+            currentIdx = (currentIdx + 1) % allImages.length;
+            showImage(currentIdx);
+        };
+
+        showImage(currentIndex);
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Image import utility functions
+    window.galleryUtils = {
+        // Generate gallery HTML from image list
+        generateGalleryHTML: function(images, title = 'New Adventure') {
+            let html = `<section class="adventure-gallery">\n  <h4>${title}</h4>\n  <div class="gallery-grid">\n    <div class="gallery-sizer"></div>\n`;
+            
+            images.forEach((image, index) => {
+                const filename = image.split('/').pop();
+                const altText = filename.replace(/\.(jpg|jpeg|png|gif)$/i, '').replace(/[_-]/g, ' ');
+                
+                html += `    <div class="gallery-item">\n`;
+                html += `      <img src="${image}" alt="${altText}" />\n`;
+                html += `      <div class="gallery-overlay">\n`;
+                html += `        <p>Caption for ${altText}</p>\n`;
+                html += `      </div>\n`;
+                html += `    </div>\n`;
+            });
+            
+            html += `  </div>\n</section>`;
+            return html;
+        },
+
+        // Scan for new images in gallery directory
+        scanGalleryImages: function(galleryPath = '/public/img/gallery/') {
+            console.log('Gallery scan function - use this in your build process or manually');
+            console.log('1. Add new images to: ' + galleryPath);
+            console.log('2. Use generateGalleryHTML() with your image list');
+            console.log('3. Copy the generated HTML to your life.md file');
+        }
+    };
+});
+</script>
+
+<!-- Lightbox Modal Styles -->
+<style>
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+.lightbox-prev, .lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.lightbox-prev {
+    left: -60px;
+}
+
+.lightbox-next {
+    right: -60px;
+}
+
+.lightbox-prev:hover, .lightbox-next:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-caption {
+    color: white;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.lightbox-counter {
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .lightbox-prev, .lightbox-next {
+        left: 10px;
+        right: 10px;
+        position: fixed;
+        top: 50%;
+    }
+    
+    .lightbox-next {
+        right: 10px;
+        left: auto;
+    }
+}
+</style> 
+
 </head>
 
 
@@ -124,7 +374,7 @@
 
   <div class="sidebar-item">
     <p>
-      © 2024. All rights reserved.
+      © 2025. All rights reserved.
     </p>
   </div>
 </div>
