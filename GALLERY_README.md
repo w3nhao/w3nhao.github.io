@@ -18,8 +18,7 @@ A modern, responsive photo gallery system for your Jekyll blog with automatic im
 ### 1. Add New Images
 
 Simply drop your images into the `public/img/gallery/` directory. For best results, use this naming convention:
-```
-YYYYMMDD_description.jpg
+```YYYYMMDD_description.jpg
 ```
 Example: `20241223_hiking_summit.jpg`
 
@@ -202,6 +201,36 @@ For issues or feature requests, check:
 - File paths and permissions
 - Browser console for JavaScript errors
 - Jekyll build logs for processing errors
+
+## Gallery Features
+
+## Click Functionality
+The gallery on the `/life/` page now includes full interactive functionality:
+
+### Features:
+- **Click to view**: Click any gallery image to open it in a full-screen modal
+- **Keyboard navigation**: 
+  - Use `Arrow Left/Right` to navigate between images
+  - Press `Escape` to close the modal
+  - Use `Enter` or `Space` to open images when focused
+- **Touch support**: Full touch and mobile device support
+- **Accessibility**: Proper ARIA labels and focus management
+- **Responsive design**: Works on all screen sizes
+
+### How it works:
+1. Each gallery item is clickable and shows a hover effect
+2. Clicking opens a modal overlay with the full-size image
+3. Navigate between images using the arrow buttons or keyboard
+4. Click outside the image or press Escape to close
+
+### Technical details:
+- Uses vanilla JavaScript (no external dependencies)
+- Lightweight and fast loading
+- Compatible with GitHub Pages
+- Follows accessibility best practices
+- Mobile-optimized with responsive breakpoints
+
+The gallery JavaScript is automatically loaded on all pages and initializes when gallery items are detected.
 
 ---
 
