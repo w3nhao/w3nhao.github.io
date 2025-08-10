@@ -760,6 +760,11 @@ a.pagination-item:hover {
   font-weight: 600;
 }
 
+.container .about-links a,
+.wrap .about-links a {
+  color: #000; /* ensure higher specificity than generic container link styles */
+}
+
 .about-links a:hover,
 .about-links a:focus {
   color: #000;
