@@ -20,3 +20,13 @@
 2. Before moving the post md file to `_posts` folder, use the `post_process.py` under `_drafts` folder to process the md file, the processed md file will be saved in `_posts` folder.
 3. Run `bundle exec jekyll serve` to start the local server.
 4. Preview the post in `http://localhost:4000/`.
+
+## Hide/Archive Posts
+
+- Add `hidden: true` to a post's front matter to hide it from:
+  - `/posts` listing
+  - Atom feed (`/atom.xml`)
+  - Related posts
+  - Sidebar pages list
+
+- Archived posts are still available via direct URL. To browse them, use `/archive/`.

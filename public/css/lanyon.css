@@ -681,6 +681,7 @@ a.pagination-item:hover {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+  gap: 1.25rem;
 }
 
 .about-image {
@@ -692,6 +693,8 @@ a.pagination-item:hover {
   width: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
 }
 
 .about-social {
@@ -702,6 +705,10 @@ a.pagination-item:hover {
 .about-social ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
 }
 
 .about-social li {
@@ -711,7 +718,7 @@ a.pagination-item:hover {
 .about-social a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
   display: flex;
   align-items: center;
 }
@@ -722,14 +729,52 @@ a.pagination-item:hover {
 }
 
 .about-social a:hover {
-  color: #007bff;
+  color: #268bd2;
 }
 
 /* Media Query for responsiveness */
+.about-content {
+  width: 100%;
+  max-width: 480px;
+}
+
+.about-definitions {
+  list-style: disc;
+  margin: 0 0 0.75rem 1rem;
+  padding: 0;
+}
+
+.about-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-links li + li {
+  margin-top: 0.25rem;
+}
+
+.about-links a {
+  color: #000;           /* black links in light mode */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about-links a:hover,
+.about-links a:focus {
+  color: #000;
+  text-decoration: underline; /* subtle affordance without color change */
+}
+
 @media screen and (min-width: 768px) {
   .about-container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+  .about-content {
+    width: 50%;
+    max-width: 420px;
   }
 }
 
