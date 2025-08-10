@@ -3,6 +3,7 @@ layout: post
 title: Falsificationism and Bayesianism
 subtitle: "Falsificationism and Bayesianism: Two Views in the Philosophy of Science"
 toc: true
+hidden: true
 ---
 
 Philosophy of science is a discipline that studies the nature, methods, categories, and knowledge structure of science. Among them, falsificationism and Bayesianism are two important philosophical views on science, which emphasize different reasoning methods and evidence verification methods.

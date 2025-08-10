@@ -18,6 +18,10 @@ plugins:
   - jekyll-toc
   - jekyll-spaceship
 
+# Exclude hidden posts from pagination by default (safety for some generators)
+# We still filter in templates, but this flag can be checked in custom logic
+hidden_posts_tag: hidden
+
 pagination:
   enabled: true
   per_page: 5

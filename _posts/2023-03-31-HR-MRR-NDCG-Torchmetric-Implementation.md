@@ -3,6 +3,7 @@ layout: post
 title: "HR, NDCG, and MRR: An easy implementation with TorchMetrics"
 subtitle: "Evaluation Metrics for Recommender Systems with PyTorch Lightning: HR, NDCG, and MRR"
 toc: true
+hidden: true
 ---
 
 To assess the performance of  Recommender systems, we need to have reliable evaluation metrics. In this blog post, we will discuss three popular metrics: Hit Rate (HR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR). We will also show you how to easily implement these metrics using TorchMetrics and integrate them into a PyTorch Lightning model.

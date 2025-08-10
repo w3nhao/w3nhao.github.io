@@ -138,11 +138,12 @@ layout: default
   </script>
 </div>
 
-{% if site.related_posts.size >= 1 %}
+{% assign related_visible = site.related_posts | where_exp: "post", "post.hidden != true" %}
+{% if related_visible.size >= 1 %}
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
+    {% for post in related_visible limit:3 %}
       <li>
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">

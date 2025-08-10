@@ -17,7 +17,8 @@ pagination:
 </div>
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% assign visible_posts = paginator.posts | where_exp: "post", "post.hidden != true" %}
+  {% for post in visible_posts %}
   <div class="post">
     <h2 class="post-title">
       <a href="{{ post.url | absolute_url }}">

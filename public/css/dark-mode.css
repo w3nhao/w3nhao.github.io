@@ -98,6 +98,16 @@ color: inherit;
   color: #4a90e2; /* Use a color that works well on a dark background */
 }
 
+/* Ensure new about links remain readable in dark mode */
+[data-theme="dark"] .about-links a {
+  color: #F0EAD6;
+}
+[data-theme="dark"] .about-links a:hover,
+[data-theme="dark"] .about-links a:focus {
+  color: #F0EAD6;
+  text-decoration: underline;
+}
+
 [data-theme="dark"] .masthead {
   border-bottom: 1px solid #444444;  /* Slightly lighter than the dark background */
 }

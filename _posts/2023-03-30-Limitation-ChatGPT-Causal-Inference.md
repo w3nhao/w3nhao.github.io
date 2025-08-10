@@ -3,6 +3,7 @@ layout: post
 title: Limitation of ChatGPT in Causal Inference
 subtitle: "The Limitations of GPT in Causal Inference: A Dialogue with Judea Pearl and Jim Fan"
 toc: true
+hidden: true
 ---
 
 In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.

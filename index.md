@@ -5,22 +5,43 @@ title: Home
 
 <div class="about-container">
   <div class="about-image">
-    <img src="/public/pic.jpg" alt="Wenhao's Picture" />
+    <img src="/public/pic.jpg" alt="Portrait of Wenhao Deng" loading="lazy" decoding="async" />
   </div>
-  <div class="about-social">
-    <ul>
-      <li><a href="https://github.com/w3nhao" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-      <!-- <li><a href="https://www.semanticscholar.org/author/Wenhao-Deng/2217948574" target="_blank" rel="noopener noreferrer"> <i class="fas fa-book-reader"></i> Semantic Scholar </a></li> -->
-      <!-- Google Scholar -->
-      <li><a href="https://scholar.google.cz/citations?user=c7XCft4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+  <div class="about-content">
+    <ul class="about-definitions">
+      <li>The trouble maker</li>
+      <li>The prompt evolver</li>
+      <li>The agent orchestrator</li>
+      <li><strong>The problem solver ← I wish I am</strong></li>
+    </ul>
+    <ul class="about-links">
+      <li>
+        <a href="https://github.com/w3nhao" target="_blank" rel="me noopener noreferrer" aria-label="GitHub profile">
+          <i class="fab fa-github fa-fw" aria-hidden="true"></i> GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://scholar.google.com/citations?user=c7XCft4AAAAJ&hl=en" target="_blank" rel="me noopener noreferrer" aria-label="Google Scholar profile">
+          <i class="fas fa-graduation-cap fa-fw" aria-hidden="true"></i> Google Scholar
+        </a>
+      </li>
     </ul>
   </div>
 </div>
 
-Hey there! I'm Wenhao Deng, a tech enthusiast with a keen interest in artificial intelligence. I earned my M.Sc. degree in *Computer Science (Artificial Intelligence)* with Distinction from the University of Nottingham. Before that, I completed my B.Eng. in *Computer Science and Technology* at Guangzhou University.
 
-Feel free to reach out to me via email at wenhao.deng@foxmail.com.
+### What I do?
 
+I do what I want to do
+
+### Email
+
+wenhao.deng@foxmail.com.
+
+### Education
+
+- M.Sc. CS, University of Nottingham
+- B.Eng. CS, Guangzhou University
 
 ### Works
 ---

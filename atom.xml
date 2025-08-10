@@ -15,7 +15,8 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
 
- {% for post in site.posts %}
+ {% assign feed_posts = site.posts | where_exp: "post", "post.hidden != true" %}
+ {% for post in feed_posts %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{{ site.url }}{{ post.url }}"/>

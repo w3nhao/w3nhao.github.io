@@ -5,7 +5,7 @@ permalink: /life/
 ---
 
 <div class="posts-intro">
-  <p class="blog-desc">It's about the journey, not the destination.</p>
+  <p class="blog-desc">Untitled</p>
   <hr class="intro-divider"/>
 </div>
 
