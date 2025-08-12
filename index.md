@@ -30,9 +30,9 @@ title: Home
 </div>
 
 
-### What I do?
+### What do I do?
 
-I do what I want to do
+I do what I want to do.
 
 ### Email
 
