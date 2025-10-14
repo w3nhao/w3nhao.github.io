@@ -78,7 +78,7 @@ wenhao.deng@foxmail.com.
     <span class="pub-arxiv">arXiv:2510.03865 (2025)</span>
   </div>
   <div class="pub-tldr">
-    We attributes one of the limitations of RFT to the reverse KL divergence, and propose a new Reward-Aware Policy Optimization with forward KL divergence to enhance the reasoning capabilities of large language models.
+    We attributes one of the limitations of Reinforcement Learning via Verifiable Reward (RLVR) to the reverse KL divergence, and propose Reward-Aware Policy Optimization with forward KL divergence to enhance the reasoning capabilities of large language models.
   </div>
 </div>
 
