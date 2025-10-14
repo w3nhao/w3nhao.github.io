@@ -1370,42 +1370,28 @@ mjx-container {
 
 @media (max-width: 480px) {
   .gallery-modal-nav {
-    position: fixed;
-    bottom: 80px;
-    left: 0;
-    right: 0;
-    top: auto;
-    transform: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    z-index: 10002;
-    pointer-events: none;
+    display: none;
   }
   
   .gallery-prev,
   .gallery-next {
-    position: relative;
-    margin: 0;
-    font-size: 20px;
-    padding: 0;
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    min-height: 52px;
-    max-width: 52px;
-    max-height: 52px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.7);
-    flex-shrink: 0;
-    flex-grow: 0;
+    display: none;
   }
   
-  .gallery-prev:active,
-  .gallery-next:active {
-    background: rgba(0, 0, 0, 0.9);
+  .gallery-modal-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  
+  .gallery-modal-image {
+    max-height: 85vh;
+  }
+  
+  .gallery-close {
+    top: 10px;
+    right: 10px;
+    z-index: 10003;
   }
 }
 
