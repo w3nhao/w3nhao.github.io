@@ -104,6 +104,34 @@
                     break;
             }
         });
+        
+        // Touch swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        modal.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        modal.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50; // Minimum distance for a swipe
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swiped left - go to next image
+                    navigateImage(1);
+                } else {
+                    // Swiped right - go to previous image
+                    navigateImage(-1);
+                }
+            }
+        }
     }
     
     let currentImageIndex = 0;
