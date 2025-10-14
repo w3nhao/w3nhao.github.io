@@ -95,7 +95,7 @@ wenhao.deng@foxmail.com.
     <span class="pub-arxiv">arXiv:2308.01191 (2023)</span>
   </div>
   <div class="pub-tldr">
-    A early survey examining how well large language models perform on code clone detection tasks and their capabilities.
+    An early survey comprehensively examining how well large language models perform on code clone detection tasks and their capabilities.
   </div>
 </div> 
 
