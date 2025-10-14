@@ -30,7 +30,7 @@ title: Home
 </div>
 
 
-### What do I do?
+### What I do?
 
 I do what I want to do.
 
@@ -44,6 +44,11 @@ wenhao.deng@foxmail.com.
 - B.Eng. CS, Guangzhou University
 
 ### Works
+---
+- [**Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration**](https://arxiv.org/abs/2510.03865).  
+ Wenhao Deng, Long Wei, Chenglei Yu, Tailin Wu.
+ arXiv preprint arXiv:2510.03865 (2025). 
+
 ---
 - [**Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey**](https://arxiv.org/abs/2308.01191).  
  Shihan Dou\*, Junjie Shan\*, Haoxiang Jia, **Wenhao Deng**, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang. (* Equal contribution)  
