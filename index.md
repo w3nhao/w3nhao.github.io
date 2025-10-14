@@ -54,7 +54,7 @@ wenhao.deng@foxmail.com.
 #### Preprints
 ---
 - [**Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration**](https://arxiv.org/abs/2510.03865).  
- Wenhao Deng, Long Wei, Chenglei Yu, Tailin Wu.  
+ **Wenhao Deng**\*, Long Wei\*, Chenglei Yu\*, Tailin Wu. (* Equal contribution)  
  arXiv preprint arXiv:2510.03865 (2025). 
 
 ---
