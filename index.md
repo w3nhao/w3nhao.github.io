@@ -46,13 +46,12 @@ wenhao.deng@foxmail.com.
 ### Works
 
 #### Publications
----
 - [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700).  
  Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. (* Equal contribution)  
  CIKM 2025. 
 
-#### Preprints
 ---
+#### Preprints
 - [**Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration**](https://arxiv.org/abs/2510.03865).  
  **Wenhao Deng**\*, Long Wei\*, Chenglei Yu\*, Tailin Wu. (* Equal contribution)  
  arXiv preprint arXiv:2510.03865 (2025). 
