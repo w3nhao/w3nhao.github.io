@@ -206,8 +206,72 @@ color: inherit;
 }
 
 
+[data-theme="dark"] .homepage-footnote a {
+  color: #8a9bb8;
+}
+
+[data-theme="dark"] .homepage-footnote a:hover {
+  text-decoration: underline;
+}
+
 [data-theme="dark"] .inspirational-quote {
   font-style: italic;
   color: lightgray;
   margin-top: 10px;
+}
+
+/* Dark Mode Styles for Publications */
+[data-theme="dark"] .publication-item,
+[data-theme="dark"] .preprint-item {
+  background: #2a2a2a;
+  border-color: #444444;
+}
+
+[data-theme="dark"] .publication-item:hover,
+[data-theme="dark"] .preprint-item:hover {
+  border-color: #555555;
+  background: #2e2e2e;
+}
+
+[data-theme="dark"] .pub-title {
+  color: #8ab4f8;
+}
+
+[data-theme="dark"] .pub-title a {
+  color: #8ab4f8;
+}
+
+[data-theme="dark"] .pub-authors {
+  color: #C0C0C0;
+}
+
+[data-theme="dark"] .pub-arxiv {
+  color: #999999;
+}
+
+[data-theme="dark"] .conference-badge {
+  background: #8a9bb8;
+  color: white;
+}
+
+[data-theme="dark"] .preprint-badge {
+  background: #999999;
+  color: white;
+}
+
+[data-theme="dark"] .pub-tldr-toggle {
+  color: #daa520;
+}
+
+[data-theme="dark"] .pub-tldr-toggle:hover {
+  color: #f0c040;
+}
+
+[data-theme="dark"] .pub-tldr {
+  background: #1e1e1e;
+  color: #C0C0C0;
+}
+
+[data-theme="dark"] .pub-tldr.show {
+  border-color: #3a3a3a;
 }

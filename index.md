@@ -30,36 +30,72 @@ title: Home
 </div>
 
 
-### What I do?
+## What I do?
 
 I do what I want to do.
 
-### Email
+## Email
 
 wenhao.deng@foxmail.com.
 
-### Education
+## Education
 
 - M.Sc. CS, University of Nottingham
 - B.Eng. CS, Guangzhou University
 
-### Works
+### Publications
 
-#### Publications
-- [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700).  
- Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. (* Equal contribution)  
- CIKM 2025. 
+<div class="publication-item">
+  <div class="pub-title">
+    <span class="conference-badge">CIKM 2025</span>
+    <a href="https://arxiv.org/abs/2305.11700" target="_blank">Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights</a>
+  </div>
+  <div class="pub-authors">
+    Ruyu Li*, <strong>Wenhao Deng</strong>*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan (* Equal contribution)
+  </div>
+  <div class="pub-meta-line">
+    <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
+  </div>
+  <div class="pub-tldr">
+    We investigate how far text-based collaborative filtering can go with extremly large language models, revealing key insights on leveraging language models for recommendation systems.
+  </div>
+</div>
 
----
-#### Preprints
-- [**Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration**](https://arxiv.org/abs/2510.03865).  
- **Wenhao Deng**\*, Long Wei\*, Chenglei Yu\*, Tailin Wu. (* Equal contribution)  
- arXiv preprint arXiv:2510.03865 (2025). 
+### Preprints
 
----
-- [**Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey**](https://arxiv.org/abs/2308.01191).  
- Shihan Dou\*, Junjie Shan\*, Haoxiang Jia, **Wenhao Deng**, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang. (* Equal contribution)  
- arXiv preprint arXiv:2308.01191 (2023). 
+<div class="preprint-item">
+  <div class="pub-title">
+    <span class="preprint-badge">Preprint</span>
+    <a href="https://arxiv.org/abs/2510.03865" target="_blank">Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration</a>
+  </div>
+  <div class="pub-authors">
+    <strong>Wenhao Deng</strong>*, Long Wei*, Chenglei Yu*, Tailin Wu (* Equal contribution)
+  </div>
+  <div class="pub-meta-line">
+    <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
+    <span class="pub-arxiv">arXiv:2510.03865 (2025)</span>
+  </div>
+  <div class="pub-tldr">
+    We attributes one of the limitations of RFT to the reverse KL divergence, and propose a new Reward-Aware Policy Optimization with forward KL divergence to enhance the reasoning capabilities of large language models.
+  </div>
+</div>
+
+<div class="preprint-item">
+  <div class="pub-title">
+    <span class="preprint-badge">Preprint</span>
+    <a href="https://arxiv.org/abs/2308.01191" target="_blank">Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey</a>
+  </div>
+  <div class="pub-authors">
+    Shihan Dou*, Junjie Shan*, Haoxiang Jia, <strong>Wenhao Deng</strong>, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang (* Equal contribution)
+  </div>
+  <div class="pub-meta-line">
+    <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
+    <span class="pub-arxiv">arXiv:2308.01191 (2023)</span>
+  </div>
+  <div class="pub-tldr">
+    A early survey examining how well large language models perform on code clone detection tasks and their capabilities.
+  </div>
+</div> 
 
 
 <div class="homepage-footnote">
