@@ -44,20 +44,23 @@ wenhao.deng@foxmail.com.
 - B.Eng. CS, Guangzhou University
 
 ### Works
+
+#### Publications
+---
+- [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700).  
+ Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. (* Equal contribution)  
+ CIKM 2025. 
+
+#### Preprints
 ---
 - [**Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration**](https://arxiv.org/abs/2510.03865).  
- Wenhao Deng, Long Wei, Chenglei Yu, Tailin Wu.
+ Wenhao Deng, Long Wei, Chenglei Yu, Tailin Wu.  
  arXiv preprint arXiv:2510.03865 (2025). 
 
 ---
 - [**Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey**](https://arxiv.org/abs/2308.01191).  
  Shihan Dou\*, Junjie Shan\*, Haoxiang Jia, **Wenhao Deng**, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang. (* Equal contribution)  
  arXiv preprint arXiv:2308.01191 (2023). 
-
----
-- [**Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights**](https://arxiv.org/abs/2305.11700).  
-Ruyu Li\*, **Wenhao Deng**\*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. (* Equal contribution)  
-arXiv preprint arXiv:2305.11700 (2023). 
 
 
 <div class="homepage-footnote">
