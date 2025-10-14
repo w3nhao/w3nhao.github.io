@@ -131,12 +131,16 @@
         modalImage.alt = img.alt || '';
         caption.textContent = overlay ? overlay.textContent : img.alt || '';
         
-        // Show modal
+        // Show modal with animation
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
+        modal.setAttribute('aria-hidden', 'false');
+        
+        // Force reflow to ensure animation plays
+        modal.offsetHeight;
+        modal.classList.add('modal-show');
         
         // Focus management
-        modal.setAttribute('aria-hidden', 'false');
         setTimeout(function() {
             modal.querySelector('.gallery-close').focus();
         }, 100);
@@ -148,9 +152,17 @@
         const modal = document.getElementById('gallery-modal');
         if (!modal) return;
         
-        modal.style.display = 'none';
-        document.body.style.overflow = '';
-        modal.setAttribute('aria-hidden', 'true');
+        // Add fade out class
+        modal.classList.remove('modal-show');
+        modal.classList.add('modal-hide');
+        
+        // Wait for animation to complete before hiding
+        setTimeout(function() {
+            modal.style.display = 'none';
+            modal.classList.remove('modal-hide');
+            document.body.style.overflow = '';
+            modal.setAttribute('aria-hidden', 'true');
+        }, 300); // Match animation duration
         
         console.log('Modal closed');
     }

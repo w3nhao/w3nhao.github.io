@@ -424,47 +424,74 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<h3 id="what-i-do">What I do?</h3>
+<h2 id="what-i-do">What I do?</h2>
 
 <p>I do what I want to do.</p>
 
-<h3 id="email">Email</h3>
+<h2 id="email">Email</h2>
 
 <p>wenhao.deng@foxmail.com.</p>
 
-<h3 id="education">Education</h3>
+<h2 id="education">Education</h2>
 
 <ul>
   <li>M.Sc. CS, University of Nottingham</li>
   <li>B.Eng. CS, Guangzhou University</li>
 </ul>
 
-<h3 id="works">Works</h3>
+<h3 id="publications">Publications</h3>
 
-<h4 id="publications">Publications</h4>
-<ul>
-  <li>
-<a href="https://arxiv.org/abs/2305.11700"><strong>Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights</strong></a>.<br>
- Ruyu Li*, <strong>Wenhao Deng</strong>*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan. (* Equal contribution)<br>
- CIKM 2025.</li>
-</ul>
+<div class="publication-item">
+  <div class="pub-title">
+    <span class="conference-badge">CIKM 2025</span>
+    <a href="https://arxiv.org/abs/2305.11700" target="_blank">Exploring the Upper Limits of Text-Based Collaborative Filtering Using Large Language Models: Discoveries and Insights</a>
+  </div>
+  <div class="pub-authors">
+    Ruyu Li*, <strong>Wenhao Deng</strong>*, Yu Cheng, Zheng Yuan, Jiaqi Zhang, Fajie Yuan (* Equal contribution)
+  </div>
+  <div class="pub-meta-line">
+    <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
+  </div>
+  <div class="pub-tldr">
+    We investigate how far text-based collaborative filtering can go with extremly large language models, revealing key insights on leveraging language models for recommendation systems.
+  </div>
+</div>
 
-<hr>
-<h4 id="preprints">Preprints</h4>
-<ul>
-  <li>
-<a href="https://arxiv.org/abs/2510.03865"><strong>Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration</strong></a>.<br>
- <strong>Wenhao Deng</strong>*, Long Wei*, Chenglei Yu*, Tailin Wu. (* Equal contribution)<br>
- arXiv preprint arXiv:2510.03865 (2025).</li>
-</ul>
+<h3 id="preprints">Preprints</h3>
 
-<hr>
-<ul>
-  <li>
-<a href="https://arxiv.org/abs/2308.01191"><strong>Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey</strong></a>.<br>
- Shihan Dou*, Junjie Shan*, Haoxiang Jia, <strong>Wenhao Deng</strong>, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang. (* Equal contribution)<br>
- arXiv preprint arXiv:2308.01191 (2023).</li>
-</ul>
+<div class="preprint-item">
+  <div class="pub-title">
+    <span class="preprint-badge">Preprint</span>
+    <a href="https://arxiv.org/abs/2510.03865" target="_blank">Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration</a>
+  </div>
+  <div class="pub-authors">
+    <strong>Wenhao Deng</strong>*, Long Wei*, Chenglei Yu*, Tailin Wu (* Equal contribution)
+  </div>
+  <div class="pub-meta-line">
+    <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
+    <span class="pub-arxiv">arXiv:2510.03865 (2025)</span>
+  </div>
+  <div class="pub-tldr">
+    We attributes one of the limitations of RFT to the reverse KL divergence, and propose a new Reward-Aware Policy Optimization with forward KL divergence to enhance the reasoning capabilities of large language models.
+  </div>
+</div>
+
+<div class="preprint-item">
+  <div class="pub-title">
+    <span class="preprint-badge">Preprint</span>
+    <a href="https://arxiv.org/abs/2308.01191" target="_blank">Towards Understanding the Capability of Large Language Models on Code Clone Detection: A Survey</a>
+  </div>
+  <div class="pub-authors">
+    Shihan Dou*, Junjie Shan*, Haoxiang Jia, <strong>Wenhao Deng</strong>, Zhiheng Xi, Wei He, Yueming Wu, Tao Gui, Yang Liu, Xuanjing Huang (* Equal contribution)
+  </div>
+  <div class="pub-meta-line">
+    <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
+    <span class="pub-arxiv">arXiv:2308.01191 (2023)</span>
+  </div>
+  <div class="pub-tldr">
+    A early survey examining how well large language models perform on code clone detection tasks and their capabilities.
+  </div>
+</div>
 
 <div class="homepage-footnote">
   <div class="inspirational-quote">
@@ -490,8 +517,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Your existing JavaScript -->
     <script src="/public/js/script.js"></script>
     
-    <!-- Gallery functionality JavaScript -->
-    <script src="/public/js/gallery.js"></script>
+    <!-- Gallery functionality is in gallery-scripts.html include -->
 
     <!-- JavaScript for Dark Mode Toggle -->
     <script>
