@@ -1376,10 +1376,13 @@ mjx-container {
     right: 0;
     top: auto;
     transform: none;
+    display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
     width: 100%;
     z-index: 10002;
+    pointer-events: none;
   }
   
   .gallery-prev,
@@ -1387,11 +1390,17 @@ mjx-container {
     position: relative;
     margin: 0;
     font-size: 20px;
-    padding: 12px 18px;
-    min-width: 48px;
-    min-height: 48px;
+    padding: 0;
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    min-height: 52px;
+    max-width: 52px;
+    max-height: 52px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.7);
+    flex-shrink: 0;
+    flex-grow: 0;
   }
   
   .gallery-prev:active,
