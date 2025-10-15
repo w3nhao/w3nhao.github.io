@@ -25,6 +25,16 @@ title: Home
           <i class="fas fa-graduation-cap fa-fw" aria-hidden="true"></i> Google Scholar
         </a>
       </li>
+      <li>
+        <a href="https://www.linkedin.com/in/wenhaod" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn profile">
+          <i class="fab fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com/dw3nhao" target="_blank" rel="me noopener noreferrer" aria-label="Twitter/X profile">
+          <i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i> Twitter
+        </a>
+      </li>
     </ul>
   </div>
 </div>
