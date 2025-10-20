@@ -112,9 +112,13 @@ wenhao.deng@foxmail.com.
 
 ## Reviewers
 
+### Conference 
 - International Conference on Learning Representations (ICLR) 2026
 - ACM International Conference on Web Search and Data Mining (WSDM) 2025
 - ACM Conference on Recommender Systems (RecSys) 2024, 2025
+
+### Journal
+- ACM Transactions on Information Systems (TOIS)
 
 <div class="homepage-footnote">
   <div class="inspirational-quote">
