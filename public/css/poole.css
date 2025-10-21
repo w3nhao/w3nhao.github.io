@@ -58,12 +58,12 @@ body {
 
 html {
   font-family: "Spectral", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -97,19 +97,19 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 h2 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 h4, h5, h6 {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* Body text */
@@ -166,7 +166,7 @@ code {
   font-size: 85%;
   color: #bf616a;
   background-color: #f9f9f9;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 pre {
   display: block;
@@ -180,6 +180,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f9f9f9;
+  border-radius: 0px;
 }
 pre code {
   padding: 0;
@@ -191,7 +192,7 @@ pre code {
 /* Pygments via Jekyll */
 .highlight {
   margin-bottom: 1rem;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .highlight pre {
   margin-bottom: 0;
@@ -224,7 +225,9 @@ blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
   color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  border-left: 3px solid #ddd;
+  background-color: #fafafa;
+  font-size: 0.9rem;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -240,7 +243,7 @@ img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 /* Tables */
@@ -249,6 +252,7 @@ table {
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
+  font-size: 0.85rem;
 }
 td,
 th {
@@ -258,6 +262,10 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
+}
+th {
+  background-color: #f5f5f5;
+  font-weight: 600;
 }
 
 
@@ -398,7 +406,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Spectral", Georgia, serif;
   color: #ccc;
   text-align: center;
 }
@@ -408,6 +416,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   padding: 1rem;
   border: 1px solid #eee;
+  font-size: 0.85rem;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -428,12 +437,10 @@ a.pagination-item:hover {
   }
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius:    4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 0px;
   }
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius:    4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 0px;
   }
 }

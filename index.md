@@ -9,53 +9,37 @@ title: Home
   </div>
   <div class="about-content">
     <ul class="about-definitions">
+      <strong class="about-name">Wenhao Deng 邓文豪 <span class="cantonese-note">(Man-Ho Tang)</span></strong>
       <li>The trouble maker</li>
       <li>The prompt evolver</li>
       <li>The agent orchestrator</li>
       <li><strong>The problem solver ← I wish I am</strong></li>
     </ul>
-    <ul class="about-links">
-      <li>
-        <a href="https://github.com/w3nhao" target="_blank" rel="me noopener noreferrer" aria-label="GitHub profile">
-          <i class="fab fa-github fa-fw" aria-hidden="true"></i> GitHub
-        </a>
-      </li>
-      <li>
-        <a href="https://scholar.google.com/citations?user=c7XCft4AAAAJ&hl=en" target="_blank" rel="me noopener noreferrer" aria-label="Google Scholar profile">
-          <i class="fas fa-graduation-cap fa-fw" aria-hidden="true"></i> Google Scholar
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/wenhaod" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn profile">
-          <i class="fab fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://x.com/dw3nhao" target="_blank" rel="me noopener noreferrer" aria-label="Twitter/X profile">
-          <i class="fab fa-twitter fa-fw" aria-hidden="true"></i> Twitter
-        </a>
-      </li>
-    </ul>
   </div>
 </div>
 
+<div class="contact-section">
+  <div class="about-links">
+    <a href="https://github.com/w3nhao" target="_blank" rel="me noopener noreferrer">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=c7XCft4AAAAJ&hl=en" target="_blank" rel="me noopener noreferrer">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/wenhaod" target="_blank" rel="me noopener noreferrer">LinkedIn</a>
+    <a href="https://x.com/dw3nhao" target="_blank" rel="me noopener noreferrer">Twitter</a>
+  </div>
+  <div class="about-email">
+    Email: wenhao [dot] deng [at] foxmail [dot] com
+  </div>
+</div>
 
 ## What I do?
 
 I do what I want to do.
-
-## Email
-
-wenhao.deng@foxmail.com.
 
 ## Education
 
 - M.Sc. CS, University of Nottingham
 - B.Eng. CS, Guangzhou University
 
-## Works
-
-### Publications
+## Papers
 
 <div class="publication-item">
   <div class="pub-title">
@@ -72,8 +56,6 @@ wenhao.deng@foxmail.com.
     We investigate how far text-based collaborative filtering can go with extremly large language models, revealing key insights on leveraging language models for recommendation systems.
   </div>
 </div>
-
-### Preprints
 
 <div class="preprint-item">
   <div class="pub-title">
@@ -129,13 +111,13 @@ wenhao.deng@foxmail.com.
 
 ## Reviewers
 
-### Conference 
-- International Conference on Learning Representations (ICLR) 2026
-- ACM International Conference on Web Search and Data Mining (WSDM) 2025
-- ACM Conference on Recommender Systems (RecSys) 2024, 2025
+<ul class="reviewers-list">
+  <li>International Conference on Learning Representations (ICLR) 2026</li>
+  <li>ACM International Conference on Web Search and Data Mining (WSDM) 2025</li>
+  <li>ACM Conference on Recommender Systems (RecSys) 2024, 2025</li>
+  <li>ACM Transactions on Information Systems (TOIS)</li>
+</ul>
 
-### Journal
-- ACM Transactions on Information Systems (TOIS)
 
 <div class="homepage-footnote">
   <div class="inspirational-quote">

@@ -1,25 +1,4 @@
-.dark-mode-checkbox {
-    position: absolute;
-    opacity: 0;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
-  }
-  
-.dark-mode-toggle {
-    position: absolute;
-    top: .8rem;
-    right: 1rem;  /* Positioned on the right side */
-    display: flex;
-    align-items: center;
-    padding: .25rem .75rem;
-    color: #505050;
-    background-color: #f5f5f5;
-    border: 1px solid #f5f5e5;
-    border-radius: .25rem;
-    cursor: pointer;
-    font-size: 18px;  /* Adjust the font size for emojis */
-  }
+/* Old dark mode toggle styles removed - now using bottom nav */
 
 /* New Dark mode styles */
 [data-theme="dark"] body {
@@ -42,17 +21,6 @@
 
 [data-theme="dark"] strong, [data-theme="dark"] b {
 color: #ccccf0;  /* Again, choose a color that fits your design */
-}
-
-[data-theme="dark"] .dark-mode-toggle {
-  color: #F0EAD6;  /* White text for dark mode */
-  background-color: #333333;  /* Darker background */
-  border: 1px solid #555555;  /* Grey border */
-}
-
-[data-theme="dark"] .dark-mode-toggle:hover {
-  color: #bbbbbb;  /* Light gray text on hover in dark mode */
-  border-color: #666666;  /* Slightly lighter border on hover in dark mode */
 }
 
 [data-theme="dark"] .page,
@@ -90,22 +58,20 @@ color: #4a90e2;
 color: inherit;
 }
 
-[data-theme="dark"] .about-social a {
-  color: #F0EAD6; /* Change to a lighter color suitable for dark mode */
-}
-
-[data-theme="dark"] .about-social a:hover {
-  color: #4a90e2; /* Use a color that works well on a dark background */
-}
-
 /* Ensure new about links remain readable in dark mode */
 [data-theme="dark"] .about-links a {
-  color: #F0EAD6;
+  color: #aaa;
 }
 [data-theme="dark"] .about-links a:hover,
 [data-theme="dark"] .about-links a:focus {
   color: #F0EAD6;
   text-decoration: underline;
+}
+[data-theme="dark"] .about-links a::after {
+  color: #555;
+}
+[data-theme="dark"] .about-email {
+  color: #aaa;
 }
 
 [data-theme="dark"] .masthead {
@@ -220,18 +186,11 @@ color: inherit;
   margin-top: 10px;
 }
 
-/* Dark Mode Styles for Publications */
-[data-theme="dark"] .publication-item,
-[data-theme="dark"] .preprint-item {
-  background: #2a2a2a;
-  border-color: #444444;
+[data-theme="dark"] .cantonese-note {
+  color: #aaa;
 }
 
-[data-theme="dark"] .publication-item:hover,
-[data-theme="dark"] .preprint-item:hover {
-  border-color: #555555;
-  background: #2e2e2e;
-}
+/* Dark Mode Styles for Publications */
 
 [data-theme="dark"] .pub-title {
   color: #8ab4f8;
