@@ -62,17 +62,17 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 0.85rem; 
+  font-size: 0.8rem; 
 }
 
 @media screen and (min-width: 768px) {
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
 li {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 
@@ -172,8 +172,8 @@ li {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: .875rem; /* 15px */
+  font-family: "Spectral", Georgia, serif;
+  font-size: .8rem; /* 14px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
@@ -181,7 +181,7 @@ li {
 }
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .75rem; /* 14px */
+    font-size: .7rem; /* 12px */
   }
 }
 
@@ -243,7 +243,7 @@ a.sidebar-nav-item:focus {
   padding: .25rem .75rem;
   color: #505050;
   background-color: #fff;
-  border-radius: .25rem;
+  border-radius: 0px;
   cursor: pointer;
 }
 
@@ -602,7 +602,7 @@ footnote::before {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Spectral", Georgia, serif;
   color: #ccc;
   text-align: center;
 }
@@ -612,6 +612,7 @@ footnote::before {
   display: block;
   padding: 1rem;
   border: 1px solid #eee;
+  font-size: 0.85rem;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -632,13 +633,11 @@ a.pagination-item:hover {
   }
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius:    4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 0px;
   }
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius:    4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 0px;
   }
 }
 
@@ -680,8 +679,9 @@ a.pagination-item:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
-  gap: 1.25rem;
+  padding: 2rem 0 1rem 0;
+  margin-bottom: 1rem;
+  gap: 1.5rem;
 }
 
 .about-image {
@@ -693,90 +693,110 @@ a.pagination-item:hover {
   width: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,.08);
-}
-
-.about-social {
-  width: 50%;
-  max-width: 300px;
-}
-
-.about-social ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 0;
-}
-
-.about-social li {
-  margin-bottom: 1rem;
-}
-
-.about-social a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-}
-
-.about-social i {
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.about-social a:hover {
-  color: #268bd2;
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /* Media Query for responsiveness */
 .about-content {
   width: 100%;
   max-width: 480px;
+  display: flex;
+  align-items: center;
 }
 
 .about-definitions {
-  list-style: disc;
-  margin: 0 0 0.75rem 1rem;
-  padding: 0;
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  list-style-type: square;
+}
+
+.about-definitions li {
+  margin-bottom: 0.3rem;
+}
+
+.about-name {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: -1.2rem;
+  font-size: 1.1rem;
+}
+
+.cantonese-note {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #888;
+  font-style: italic;
+}
+
+/* Reviewers list */
+.reviewers-list {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+.reviewers-list li {
+  margin-bottom: 0.3rem;
+}
+
+/* Contact Section */
+.contact-section {
+  margin: 2px 2px 1rem 2px;
+  padding: 0 0 1rem 0;
 }
 
 .about-links {
-  list-style: none;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   padding: 0;
-}
-
-.about-links li + li {
-  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  font-size: 0.75rem;
 }
 
 .about-links a {
-  color: #000;           /* black links in light mode */
+  color: #555;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.about-links a::after {
+  content: " /";
+  color: #ccc;
+  margin-left: 0.5rem;
+}
+
+.about-links a:last-child::after {
+  content: "";
 }
 
 .container .about-links a,
 .wrap .about-links a {
-  color: #000; /* ensure higher specificity than generic container link styles */
+  color: #555;
 }
 
 .about-links a:hover,
 .about-links a:focus {
-  color: #000;
-  text-decoration: underline; /* subtle affordance without color change */
+  text-decoration: underline;
+}
+
+.about-email {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .about-container {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
+  
   .about-content {
     width: 50%;
     max-width: 420px;
@@ -937,8 +957,8 @@ mjx-container {
   padding: 10px;
   border: 1px solid #ccc;
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 14px;
+  border-radius: 0px;
   transition: color 0.3s ease, border-color 0.3s ease;
   text-align: center;  /* Center the text */
   margin-bottom: 10px;
@@ -957,13 +977,13 @@ mjx-container {
   */
   .collapsible {
     cursor: pointer;
-    border: 2px solid #B0C4DE;  /* Light border for contrast */
+    border: 1px solid #ccc;
     background: transparent;
     color: #333;  /* Dark text for light mode */
     outline: none;
     padding: 5px 10px;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-align: left;
     position: relative;
     display: flex;
@@ -973,7 +993,7 @@ mjx-container {
   }
   
   .collapsible:hover {
-    background: rgba(176, 196, 222, 0.1);  /* Slight hover effect */
+    background: rgba(176, 196, 222, 0.1);
   }
   
   .collapsible:before {
@@ -1042,9 +1062,12 @@ mjx-container {
 }
 
 .homepage-footnote {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 20px;
   text-align: center;
+  font-family: "Spectral", Georgia, serif;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
 }
 
 .homepage-footnote a {
@@ -1060,6 +1083,8 @@ mjx-container {
   font-style: italic;
   color: gray;
   margin-top: 10px;
+  font-size: 11px;
+  font-family: "Spectral", Georgia, serif;
 }
 
 .pinterest-gallery {
@@ -1098,29 +1123,29 @@ mjx-container {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  box-shadow: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: #fff;
   break-inside: avoid;
 }
 
 .gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: none;
+  opacity: 0.9;
 }
 
 .gallery-item img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 0px;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   object-fit: cover;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.02);
+  transform: none;
 }
 
 .gallery-overlay {
@@ -1409,22 +1434,15 @@ mjx-container {
 /* Publications Styling */
 .publication-item,
 .preprint-item {
-  padding: 16px;
-  margin-bottom: 20px;
-  background: #f9f9f9;
-  border-radius: 4px;
-  border: 1px solid #e5e5e5;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  background: none;
+  border-radius: 0px;
   transition: all 0.2s ease;
 }
 
-.publication-item:hover,
-.preprint-item:hover {
-  border-color: #d0d0d0;
-  background: #fafafa;
-}
-
 .pub-title {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 6px;
@@ -1441,7 +1459,7 @@ mjx-container {
 }
 
 .pub-authors {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #555;
   line-height: 1.4;
   margin-bottom: 6px;
@@ -1456,7 +1474,7 @@ mjx-container {
 }
 
 .pub-arxiv {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #888;
   line-height: 1.4;
 }
@@ -1466,10 +1484,10 @@ mjx-container {
   padding: 2px 8px;
   background: #7c8db0;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
-  border-radius: 3px;
-  letter-spacing: 0.3px;
+  border-radius: 0px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   line-height: 1.2;
   vertical-align: baseline;
@@ -1481,10 +1499,10 @@ mjx-container {
   padding: 2px 8px;
   background: #8a8a8a;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
-  border-radius: 3px;
-  letter-spacing: 0.3px;
+  border-radius: 0px;
+  letter-spacing: 0.5px;
   line-height: 1.2;
   vertical-align: baseline;
   margin-right: 8px;
@@ -1494,7 +1512,7 @@ mjx-container {
   cursor: pointer;
   color: #b8860b;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: inline-flex;
@@ -1520,41 +1538,39 @@ mjx-container {
 }
 
 .pub-tldr {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #666;
   padding: 0;
   background: white;
-  border-radius: 4px;
+  border-radius: 0px;
   margin-top: 0;
   line-height: 1.5;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease, margin-top 0.3s ease;
-  border: 1px solid transparent;
 }
 
 .pub-tldr.show {
   max-height: 300px;
   padding: 10px 12px;
   margin-top: 8px;
-  border-color: #f0f0f0;
 }
 
 @media screen and (max-width: 768px) {
   .publication-item,
   .preprint-item {
-    padding: 16px;
+    padding: 14px;
   }
   
   .pub-title {
-    font-size: 0.9rem;
-  }
-  
-  .pub-authors {
     font-size: 0.8rem;
   }
   
+  .pub-authors {
+    font-size: 0.7rem;
+  }
+  
   .pub-tldr {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 }

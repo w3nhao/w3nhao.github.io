@@ -1,0 +1,164 @@
+/* Fixed Bottom Navigation Bar - Minimal & Geeky */
+
+/* Hide sidebar and sidebar toggle completely */
+.sidebar,
+.sidebar-toggle,
+.sidebar-checkbox {
+  display: none !important;
+}
+
+/* Remove sidebar transform effects from wrap */
+.wrap {
+  transform: none !important;
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 1000;
+  font-family: "Spectral", Georgia, serif;
+  font-size: 0.75rem;
+  border-top: 1px solid #e5e5e5;
+  transition: transform 0.3s ease;
+}
+
+.bottom-nav.hidden {
+  transform: translateY(100%);
+}
+
+.bottom-nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-nav-links li {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.bottom-nav a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.bottom-nav a:hover {
+  color: #000;
+}
+
+.bottom-nav .theme-toggle {
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  color: #555;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  font-family: "Spectral", Georgia, serif;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0px;
+}
+
+.bottom-nav .theme-toggle:hover {
+  color: #000;
+  background: #e5e5e5;
+}
+
+/* Dark mode styles for bottom nav */
+[data-theme="dark"] .bottom-nav {
+  background: rgba(32, 32, 32, 0.95);
+  border-top-color: #444;
+}
+
+[data-theme="dark"] .bottom-nav a {
+  color: #aaa;
+}
+
+[data-theme="dark"] .bottom-nav a:hover {
+  color: #fff;
+}
+
+[data-theme="dark"] .bottom-nav .theme-toggle {
+  color: #aaa;
+  background: #2a2a2a;
+}
+
+[data-theme="dark"] .bottom-nav .theme-toggle:hover {
+  color: #fff;
+  background: #3a3a3a;
+}
+
+/* Add padding to body to prevent content from being hidden behind nav */
+body {
+  padding-bottom: 60px;
+}
+
+/* Add top padding since masthead is removed */
+.container.content {
+  padding-top: 2rem;
+}
+
+@media (min-width: 38em) {
+  .container.content {
+    padding-top: 3rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bottom-nav {
+    padding: 0.6rem 0.5rem;
+    gap: 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .bottom-nav-links {
+    gap: 1rem;
+  }
+  
+  .bottom-nav-links li {
+    font-size: 0.7rem;
+  }
+  
+  .bottom-nav .theme-toggle {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+
+/* Optional: Hide on small screens if needed */
+@media (max-width: 480px) {
+  .bottom-nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+  
+  .bottom-nav-links {
+    gap: 0.8rem;
+  }
+}
+

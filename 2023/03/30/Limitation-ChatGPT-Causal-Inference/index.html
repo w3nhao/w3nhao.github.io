@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://w3nhao.github.io/public/css/syntax.css?v=1.1.0">
   <link rel="stylesheet" href="https://w3nhao.github.io/public/css/lanyon.css?v=1.1.0">
   <link rel="stylesheet" href="https://w3nhao.github.io/public/css/dark-mode.css?v=1.1.0">
+  <link rel="stylesheet" href="https://w3nhao.github.io/public/css/bottom-nav.css?v=1.1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://w3nhao.github.io/public/apple-touch-icon-precomposed.png">
@@ -321,80 +322,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <body>
 
-    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p></p>
-  </div>
-
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://w3nhao.github.io/">Home</a>
-
-    
-
-    
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-    
-      
-    
-      
-        
-          <a class="sidebar-nav-item" href="https://w3nhao.github.io/life/">Adventures</a>
-        
-      
-    
-      
-        
-          <a class="sidebar-nav-item" href="https://w3nhao.github.io/posts/">First In Last Out</a>
-        
-      
-    
-      
-    
-      
-    
-
-    <!-- <a class="sidebar-nav-item" href="/archive/v1.1.0.zip">Download</a> -->
-    <!-- <a class="sidebar-nav-item" href="">GitHub project</a> -->
-    <!-- <span class="sidebar-nav-item">Currently v1.1.0</span> -->
-  </nav>
-
-  <div class="sidebar-item">
-    <p>
-      © 2025. All rights reserved.
-    </p>
-  </div>
-</div>
-
+    <!-- Sidebar removed -->
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
       <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Wenhao Deng</a>
-            <small></small>
-          </h3>
-          
-          <!-- New Dark Mode Checkbox and Toggle -->
-          <input type="checkbox" class="dark-mode-checkbox" id="dark-mode-checkbox">
-          <label for="dark-mode-checkbox" class="dark-mode-toggle">🌞</label>
-        </div>
-      </div>
+      <!-- Masthead removed - using bottom nav instead -->
         
 
       <div class="container content">
@@ -630,18 +563,25 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <ul class="bottom-nav-links">
+        <li><a href="/">~/home</a></li>
+        <li><a href="/posts">~/posts</a></li>
+        <li><a href="/life">~/gallery</a></li>
+      </ul>
+      <button class="theme-toggle" id="bottom-theme-toggle" aria-label="Toggle dark mode">dark</button>
+    </nav>
 
     <!-- Your existing JavaScript -->
     <script src="/public/js/script.js"></script>
     
     <!-- Gallery functionality is in gallery-scripts.html include -->
 
-    <!-- JavaScript for Dark Mode Toggle -->
+    <!-- JavaScript for Dark Mode Toggle (Bottom Nav) -->
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
-        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
-        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+        const themeToggle = document.getElementById('bottom-theme-toggle');
       
         // Function to update Utterances theme
         function updateUtterancesTheme(theme) {
@@ -656,26 +596,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       
         // Initialize based on localStorage
-        if (localStorage.getItem('theme') === 'dark') {
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
-          darkModeCheckbox.checked = true;
-          darkModeToggle.textContent = '🌝';
+          themeToggle.textContent = 'light';  // Show opposite (what it will switch TO)
           updateUtterancesTheme('github-dark');
         } else {
+          themeToggle.textContent = 'dark';   // Show opposite (what it will switch TO)
           updateUtterancesTheme('github-light');
         }
       
-        darkModeCheckbox.addEventListener('change', function () {
-          if (this.checked) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-            darkModeToggle.textContent = '🌝';
-            updateUtterancesTheme('github-dark');
-          } else {
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', function () {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          
+          if (currentTheme === 'dark') {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
-            darkModeToggle.textContent = '🌞';
+            themeToggle.textContent = 'dark';   // Show what it will switch TO next
             updateUtterancesTheme('github-light');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggle.textContent = 'light';  // Show what it will switch TO next
+            updateUtterancesTheme('github-dark');
           }
         });
       });
