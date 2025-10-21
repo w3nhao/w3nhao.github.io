@@ -78,6 +78,23 @@ wenhao.deng@foxmail.com.
 <div class="preprint-item">
   <div class="pub-title">
     <span class="preprint-badge">Preprint</span>
+    <a href="https://arxiv.org/abs/2510.16559" target="_blank">BuildArena: A Physics-Aligned Interactive Benchmark of LLMs for Engineering Construction</a>
+  </div>
+  <div class="pub-authors">
+    Tian Xia, Tianrun Gao, <strong>Wenhao Deng</strong>, Long Wei, Xiaowei Qian, Yixian Jiang, Chenglei Yu, Tailin Wu
+  </div>
+  <div class="pub-meta-line">
+    <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
+    <span class="pub-arxiv">arXiv:2510.16559 (2025)</span>
+  </div>
+  <div class="pub-tldr">
+    We introduce BuildArena, the first physics-aligned interactive benchmark for language-driven engineering construction, comprehensively evaluating LLMs' capabilities for construction automation under strict physical constraints through a highly customizable agentic engineering framework with static and dynamic mechanics tasks.
+  </div>
+</div>
+
+<div class="preprint-item">
+  <div class="pub-title">
+    <span class="preprint-badge">Preprint</span>
     <a href="https://arxiv.org/abs/2510.03865" target="_blank">Unlocking Reasoning Capabilities in LLMs via Reinforcement Learning Exploration</a>
   </div>
   <div class="pub-authors">
