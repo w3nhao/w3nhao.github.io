@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Co-Evo vs Self-Evo"
-hidden: true
+hidden: false
 ---
 
 {::options parse_block_html="true" /}
