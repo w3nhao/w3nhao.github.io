@@ -106,9 +106,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
   </div>
 
-  <div class="lang-switch">
-  <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
-  <button class="lang-btn" onclick="switchLang('en')">EN</button>
+  
+<div class="lang-switch">
+  <p><button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+  <button class="lang-btn" onclick="switchLang('en')">EN</button></p>
 </div>
 
 <div class="lang-zh">
@@ -323,13 +324,42 @@ Under finite observation, the optimization objective cannot be uniquely identifi
 
 <script>
 function switchLang(lang) {
-  document.querySelector('.lang-zh').style.display = lang === 'zh' ? 'block' : 'none';
-  document.querySelector('.lang-en').style.display = lang === 'en' ? 'block' : 'none';
+  var zhDiv = document.querySelector('.lang-zh');
+  var enDiv = document.querySelector('.lang-en');
+  zhDiv.style.display = lang === 'zh' ? 'block' : 'none';
+  enDiv.style.display = lang === 'en' ? 'block' : 'none';
   document.querySelectorAll('.lang-btn').forEach(function(btn) {
     btn.classList.remove('active');
   });
   document.querySelector('.lang-btn[onclick*="' + lang + '"]').classList.add('active');
+
+  var activeDiv = lang === 'zh' ? zhDiv : enDiv;
+  var hiddenDiv = lang === 'zh' ? enDiv : zhDiv;
+  var activeIds = [];
+  activeDiv.querySelectorAll('h2, h3, h4').forEach(function(h) {
+    if (h.id) activeIds.push(h.id);
+  });
+  var hiddenIds = [];
+  hiddenDiv.querySelectorAll('h2, h3, h4').forEach(function(h) {
+    if (h.id) hiddenIds.push(h.id);
+  });
+  var tocContainer = document.getElementById('toc-container');
+  if (tocContainer) {
+    tocContainer.querySelectorAll('a').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (!href) return;
+      var targetId = href.replace('#', '');
+      var li = a.closest('li');
+      if (!li) return;
+      if (hiddenIds.indexOf(targetId) !== -1) {
+        li.style.display = 'none';
+      } else {
+        li.style.display = '';
+      }
+    });
+  }
 }
+document.addEventListener('DOMContentLoaded', function() { switchLang('zh'); });
 </script>
 
 
