@@ -401,6 +401,13 @@ a.sidebar-nav-item:focus {
   color: #888;
   margin-top: 0.15rem;
 }
+.post-description {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
 
 .post > .l-body,
 .post > .l-body-outset,
