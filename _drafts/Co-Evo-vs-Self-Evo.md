@@ -17,13 +17,22 @@ hidden: true
 
 但我始终觉得不对劲。不是技术上不对劲，而是角色分配上不对劲。自动化程度变高了，人就应该退到后面去吗？Agentic 时代，人的角色应该被弱化吗？
 
-我不这么认为。我觉得人在生产中始终要占据主动的位置。这是某种西西弗式的倔强：在封闭系统里人类不可能胜过机器，围棋已经证明了这一点，但仍然坚持人不能退场。这篇文章想回答的问题是：一个人主导的 agentic system，到底能 scale 到多大？以及，凭什么人来领导还有价值？
+我不这么认为。我觉得人在生产中始终要占据主动的位置。这是某种西西弗式的倔强：在封闭系统里人类不可能胜过机器，围棋已经证明了这一点，但仍然坚持人不能退场。
 
 ---
 
 ## 目的不能自举
 
-为了认真框架这个问题，过去一段时间我在尝试为 Agentic System 建立一套公理体系。在推演的过程中，有一条公理逐渐变成了整个体系的核心：
+过去一段时间，为了研究人主导的 agentic system 到底怎么 scaling，我在尝试为其建立一套公理体系。体系共六条公理：
+
+> **Ω1.** 时间稀缺且不可逆。
+> **Ω2.** 人的控制资源有限。
+> **Ω3.** 表述与传输必然有损。
+> **Ω4.** Telos 对系统内部欠定。
+> **Ω5.** 执行与评估可错，且错误一般相关。
+> **Ω6.** 环境与价值随时间漂移。
+
+在推演的过程中，第四条逐渐变成了整个体系的核心：
 
 > **Ω4. Telos 对系统内部欠定。**
 > 在有限观测下，优化目标不可唯一识别；任何确定的 telos 等价于引入外部偏好信号。
@@ -108,13 +117,22 @@ The dominant AI narrative goes something like this: agents learn to self-improve
 
 Something about it still feels wrong to me. Not technically wrong, but wrong in how it assigns roles. Should humans retreat to the background just because the degree of automation increases? Should the human role be diminished in the agentic era?
 
-I don't think so. I believe humans must always hold the active position in production. Call it a Sisyphean stubbornness: in closed systems, humans cannot beat machines, and the game of Go has settled that question already, yet I still insist that humans cannot leave the stage. The question this essay tries to answer is: how far can a human-led agentic system scale? And what makes human leadership still valuable?
+I don't think so. I believe humans must always hold the active position in production. Call it a Sisyphean stubbornness: in closed systems, humans cannot beat machines, and the game of Go has settled that question already, yet I still insist that humans cannot leave the stage.
 
 ---
 
 ## Purpose Cannot Bootstrap Itself
 
-To frame this question rigorously, I have been building an axiomatic system for agentic systems over the past months. During the derivation, one axiom gradually became the core of the entire framework:
+To study how human-led agentic systems actually scale, I have been building an axiomatic framework over the past months. The framework has six axioms:
+
+> **Omega-1.** Time is scarce and irreversible.
+> **Omega-2.** Human control resources are bounded.
+> **Omega-3.** Representation and transmission are necessarily lossy.
+> **Omega-4.** Telos is underdetermined from within the system.
+> **Omega-5.** Execution and evaluation are fallible, and errors are generally correlated.
+> **Omega-6.** Environment and values drift over time.
+
+During the derivation, the fourth axiom gradually became the core of the entire framework:
 
 > **Axiom 4 (Omega-4). Telos is underdetermined from within the system.**
 > Under finite observation, the optimization objective cannot be uniquely identified; any determined telos is equivalent to injecting an external preference signal.
