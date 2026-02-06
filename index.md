@@ -30,6 +30,18 @@ title: Home
   </div>
 </div>
 
+## Recent Posts
+
+<ul class="recent-posts">
+{% assign visible_posts = site.posts | where_exp: "post", "post.hidden != true" %}
+{% for post in visible_posts limit:3 %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+  </li>
+{% endfor %}
+</ul>
+
 ## What do I do?
 
 I do what I want to do.
