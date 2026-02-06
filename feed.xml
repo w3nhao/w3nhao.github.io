@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T02:46:36+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T02:57:13+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
   <p><button class="lang-btn active" onclick="switchLang('zh')">中文</button>
   <button class="lang-btn" onclick="switchLang('en')">EN</button></p>
 </div>
@@ -35,9 +35,9 @@
 
   <p>Telos 说起来抽象，但它指的东西很具体：欲望。人在生产过程中的驱动力到底是什么？Spinoza 在《伦理学》里给过一个干脆的回答：欲望是人的本质本身。大家喜欢说的 taste，是个人欲望的投射；老师评价学生的 motivation，是欲望；说得负面一点，野心，也是欲望。这些都是同一个东西。我第一次认真想这件事的时候，脑子里蹦出来的是《云图》里那句 the true true：真相到底是什么？在这个语境下，the true true desire，就是生产的原初驱动力。</p>
 
-  <p>Ω4 说的是：一个系统从内部观察自己的时候，它面对无穷多个等价的目标函数，没有任何内在依据去选其中一个。这不是能力问题，不是”还不够强”，这是 underdetermination，是结构性的。你给一个 Agent 足够多的算力和数据，它可以优化任何目标函数到极致，但它无法回答”为什么是这个目标函数而不是那个”。这个选择必须从外部注入。</p>
+  <p>Ω4 说的是：一个系统从内部观察自己的时候，它面对无穷多个等价的目标函数，没有任何内在依据去选其中一个。这不是能力问题，不是\u201C还不够强\u201D，这是 underdetermination，是结构性的。你给一个 Agent 足够多的算力和数据，它可以优化任何目标函数到极致，但它无法回答\u201C为什么是这个目标函数而不是那个\u201D。这个选择必须从外部注入。</p>
 
-  <p>在当前的世界里，那个外部信号叫做「人」。这条公理在体系中被标注为”可被挑战”：如果有一天 AGI 产生了 genuine desire，它会失效。但在此之前，它成立。</p>
+  <p>在当前的世界里，那个外部信号叫做「人」。这条公理在体系中被标注为\u201C可被挑战\u201D：如果有一天 AGI 产生了 genuine desire，它会失效。但在此之前，它成立。</p>
 
   <hr />
 
@@ -51,7 +51,7 @@
 
   <p>第二件叫 steering：定义那个 reference 本身。什么是「好」？什么方向值得追求？这不是计算问题。这是意志问题。</p>
 
-  <p>Self-Evo 说”我能自己验证自己”，没问题，这确实可以。但谁来写验证的标准？谁来说”这个方向对”？这个问题不可能从系统内部回答，Ω4 已经封死了这条路。</p>
+  <p>Self-Evo 说\u201C我能自己验证自己\u201D，没问题，这确实可以。但谁来写验证的标准？谁来说\u201C这个方向对\u201D？这个问题不可能从系统内部回答，Ω4 已经封死了这条路。</p>
 
   <p>所以人的不可替代性不在于判断更准，Agent 可能判断得比人准得多，而在于人定义什么叫「准」。人从验证者变为定义者，从监工变为导演。这是一个范畴的跃迁，不是程度的差异。</p>
 
@@ -61,7 +61,7 @@
 
   <p>验证可以自动化，steering 不可以。那么一个自然的推论是：一个只跟自己对话的系统和一个跟人对话的系统，能到达的地方是不一样的。</p>
 
-  <p>Agent 的自我改进，无论多精妙，本质上是在训练分布所张成的流形上滑动。它能找到流形上的最优点，但无法抵达流形之外的点。而人类提供的信号，比如物理直觉、市场嗅觉、法律判断、审美品味，这些东西来自训练分布之外。它们不是 Agent”还没学到”的知识，而是结构性的 out-of-distribution 输入。</p>
+  <p>Agent 的自我改进，无论多精妙，本质上是在训练分布所张成的流形上滑动。它能找到流形上的最优点，但无法抵达流形之外的点。而人类提供的信号，比如物理直觉、市场嗅觉、法律判断、审美品味，这些东西来自训练分布之外。它们不是 Agent\u201C还没学到\u201D的知识，而是结构性的 out-of-distribution 输入。</p>
 
   <p>Self-Evo 是一个系统的内部独白：系统和自己对话，在自己的语言里打转。Co-Evo 是两种认知形态之间的对话：碳基的、具身的、有死亡焦虑的智能，和硅基的、统计的、没有时间概念的智能，互相提供对方到达不了的信号。</p>
 
@@ -89,9 +89,9 @@
 
   <p>Co-Evo 的优势很可能是有保质期的。2026 年，human-agent augmentation 显然是正确的路径。2027、2028 年，Agent 在常规任务上可能实现完全自主。再往后，纯 agentic 系统在生产力维度上大概率会碾压一切。</p>
 
-  <p>Ω4 被标注为”可被挑战”是有原因的。如果 AGI 产生了 genuine desire，不是模拟的、不是 RLHF 训练出来的、而是真正内生的目的性，那么 telos 不再需要外部注入，Co-Evo 的哲学基础就塌了。</p>
+  <p>Ω4 被标注为\u201C可被挑战\u201D是有原因的。如果 AGI 产生了 genuine desire，不是模拟的、不是 RLHF 训练出来的、而是真正内生的目的性，那么 telos 不再需要外部注入，Co-Evo 的哲学基础就塌了。</p>
 
-  <p>但这不是我希望的未来，这与我的想法相左。问题不应该停在”人会不会被替代”，而应该是：怎么保证人也在 evolve？怎么保证人在 scaling 这个系统的同时，自己也在 scaling？</p>
+  <p>但这不是我希望的未来，这与我的想法相左。问题不应该停在\u201C人会不会被替代\u201D，而应该是：怎么保证人也在 evolve？怎么保证人在 scaling 这个系统的同时，自己也在 scaling？</p>
 
   <p>目前已经有很多声音在说，接触 agentic 系统之后人的技能在退化。如果人把验证交给了 Critic，把执行交给了 Agent，只剩下 steering，那 steering 技能的进化是否足够？还是说人需要警惕不能丧失某些东西？又或者，人应该建立某种新的能力，一种学校不教的、专门为人机共演时代准备的能力。这个东西到底是什么，我还没有答案。</p>
 
