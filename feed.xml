@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T02:31:36+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T02:32:56+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
   <p><button class="lang-btn active" onclick="switchLang('zh')">中文</button>
   <button class="lang-btn" onclick="switchLang('en')">EN</button></p>
 </div>
@@ -83,7 +83,7 @@
 
   <hr />
 
-  <h2 id="section-3">诚实的时间性</h2>
+  <h2 id="section-3">暂时而言</h2>
 
   <p>写到这里我必须交代一件事。</p>
 
@@ -187,7 +187,7 @@ Under finite observation, the optimization objective cannot be uniquely identifi
 
   <hr />
 
-  <h2 id="honest-temporality">Honest Temporality</h2>
+  <h2 id="for-now">For Now</h2>
 
   <p>At this point I must disclose something.</p>
 
