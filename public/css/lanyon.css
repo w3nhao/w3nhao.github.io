@@ -396,6 +396,11 @@ a.sidebar-nav-item:focus {
   color: #999;
   margin-left: 0.5rem;
 }
+.recent-posts-desc {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.15rem;
+}
 
 .post > .l-body,
 .post > .l-body-outset,

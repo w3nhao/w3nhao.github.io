@@ -58,6 +58,10 @@ color: #4a90e2;
 color: inherit;
 }
 
+[data-theme="dark"] .recent-posts-desc {
+  color: #aaa;
+}
+
 /* Ensure new about links remain readable in dark mode */
 [data-theme="dark"] .about-links a {
   color: #aaa;
