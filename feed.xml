@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T02:57:13+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T03:01:23+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
   <p><button class="lang-btn active" onclick="switchLang('zh')">中文</button>
   <button class="lang-btn" onclick="switchLang('en')">EN</button></p>
 </div>
@@ -35,9 +35,9 @@
 
   <p>Telos 说起来抽象，但它指的东西很具体：欲望。人在生产过程中的驱动力到底是什么？Spinoza 在《伦理学》里给过一个干脆的回答：欲望是人的本质本身。大家喜欢说的 taste，是个人欲望的投射；老师评价学生的 motivation，是欲望；说得负面一点，野心，也是欲望。这些都是同一个东西。我第一次认真想这件事的时候，脑子里蹦出来的是《云图》里那句 the true true：真相到底是什么？在这个语境下，the true true desire，就是生产的原初驱动力。</p>
 
-  <p>Ω4 说的是：一个系统从内部观察自己的时候，它面对无穷多个等价的目标函数，没有任何内在依据去选其中一个。这不是能力问题，不是\u201C还不够强\u201D，这是 underdetermination，是结构性的。你给一个 Agent 足够多的算力和数据，它可以优化任何目标函数到极致，但它无法回答\u201C为什么是这个目标函数而不是那个\u201D。这个选择必须从外部注入。</p>
+  <p>Ω4 说的是：一个系统从内部观察自己的时候，它面对无穷多个等价的目标函数，没有任何内在依据去选其中一个。这不是能力问题，不是"还不够强"，这是 underdetermination，是结构性的。你给一个 Agent 足够多的算力和数据，它可以优化任何目标函数到极致，但它无法回答"为什么是这个目标函数而不是那个"。这个选择必须从外部注入。</p>
 
-  <p>在当前的世界里，那个外部信号叫做「人」。这条公理在体系中被标注为\u201C可被挑战\u201D：如果有一天 AGI 产生了 genuine desire，它会失效。但在此之前，它成立。</p>
+  <p>在当前的世界里，那个外部信号叫做「人」。这条公理在体系中被标注为"可被挑战"：如果有一天 AGI 产生了 genuine desire，它会失效。但在此之前，它成立。</p>
 
   <hr />
 
@@ -51,7 +51,7 @@
 
   <p>第二件叫 steering：定义那个 reference 本身。什么是「好」？什么方向值得追求？这不是计算问题。这是意志问题。</p>
 
-  <p>Self-Evo 说\u201C我能自己验证自己\u201D，没问题，这确实可以。但谁来写验证的标准？谁来说\u201C这个方向对\u201D？这个问题不可能从系统内部回答，Ω4 已经封死了这条路。</p>
+  <p>Self-Evo 说"我能自己验证自己"，没问题，这确实可以。但谁来写验证的标准？谁来说"这个方向对"？这个问题不可能从系统内部回答，Ω4 已经封死了这条路。</p>
 
   <p>所以人的不可替代性不在于判断更准，Agent 可能判断得比人准得多，而在于人定义什么叫「准」。人从验证者变为定义者，从监工变为导演。这是一个范畴的跃迁，不是程度的差异。</p>
 
@@ -61,7 +61,7 @@
 
   <p>验证可以自动化，steering 不可以。那么一个自然的推论是：一个只跟自己对话的系统和一个跟人对话的系统，能到达的地方是不一样的。</p>
 
-  <p>Agent 的自我改进，无论多精妙，本质上是在训练分布所张成的流形上滑动。它能找到流形上的最优点，但无法抵达流形之外的点。而人类提供的信号，比如物理直觉、市场嗅觉、法律判断、审美品味，这些东西来自训练分布之外。它们不是 Agent\u201C还没学到\u201D的知识，而是结构性的 out-of-distribution 输入。</p>
+  <p>Agent 的自我改进，无论多精妙，本质上是在训练分布所张成的流形上滑动。它能找到流形上的最优点，但无法抵达流形之外的点。而人类提供的信号，比如物理直觉、市场嗅觉、法律判断、审美品味，这些东西来自训练分布之外。它们不是 Agent"还没学到"的知识，而是结构性的 out-of-distribution 输入。</p>
 
   <p>Self-Evo 是一个系统的内部独白：系统和自己对话，在自己的语言里打转。Co-Evo 是两种认知形态之间的对话：碳基的、具身的、有死亡焦虑的智能，和硅基的、统计的、没有时间概念的智能，互相提供对方到达不了的信号。</p>
 
@@ -89,9 +89,9 @@
 
   <p>Co-Evo 的优势很可能是有保质期的。2026 年，human-agent augmentation 显然是正确的路径。2027、2028 年，Agent 在常规任务上可能实现完全自主。再往后，纯 agentic 系统在生产力维度上大概率会碾压一切。</p>
 
-  <p>Ω4 被标注为\u201C可被挑战\u201D是有原因的。如果 AGI 产生了 genuine desire，不是模拟的、不是 RLHF 训练出来的、而是真正内生的目的性，那么 telos 不再需要外部注入，Co-Evo 的哲学基础就塌了。</p>
+  <p>Ω4 被标注为"可被挑战"是有原因的。如果 AGI 产生了 genuine desire，不是模拟的、不是 RLHF 训练出来的、而是真正内生的目的性，那么 telos 不再需要外部注入，Co-Evo 的哲学基础就塌了。</p>
 
-  <p>但这不是我希望的未来，这与我的想法相左。问题不应该停在\u201C人会不会被替代\u201D，而应该是：怎么保证人也在 evolve？怎么保证人在 scaling 这个系统的同时，自己也在 scaling？</p>
+  <p>但这不是我希望的未来，这与我的想法相左。问题不应该停在"人会不会被替代"，而应该是：怎么保证人也在 evolve？怎么保证人在 scaling 这个系统的同时，自己也在 scaling？</p>
 
   <p>目前已经有很多声音在说，接触 agentic 系统之后人的技能在退化。如果人把验证交给了 Critic，把执行交给了 Agent，只剩下 steering，那 steering 技能的进化是否足够？还是说人需要警惕不能丧失某些东西？又或者，人应该建立某种新的能力，一种学校不教的、专门为人机共演时代准备的能力。这个东西到底是什么，我还没有答案。</p>
 
@@ -99,7 +99,7 @@
 
   <hr />
 
-  <p><em>The harness doesn’t do the running. But now we know: it’s not about running faster, it’s about knowing where to run.</em></p>
+  <p><em>The harness doesn't do the running. But now we know: it's not about running faster, it's about knowing where to run.</em></p>
 
   <hr />
 
@@ -111,7 +111,7 @@
 
   <p>Something about it still feels wrong to me. Not technically wrong, but wrong in how it assigns roles. Should humans retreat to the background just because the degree of automation increases? Should the human role be diminished in the agentic era?</p>
 
-  <p>I don’t think so. I believe humans must always hold the active position in production. Call it a Sisyphean stubbornness: in closed systems, humans cannot beat machines, and the game of Go has settled that question already, yet I still insist that humans cannot leave the stage.</p>
+  <p>I don't think so. I believe humans must always hold the active position in production. Call it a Sisyphean stubbornness: in closed systems, humans cannot beat machines, and the game of Go has settled that question already, yet I still insist that humans cannot leave the stage.</p>
 
   <hr />
 
@@ -135,27 +135,27 @@
 Under finite observation, the optimization objective cannot be uniquely identified; any determined telos is equivalent to injecting an external preference signal.</p>
   </blockquote>
 
-  <p>Telos sounds abstract, but the thing it points to is concrete: desire. What actually drives humans in production? Spinoza gave a blunt answer in the <em>Ethics</em>: desire is the very essence of man. What people like to call taste is a projection of personal desire. What teachers evaluate as a student’s motivation is desire. Put negatively, ambition is also desire. All of these are the same thing. The first time I thought seriously about this, what came to mind was the phrase from <em>Cloud Atlas</em>: the true true. What is the truth, really? In this context, the true true desire is the primal driving force of production.</p>
+  <p>Telos sounds abstract, but the thing it points to is concrete: desire. What actually drives humans in production? Spinoza gave a blunt answer in the <em>Ethics</em>: desire is the very essence of man. What people like to call taste is a projection of personal desire. What teachers evaluate as a student's motivation is desire. Put negatively, ambition is also desire. All of these are the same thing. The first time I thought seriously about this, what came to mind was the phrase from <em>Cloud Atlas</em>: the true true. What is the truth, really? In this context, the true true desire is the primal driving force of production.</p>
 
-  <p>Omega-4 states: when a system observes itself from the inside, it faces infinitely many equivalent objective functions with no internal basis for choosing one over another. This is not a capability gap. This is underdetermination, and it is structural. Given enough compute and data, an agent can optimize any objective function to its limit, but the agent cannot answer “why this objective function and not that one.” That choice must be injected from outside.</p>
+  <p>Omega-4 states: when a system observes itself from the inside, it faces infinitely many equivalent objective functions with no internal basis for choosing one over another. This is not a capability gap. This is underdetermination, and it is structural. Given enough compute and data, an agent can optimize any objective function to its limit, but the agent cannot answer "why this objective function and not that one." That choice must be injected from outside.</p>
 
-  <p>In the current world, that external signal is called “human.” Omega-4 is labeled “challengeable” in the axiom system: if AGI one day develops genuine desire, the axiom breaks. Until then, it holds.</p>
+  <p>In the current world, that external signal is called "human." Omega-4 is labeled "challengeable" in the axiom system: if AGI one day develops genuine desire, the axiom breaks. Until then, it holds.</p>
 
   <hr />
 
   <h2 id="critic-and-steering-1">Critic and Steering</h2>
 
-  <p>Desire is the driving force, but desire entering a production system requires a concrete action. I call that action steering. The reason I avoid the word “govern” is that humans do not need to manage every aspect of the system. Humans only lever one corner of it and give it a direction.</p>
+  <p>Desire is the driving force, but desire entering a production system requires a concrete action. I call that action steering. The reason I avoid the word "govern" is that humans do not need to manage every aspect of the system. Humans only lever one corner of it and give it a direction.</p>
 
   <p>A common conflation in Self-Evolution discourse is mixing two cognitively distinct actions into one.</p>
 
   <p>The first action is critique: given a standard, check whether output conforms to the standard. Critique is comparison, placing output next to a reference and checking alignment. As long as the reference exists and is executable, critique is a computational problem and can be fully automated. A single critic agent can do it. A cluster of critics can cross-validate each other.</p>
 
-  <p>The second action is steering: defining the reference itself. What counts as “good”? Which direction is worth pursuing? Steering is not a computational problem. Steering is a problem of will.</p>
+  <p>The second action is steering: defining the reference itself. What counts as "good"? Which direction is worth pursuing? Steering is not a computational problem. Steering is a problem of will.</p>
 
-  <p>Self-Evolution says “I can validate myself.” Fine, validation is indeed automatable. But who writes the validation standard? Who says “this direction is correct”? That question cannot be answered from inside the system. Omega-4 has closed that door.</p>
+  <p>Self-Evolution says "I can validate myself." Fine, validation is indeed automatable. But who writes the validation standard? Who says "this direction is correct"? That question cannot be answered from inside the system. Omega-4 has closed that door.</p>
 
-  <p>Human irreplaceability does not lie in judging more accurately. Agents may judge far more accurately than humans. Human irreplaceability lies in defining what “accurate” means. The human shifts from verifier to definer, from manager to director. This is a categorical leap, not a difference of degree.</p>
+  <p>Human irreplaceability does not lie in judging more accurately. Agents may judge far more accurately than humans. Human irreplaceability lies in defining what "accurate" means. The human shifts from verifier to definer, from manager to director. This is a categorical leap, not a difference of degree.</p>
 
   <hr />
 
@@ -163,13 +163,13 @@ Under finite observation, the optimization objective cannot be uniquely identifi
 
   <p>Critique can be automated. Steering cannot. A natural corollary follows: a system that only talks to itself and a system that talks to a human can reach different places.</p>
 
-  <p>Agent self-improvement, however sophisticated, amounts to sliding along the manifold spanned by the training distribution. The agent can find the optimal point on that manifold but cannot reach points outside of it. Human signals, physical intuition, market sense, legal judgment, aesthetic taste, come from outside the training distribution. These signals are not knowledge the agent “hasn’t learned yet.” They are structurally out-of-distribution inputs.</p>
+  <p>Agent self-improvement, however sophisticated, amounts to sliding along the manifold spanned by the training distribution. The agent can find the optimal point on that manifold but cannot reach points outside of it. Human signals, physical intuition, market sense, legal judgment, aesthetic taste, come from outside the training distribution. These signals are not knowledge the agent "hasn't learned yet." They are structurally out-of-distribution inputs.</p>
 
-  <p>Self-Evolution is a system’s internal monologue: the system talks to itself and spins within its own language. Co-Evolution is a dialogue between two cognitive forms: carbon-based, embodied intelligence with mortality anxiety on one side, and silicon-based, statistical intelligence with no concept of time on the other, each providing signals the other cannot reach.</p>
+  <p>Self-Evolution is a system's internal monologue: the system talks to itself and spins within its own language. Co-Evolution is a dialogue between two cognitive forms: carbon-based, embodied intelligence with mortality anxiety on one side, and silicon-based, statistical intelligence with no concept of time on the other, each providing signals the other cannot reach.</p>
 
   <p>Monologue is faster. Dialogue goes further. The comparison here is not about efficiency. The comparison is about reachable space.</p>
 
-  <p>There is also a more practical dimension: common-mode failure. When a system is trained on the same data, built on the same architecture, and constrained by the same spec, the system has blind spots in the same places. Self-checking shares the blind spots. In the axiom system, this is the common-mode failure rate $q$. The only way to reduce $q$ is to introduce heterogeneous verification signals. Humans are the most heterogeneous critic, because human cognitive architecture has an entirely different origin from the agent’s.</p>
+  <p>There is also a more practical dimension: common-mode failure. When a system is trained on the same data, built on the same architecture, and constrained by the same spec, the system has blind spots in the same places. Self-checking shares the blind spots. In the axiom system, this is the common-mode failure rate $q$. The only way to reduce $q$ is to introduce heterogeneous verification signals. Humans are the most heterogeneous critic, because human cognitive architecture has an entirely different origin from the agent's.</p>
 
   <hr />
 
@@ -179,9 +179,9 @@ Under finite observation, the optimization objective cannot be uniquely identifi
 
   <p>The genotype is stable, spans individual lifetimes, and carries will. The phenotype is mutable, mortal, and a one-time expression of the genotype. Agents come and go, contexts fill up and get cleared, but the spec, the document encoding human will, persists. Agents cycle through reincarnation, and the document carrying will is their karma.</p>
 
-  <p>Self-Evolution’s logic is to let the phenotype evolve its own genotype. Co-Evolution’s logic is genotype first, phenotype as expression.</p>
+  <p>Self-Evolution's logic is to let the phenotype evolve its own genotype. Co-Evolution's logic is genotype first, phenotype as expression.</p>
 
-  <p>Biology’s answer across billions of years is clear: genotype has always come first. Phenotypes die. Genes persist. Code does not produce spec. Will produces spec. Spec produces code. The direction of causation cannot be reversed.</p>
+  <p>Biology's answer across billions of years is clear: genotype has always come first. Phenotypes die. Genes persist. Code does not produce spec. Will produces spec. Spec produces code. The direction of causation cannot be reversed.</p>
 
   <hr />
 
@@ -191,9 +191,9 @@ Under finite observation, the optimization objective cannot be uniquely identifi
 
   <p>The advantage of Co-Evolution very likely has an expiration date. In 2026, human-agent augmentation is clearly the right path. By 2027 or 2028, agents may achieve full autonomy on routine tasks. Beyond that, purely agentic systems will probably dominate on the productivity dimension.</p>
 
-  <p>Omega-4 is labeled “challengeable” for a reason. If AGI develops genuine desire, not simulated, not RLHF-trained, but truly endogenous purpose, then telos no longer requires external injection, and Co-Evolution’s philosophical foundation collapses.</p>
+  <p>Omega-4 is labeled "challengeable" for a reason. If AGI develops genuine desire, not simulated, not RLHF-trained, but truly endogenous purpose, then telos no longer requires external injection, and Co-Evolution's philosophical foundation collapses.</p>
 
-  <p>That is not the future I want. It runs against my conviction. The question should not stop at “will humans be replaced.” The question should be: how do we ensure humans also evolve? How do we ensure that humans scale alongside the system they are scaling?</p>
+  <p>That is not the future I want. It runs against my conviction. The question should not stop at "will humans be replaced." The question should be: how do we ensure humans also evolve? How do we ensure that humans scale alongside the system they are scaling?</p>
 
   <p>Many voices already report that human skills degrade after prolonged contact with agentic systems. If humans hand critique to the critic, execution to the agent, and only steering remains, is the evolution of steering skill alone sufficient? Or must humans guard against losing certain capabilities? Perhaps humans need to develop an entirely new kind of ability, one that schools do not teach, one built specifically for the era of human-machine co-evolution. I do not have an answer for what that ability is.</p>
 
@@ -201,7 +201,7 @@ Under finite observation, the optimization objective cannot be uniquely identifi
 
   <hr />
 
-  <p><em>The harness doesn’t do the running. But now we know: it’s not about running faster, it’s about knowing where to run.</em></p>
+  <p><em>The harness doesn't do the running. But now we know: it's not about running faster, it's about knowing where to run.</em></p>
 
   <hr />
 
@@ -445,7 +445,7 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
 </code></pre></div></div>
 
 <h2 id="integrating-metrics-with-pytorch-lightning">Integrating Metrics with PyTorch Lightning</h2>
-<p>Now, let’s demonstrate how to integrate these evaluation metrics into a PyTorch Lightning model using a sample recommender system called SASRec.</p>
+<p>Now, let's demonstrate how to integrate these evaluation metrics into a PyTorch Lightning model using a sample recommender system called SASRec.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pytorch_lightning</span> <span class="k">as</span> <span class="n">pl</span>
 <span class="kn">from</span> <span class="n">torchmetrics</span> <span class="kn">import</span> <span class="n">MetricCollection</span>
@@ -535,11 +535,11 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
     </a>
 </div>
 
-<h2 id="judea-pearls-critique">Judea Pearl’s Critique</h2>
-<p>According to Judea Pearl, deep learning models like GPT are inherently limited in their ability to reason about causality. He argues that their achievements amount to little more than “curve fitting” and are constrained by the passive data they are trained on. Pearl posits that answering causal questions requires either causal assumptions or interventional experiments to enrich the data.</p>
+<h2 id="judea-pearls-critique">Judea Pearl's Critique</h2>
+<p>According to Judea Pearl, deep learning models like GPT are inherently limited in their ability to reason about causality. He argues that their achievements amount to little more than "curve fitting" and are constrained by the passive data they are trained on. Pearl posits that answering causal questions requires either causal assumptions or interventional experiments to enrich the data.</p>
 
-<h2 id="jim-fans-perspective">Jim Fan’s Perspective</h2>
-<p>Jim Fan, on the other hand, highlights GPT’s impressive performance in reasoning about “why” (cause and effect) and “what if” (counterfactual imagination). He suggests that GPT’s ability to infer causality could be attributed to:</p>
+<h2 id="jim-fans-perspective">Jim Fan's Perspective</h2>
+<p>Jim Fan, on the other hand, highlights GPT's impressive performance in reasoning about "why" (cause and effect) and "what if" (counterfactual imagination). He suggests that GPT's ability to infer causality could be attributed to:</p>
 
 <ul>
   <li>The presence of causal examples and counterfactuals in the pre-training data.</li>
@@ -551,10 +551,10 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
 <h2 id="the-inherent-limitations-of-gpt">The Inherent Limitations of GPT</h2>
 <p>While GPT demonstrates some ability to reason about causality, it is important to recognize its inherent limitations. As an AI language model, GPT is unable to directly manipulate variables or actively collect new data to validate its causal inferences. Instead, it relies on the causal assumptions and human judgments present in its training data.</p>
 
-<p>One example of this limitation can be seen in a hypothetical scenario where GPT is trained on a dataset containing the false statement: “Jumping from a building won’t kill you because it’s from the tenth floor.” In this case, GPT might take this erroneous story as a causal assumption and generate incorrect inferences when answering related questions. Since GPT lacks the ability to interact with the real world and conduct interventional experiments, it cannot validate or correct its understanding of the causal relationship.</p>
+<p>One example of this limitation can be seen in a hypothetical scenario where GPT is trained on a dataset containing the false statement: "Jumping from a building won't kill you because it's from the tenth floor." In this case, GPT might take this erroneous story as a causal assumption and generate incorrect inferences when answering related questions. Since GPT lacks the ability to interact with the real world and conduct interventional experiments, it cannot validate or correct its understanding of the causal relationship.</p>
 
 <h2 id="a-cautious-approach-to-causal-inference">A Cautious Approach to Causal Inference</h2>
-<p>In light of these limitations, it is essential to exercise caution when using GPT or similar models for causal inference. To obtain more accurate results, it may be necessary to combine GPT’s output with correct causal assumptions or conduct interventional experiments where possible.</p>
+<p>In light of these limitations, it is essential to exercise caution when using GPT or similar models for causal inference. To obtain more accurate results, it may be necessary to combine GPT's output with correct causal assumptions or conduct interventional experiments where possible.</p>
 
 <p>In conclusion, the dialogue between Judea Pearl and Jim Fan serves as a valuable reminder of the limitations of deep learning models like GPT in the domain of causal inference. While these models have made significant strides in various aspects of natural language understanding, their abilities in causal reasoning remain constrained by their training data and the algorithms themselves.</p>]]></content><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><summary type="html"><![CDATA[In the realm of artificial intelligence, the ability to understand and reason about causality has always been a significant challenge. In a recent exchange on Twitter, Turing Prize Laureate Judea Pearl and AI enthusiast Jim Fan discussed the limitations of GPT, a state-of-the-art language model, in inferring causal relationships.]]></summary></entry><entry><title type="html">Falsificationism and Bayesianism</title><link href="https://w3nhao.github.io/2023/03/29/Falsificationism-and-Bayesianism/" rel="alternate" type="text/html" title="Falsificationism and Bayesianism" /><published>2023-03-29T00:00:00+00:00</published><updated>2023-03-29T00:00:00+00:00</updated><id>https://w3nhao.github.io/2023/03/29/Falsificationism-and-Bayesianism</id><content type="html" xml:base="https://w3nhao.github.io/2023/03/29/Falsificationism-and-Bayesianism/"><![CDATA[<p>Philosophy of science is a discipline that studies the nature, methods, categories, and knowledge structure of science. Among them, falsificationism and Bayesianism are two important philosophical views on science, which emphasize different reasoning methods and evidence verification methods.</p>
 
@@ -566,7 +566,7 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
 
 <h2 id="bayesianism">Bayesianism</h2>
 
-<p>Compared to falsificationism, Bayesianism tries to save inductive reasoning and provides another perspective. Bayesianism, based on Bayes’ theorem, quantifies beliefs by calculating probabilities as the basis for reasoning and decision-making. They believe that new evidence updates our beliefs about a proposition or hypothesis, and these beliefs are adjusted according to Bayes’ theorem.</p>
+<p>Compared to falsificationism, Bayesianism tries to save inductive reasoning and provides another perspective. Bayesianism, based on Bayes' theorem, quantifies beliefs by calculating probabilities as the basis for reasoning and decision-making. They believe that new evidence updates our beliefs about a proposition or hypothesis, and these beliefs are adjusted according to Bayes' theorem.</p>
 
 <p>The specific ways in which Bayesianism saves inductive reasoning include using prior probabilities, updating beliefs, and probability reasoning <cite key="2" data-info="Jaynes, E. T. (2003). Probability theory: The logic of science. Cambridge University Press."></cite>. However, Bayesianism also faces some criticisms, such as subjectivity, computational complexity, model selection, and overfitting problems <cite key="3" data-info="Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., &amp; Rubin, D. B. (2013). Bayesian data analysis (3rd ed.). Chapman and Hall/CRC."></cite>.</p>
 
@@ -582,7 +582,7 @@ where $|U|$ is the number of users, and $\text{rank}_u$ is the position of the f
 
 <h3 id="evidence-verification">Evidence Verification</h3>
 
-<p>Falsificationism holds that a theory should only be abandoned when it is sufficiently falsified by evidence. Bayesianism holds that any new evidence should be used to update prior beliefs and adjust posterior beliefs according to Bayes’ theorem.</p>
+<p>Falsificationism holds that a theory should only be abandoned when it is sufficiently falsified by evidence. Bayesianism holds that any new evidence should be used to update prior beliefs and adjust posterior beliefs according to Bayes' theorem.</p>
 
 <h3 id="handling-uncertainty">Handling Uncertainty</h3>
 
