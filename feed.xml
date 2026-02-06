@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T02:32:56+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://w3nhao.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://w3nhao.github.io/" rel="alternate" type="text/html" /><updated>2026-02-06T02:37:49+00:00</updated><id>https://w3nhao.github.io/feed.xml</id><title type="html">Wenhao Deng</title><subtitle></subtitle><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author><entry><title type="html">Co-Evo vs Self-Evo</title><link href="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/" rel="alternate" type="text/html" title="Co-Evo vs Self-Evo" /><published>2026-02-06T00:00:00+00:00</published><updated>2026-02-06T00:00:00+00:00</updated><id>https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo</id><content type="html" xml:base="https://w3nhao.github.io/2026/02/06/Co-Evo-vs-Self-Evo/"><![CDATA[<div class="lang-switch">
   <p><button class="lang-btn active" onclick="switchLang('zh')">中文</button>
   <button class="lang-btn" onclick="switchLang('en')">EN</button></p>
 </div>
@@ -103,8 +103,6 @@
 
   <hr />
 
-  <p><em>本文基于 Agentic System 公理体系 v4 的哲学随笔。技术细节另有专文。</em></p>
-
 </div>
 
 <div class="lang-en" style="display:none;">
@@ -207,8 +205,6 @@ Under finite observation, the optimization objective cannot be uniquely identifi
 
   <hr />
 
-  <p><em>A philosophical essay based on the Agentic System Axiom Framework v4. Technical details in a separate publication.</em></p>
-
 </div>
 
 <style>
@@ -272,7 +268,13 @@ function switchLang(lang) {
     });
   }
 }
-document.addEventListener('DOMContentLoaded', function() { switchLang('zh'); });
+document.addEventListener('DOMContentLoaded', function() {
+  switchLang('zh');
+  var tocBtn = document.getElementById('toggle-toc');
+  var tocContainer = document.getElementById('toc-container');
+  if (tocBtn) tocBtn.style.display = 'none';
+  if (tocContainer) tocContainer.style.display = 'none';
+});
 </script>]]></content><author><name>Wenhao Deng</name><email>wenhao.deng@foxmail.com</email></author></entry><entry><title type="html">HR, NDCG, and MRR: An easy implementation with TorchMetrics</title><link href="https://w3nhao.github.io/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/" rel="alternate" type="text/html" title="HR, NDCG, and MRR: An easy implementation with TorchMetrics" /><published>2023-03-31T00:00:00+00:00</published><updated>2023-03-31T00:00:00+00:00</updated><id>https://w3nhao.github.io/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation</id><content type="html" xml:base="https://w3nhao.github.io/2023/03/31/HR-MRR-NDCG-Torchmetric-Implementation/"><![CDATA[<p>To assess the performance of  Recommender systems, we need to have reliable evaluation metrics. In this blog post, we will discuss three popular metrics: Hit Rate (HR), Normalized Discounted Cumulative Gain (NDCG), and Mean Reciprocal Rank (MRR). We will also show you how to easily implement these metrics using TorchMetrics and integrate them into a PyTorch Lightning model.</p>
 
 <h2 id="0-understanding-the-get_topk_ranks-function">0. Understanding the <code class="language-plaintext highlighter-rouge">get_topk_ranks</code> Function</h2>
