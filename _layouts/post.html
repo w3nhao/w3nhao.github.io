@@ -6,6 +6,7 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   <span class="post-subtitle">{{ page.subtitle }}</span>
+  {% if page.description %}<div class="post-description">{{ page.description }}</div>{% endif %}
 
   <button id="toggle-toc" class="toc-button">📖 Toggle Table of Contents</button>
 
