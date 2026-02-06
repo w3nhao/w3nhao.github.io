@@ -10,10 +10,10 @@ title: Home
   <div class="about-content">
     <ul class="about-definitions">
       <strong class="about-name">Wenhao Deng 邓文豪 <span class="cantonese-note">(Man-Ho Tang)</span></strong>
-      <li>The trouble maker</li>
+      <li>The troublemaker</li>
       <li>The prompt evolver</li>
       <li>The agent orchestrator</li>
-      <li><strong>The problem solver ← I wish I am</strong></li>
+      <li><strong>The problem solver ← I wish I were</strong></li>
     </ul>
   </div>
 </div>
@@ -30,7 +30,7 @@ title: Home
   </div>
 </div>
 
-## What I do?
+## What do I do?
 
 I do what I want to do.
 
@@ -53,7 +53,7 @@ I do what I want to do.
     <div class="pub-tldr-toggle" onclick="toggleTldr(this)">TL;DR</div>
   </div>
   <div class="pub-tldr">
-    We investigate how far text-based collaborative filtering can go with extremly large language models, revealing key insights on leveraging language models for recommendation systems.
+    We investigate how far text-based collaborative filtering can go with extremely large language models, revealing key insights on leveraging language models for recommendation systems.
   </div>
 </div>
 
@@ -87,7 +87,7 @@ I do what I want to do.
     <span class="pub-arxiv">arXiv:2510.03865 (2025)</span>
   </div>
   <div class="pub-tldr">
-    We attributes one of the limitations of Reinforcement Learning via Verifiable Reward (RLVR) to the reverse KL divergence, and propose Reward-Aware Policy Optimization with forward KL divergence to enhance the reasoning capabilities of large language models.
+    We attribute one of the limitations of Reinforcement Learning via Verifiable Reward (RLVR) to the reverse KL divergence, and propose Reward-Aware Policy Optimization with forward KL divergence to enhance the reasoning capabilities of large language models.
   </div>
 </div>
 
@@ -121,10 +121,10 @@ I do what I want to do.
     *You don’t need to solve your entire life overnight, just focus on one small step at a time.*
   </div>
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
-<div>
+</div>
 
 
-<!-- 
+<!--
 <div class="cat-gif-container">
   <img src="/public/spinning-cat.gif" alt="Spinning 3D Cat" />
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
