@@ -107,7 +107,6 @@ Co-Evo 的优势很可能是有保质期的。2026 年，human-agent augmentatio
 
 ---
 
-*本文基于 Agentic System 公理体系 v4 的哲学随笔。技术细节另有专文。*
 
 </div>
 
@@ -207,7 +206,6 @@ But I know one thing: transient states deserve to be taken seriously. Most lives
 
 ---
 
-*A philosophical essay based on the Agentic System Axiom Framework v4. Technical details in a separate publication.*
 
 </div>
 
@@ -272,5 +270,11 @@ function switchLang(lang) {
     });
   }
 }
-document.addEventListener('DOMContentLoaded', function() { switchLang('zh'); });
+document.addEventListener('DOMContentLoaded', function() {
+  switchLang('zh');
+  var tocBtn = document.getElementById('toggle-toc');
+  var tocContainer = document.getElementById('toc-container');
+  if (tocBtn) tocBtn.style.display = 'none';
+  if (tocContainer) tocContainer.style.display = 'none';
+});
 </script>
