@@ -384,6 +384,19 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+.recent-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.recent-posts li {
+  margin-bottom: 0.25rem;
+}
+.recent-posts li small {
+  font-size: 75%;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
 .post > .l-body,
 .post > .l-body-outset,
 .post > .l-page,
