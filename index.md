@@ -38,6 +38,7 @@ title: Home
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
     <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+    {% if post.description %}<div class="recent-posts-desc">{{ post.description }}</div>{% endif %}
   </li>
 {% endfor %}
 </ul>

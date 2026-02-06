@@ -2,6 +2,7 @@
 layout: post
 title: "Co-Evo vs Self-Evo"
 hidden: false
+description: "Humans must hold the active position in production. A Sisyphean stubbornness."
 ---
 
 {::options parse_block_html="true" /}
