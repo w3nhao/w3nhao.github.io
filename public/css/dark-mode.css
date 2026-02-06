@@ -125,7 +125,9 @@ color: inherit;
 
 /* Blockquote Styles for Dark Mode */
 [data-theme="dark"] blockquote {
-  color: #C0C0C0;  /* Lighter gray for better readability in dark mode */
+  color: #C0C0C0;
+  background-color: #2a2a2a;
+  border-left-color: #555;
 }
 
 
