@@ -87,7 +87,7 @@ Self-Evo 的逻辑是让表型自己演化出基因型。Co-Evo 的逻辑是基�
 
 ---
 
-## 诚实的时间性
+## 暂时而言
 
 写到这里我必须交代一件事。
 
@@ -187,7 +187,7 @@ Biology's answer across billions of years is clear: genotype has always come fir
 
 ---
 
-## Honest Temporality
+## For Now
 
 At this point I must disclose something.
 
