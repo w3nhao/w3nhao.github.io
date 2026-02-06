@@ -109,6 +109,7 @@ I do what I want to do.
 </div> 
 
 
+<!--
 ## Reviewers
 
 - International Conference on Learning Representations (ICLR) 2026
@@ -118,11 +119,11 @@ I do what I want to do.
 
 <div class="homepage-footnote">
   <div class="inspirational-quote">
-    *You don’t need to solve your entire life overnight, just focus on one small step at a time.*
+    *You don't need to solve your entire life overnight, just focus on one small step at a time.*
   </div>
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a>.
 </div>
-
+-->
 
 <!--
 <div class="cat-gif-container">
