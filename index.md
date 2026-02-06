@@ -32,6 +32,7 @@ title: Home
 
 ## Recent Posts
 
+{::nomarkdown}
 <ul class="recent-posts">
 {% assign visible_posts = site.posts | where_exp: "post", "post.hidden != true" %}
 {% for post in visible_posts limit:3 %}
@@ -42,6 +43,7 @@ title: Home
   </li>
 {% endfor %}
 </ul>
+{:/nomarkdown}
 
 ## What do I do?
 
